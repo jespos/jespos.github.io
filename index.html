@@ -15,11 +15,13 @@
   <body>
 <!-- Navigation -->
     <nav>
-      <a href="index.html"><img src="images/logo_je.png" alt="Jolene Esposito logo"></a>
-      <a href="#work">Work</a>
-      <a href="about.html">About</a>
-      <a href="esposito_resume.pdf" target="_blank">Resume</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html"><img src="images/logo_je.png" alt="logo"></a>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
 
 <!-- Header -->
@@ -27,16 +29,19 @@
       <h1>Hello! I'm Jolene Esposito</h1>
       <h2>UI/UX Designer in Virginia</h2>
       <h3>I tell stories through design, interactions, and pleasant user experiences</h3>
+      <i class="fa fa-angle-down"></i>
     </header>
 
+
 <!-- Project1 -->
-    <a name="work"></a>
-    <section class="project01">
-      <a href="casestudy_vdubs.html"><img src="images/vdubs_isometric01.png" alt="V-DUBS iPhone images"></a>
+    <a id="work"></a>
+    <section class="project vdubs">
+      <a href="casestudy_vdubs.html"><img src="images/vdubs_isometric.png" alt="V-DUBS iPhone images"></a>
       <img src="images/logo_vdubs.png" alt="V-DUBS logo">
       <h3>Share Your Spirit.</h3>
       <p>A free storage and sharing app for Volkswagen enthusiasts.</p>
-      <button type="button">View Case Study</button>
+      <button onclick="window.location.href = 'casestudy_vdubs.html';">View Case Study</button>
+
 
 
 <!-- Footer -->
@@ -44,7 +49,7 @@
       <h2>Let's Connect!</h2>
       <a href="https://www.linkedin.com/in/jolene-esposito"><i class="fa fa-linkedin-square"></i></a>
       <a href="https://github.com/jespos"><i class="fa fa-github-square"></i></a>
-      <a href="mailto: esposito.jolene@gmail.com"><i class="fa fa-envelope-square"></i></a>
+      <a href="contact.html"><i class="fa fa-envelope-square"></i></a>  <!-- this should link to contact page instead of having my email address here -->
       <p class="footer">© 2020 Jolene Esposito | Designed and Developed by Jolene Esposito</p>
     </footer>
 
