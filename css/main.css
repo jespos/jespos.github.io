@@ -1,31 +1,56 @@
-/* *, *:before, *:after {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
 html {
+  background-color: #FFFFFF;
   font-size: 10px;
 }
-body {
-  background-color: #FFFFFF;
-  font-size: 1.6em;
+
+/* body {
   font-family: 'Quicksand', sans-serif;
+  font-size: 1.6em;
 } */
 
-
+/* header, nav {
+  background-color: #1B1826;
+  color: #F2E5E5;
+} */
 
 /***** Navigation *****/
-/* nav {
-  background-color: #1B1826;
-}
 
-nav a {
+/*unsure about this hack.*/
+/* nav::after {
+  content: '';
+  display: table;
+  clear: both;
+} */
+
+/* nav a {
   color: #F2E5E5;
   text-decoration: none;
-}
+} */
 
-nav li {
-  display:inline-block;
-  padding: 4rem;
+/* nav ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
+
+/* nav li {
+  display: inline-block;
+  padding: 3rem;
+} */
+
+/* .hero {
+  display: block;
+} */
+
+/* .logo {
+  /* display: inline-block; */
+  /* float: left;
+  padding: 2rem;
 } */
 
 
@@ -33,15 +58,26 @@ nav li {
 
 
 
+/***** Hero ******/
 
 
-/***** Header ******/
-/* header {
-  background-color: #1B1826;
-  color: #F2E5E5;
-}
-
-h1 {
+/* h1 {
   font-size: 2.7em;
   font-weight: 300;
+  /* line-height: 2em; */
+  /* margin-bottom: .4em;
+} */
+
+/* h2 {
+  font-size: 2.1em;
+  font-weight: 300;
+  /* line-height: 1.5em; */
+  /* margin-bottom: .3em;
+} */
+
+/* h3{
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 2.5em;
+  margin-bottom: .2em;
 } */

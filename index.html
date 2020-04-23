@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title> Portfolio | Jolene Esposito </title>
     <meta charset="utf-8">
@@ -14,23 +14,27 @@
   </head>
   <body>
 <!-- Navigation -->
+  <header>
     <nav>
-      <a href="index.html"><img src="images/logo_je.png" alt="logo"></a>
-      <ul>
-        <li><a href="#work">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo_je.png" alt="logo"></a>
+      </div>
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
-<!-- Header -->
-    <header>
-      <h1>Hello! I'm Jolene Esposito</h1>
-      <h2>UI/UX Designer in Virginia</h2>
+<!-- Hero -->
+    <section class="hero">
+      <h1>Hello! I'm <span style="font-weight:600">Jolene Esposito</span></h1>
+      <h2><span style="font-weight:600">UI/UX Designer</span> in <span style="font-weight:600">Virginia</span></h2>
       <h3>I tell stories through design, interactions, and pleasant user experiences</h3>
       <i class="fa fa-angle-down"></i>
-    </header>
+    </section>
+  </header>
 
 
 <!-- Project1 -->
@@ -41,9 +45,8 @@
       <h3>Share Your Spirit.</h3>
       <p>A free storage and sharing app for Volkswagen enthusiasts.</p>
       <!-- <button onclick="window.location.href = 'casestudy_vdubs.html';">View Case Study</button>  -->
-      <form action="casestudy_vdubs.html">
-        <input type="submit" value="View Case Study" class="button">
-      </form>
+      <a href="casestudy_vdubs.html">View Case Study</a>
+    </section>
 
 
 <!-- Footer -->
