@@ -23,32 +23,34 @@
     </nav>
 
     <!-- Body -->
-    <h2>Get in Touch!</h2>
-    <p>Want to inquire about my work or just say hello? Reach me at esposito.jolene [at] gmail [dot] com
+    <h2 class="contact__title">Get in Touch!</h2>
+    <p class="contact__text">Want to inquire about my work or just say hello? Reach me at esposito.jolene [at] gmail [dot] com
       or fill out the form below.</p>
 
     <!-- Form -->
-    <form
-      action="https://formspree.io/xnqbeozr"
-      method="POST"
-    >
-      <label>
-        Name:
-        <input type="text" name="name">
-      </label>
+    <section class="contact-form">
+      <form
+        action="https://formspree.io/xnqbeozr"
+        method="POST"
+      >
+        <label>
+          Name:
+          <input type="text" name="name">
+        </label>
 
-      <label>
-        Email:
-        <input type="text" name="_replyto">
-      </label>
-      
-      <label>
-        Message:
-        <textarea name="message"></textarea>
-      </label>
+        <label>
+          Email:
+          <input type="text" name="_replyto">
+        </label>
 
-      <button type="submit">Send</button>
-  </form>
+        <label>
+          Message:
+          <textarea name="message" class="message"></textarea>
+        </label>
+
+        <button type="submit" class="project_button">Send</button>
+    </form>
+  </section>
 
 
 
