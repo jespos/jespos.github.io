@@ -27,8 +27,19 @@
           <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul> -->
+
         <!-- hamburger menu -->
-        <i class="fa fa-bars"></i>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#work">Work</a>
+            <a href="about.html">About</a>
+            <a href="esposito_resume.pdf" target="_blank">Resume</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
       </nav>
 
@@ -47,12 +58,13 @@
   <!-- Project1 -->
       <a id="work"></a>
       <section class="project vdubs">
-        <a href="casestudy_vdubs.html"><img class="cover" src="images/vdubs_isometric_homepage.png" alt="V-DUBS iPhone images"></a>
+        <!-- <a href="casestudy_vdubs.html"><img class="cover" src="images/vdubs_isometric_homepage.png" alt="V-DUBS iPhone images"></a> -->
+        <a href="casestudy_vdubs.html"><img class="cover" src="images/vdubs_isometric_resizeTEST.png" alt="V-DUBS iPhone images"></a>
+
         <img src="images/logo_vdubs.png" alt="V-DUBS logo" class="vdubs__logo">
         <h3 class="project__title">Share Your Spirit.</h3>
         <p class="project__summary">A free storage and sharing app for Volkswagen enthusiasts.</p>
-        <!-- <button onclick="window.location.href = 'casestudy_vdubs.html';">View Case Study</button>  -->
-        <a href="casestudy_vdubs.html" class="project_button">View Case Study</a>
+        <a href="casestudy_vdubs.html" class="project_button_homepage">View Case Study</a>
       </section>
 
 
@@ -71,5 +83,15 @@
       </footer>
 
     </section>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
   </body>
 </html>

@@ -25,20 +25,16 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <!-- <nav>
-      <a id="top"></a>
-      <a href="index.html"><img src="images/logo_je.png" alt="Jolene Esposito logo"></a>
-      <a href="index.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="esposito_resume.pdf" target="_blank">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav> -->
 
-    <section>
+    <section class="summary">
       <img src="images/logo_vdubs.png" alt="V-DUBS logo" class="logo__casestudy">
       <h3 class="project__title">Share Your Spirit.</h3>
       <p class="project__summary">A free storage and sharing app for Volkswagen enthusiasts.</p>
-      <img src="images/vdubs_isometric.png"  alt="V-DUBS displayed on iPhone screens">
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/vdubs_isometric_resizeTEST.png">
+        <source media="(min-width: 400px)" srcset="images/vdubs_isometric_resizeTEST.png">
+        <img src="images/vdubs_isometric.png" alt="V-DUBS screens" style="width:auto;">
+      </picture>
       <a href="https://www.figma.com/proto/IRrgH2grlbgydTkzMMs2py/iOS-11-GUI-Assets?node-id=23973%3A0&viewport=6520%2C-10937%2C1&scaling=scale-down" target="_blank" class="project_button">View Protoype</a>
     </section>
 
@@ -98,10 +94,10 @@
 
     <!-- In-page Navigation -->
     <nav class="project__nav">
-      <a href="#research">Research</a>
-      <a href="#informationarchitecture">Information Architecture</a>
-      <a href="#visualdesign">Visual Design</a>
-      <a href="#prototype">Prototype</a>
+      <a href="#research">Research &ensp;|</a>
+      <a href="#informationarchitecture"> &ensp;Information Architecture &ensp;|</a>
+      <a href="#visualdesign">&ensp;Visual Design &ensp;|</a>
+      <a href="#prototype">&ensp;Prototype</a>
     </nav>
 
     <!-- Research -->
@@ -117,16 +113,15 @@
     <p class="survey_learning">What did I want to learn?</p>
     <div class="verticalline">
       <ul class="survey">
-        <li>Usage of specific features (i.e. creating, uploading, editing, sharing, and organizing files</li>
+        <li>Usage of specific features</li>
         <li>Likes and dislikes of cloud storage</li>
         <li>Frequency of accessing cloud storage</li>
         <li>Device(s) used to access cloud storage</li>
       </ul>
     </div>
     <!-- Results of User Survey 1 -->
-    <div class="survey__results">
-      <img src="images/results_cloudstorage.png" alt="Background closeup of car hood">
-      <div class="centered">
+    <section class="survey__results">
+      <div class="survey__results__flexbox">
         <h3 class="section__subheading__results">Results: Cloud Storage</h3>
         <h4>Most Popular</h4>
         <ul class="survey__results__list">
@@ -142,11 +137,15 @@
           <li>Create files/folders</li>
         </ul>
         <h4>80%</h4>
-        <p class="survey__results__nonlist">of cloud storage users collaborate</p>
+        <ul class="survey__results__list">
+          <li>Collaborate</li>
+        </ul>
         <h4>94%</h4>
-        <p class="survey__results__nonlist">of cloud storage users share files and folders</p>
+        <ul class="survey__results__list">
+          <li>Share files and folders</li>
+        </ul>
       </div>
-    </div>
+    </section>
 
     <!-- User Survey 2: Social Media -->
     <h3 class="section__heading">User Survey: Social Media</h3>
@@ -162,24 +161,31 @@
     </div>
 
     <!-- Results of User Survey 2 -->
-    <img src="images/results_socialmedia.png" alt="Background closeup of car hood">
-    <h3 class="section__subheading__results">Results: Social Media</h3>
-    <h4>80%</h4>
-    <p class="survey__results__nonlist">access social apps from mobile device</p>
-    <h4>93%</h4>
-    <p class="survey__results__nonlist">of users access social apps daily</p>
-    <h4>Frustrations</h4>
-    <ul class="survey__results__list">
-      <li>Too much unrelated info</li>
-      <li>Too many ads</li>
-      <li>Privacy concerns</li>
-    </ul>
-    <h4>Top Features</h4>
-    <ul class="survey__results__list">
-      <li>Create content</li>
-      <li>Share content</li>
-      <li>Search in-app</li>
-    </ul>
+    <section class="survey__results">
+      <div class="survey__results__flexbox">
+        <h3 class="section__subheading__results">Results: Social Media</h3>
+        <h4>80%</h4>
+        <ul class="survey__results__list">
+          <li>Access social apps from mobile device</li>
+        </ul>
+        <h4>93%</h4>
+        <ul class="survey__results__list">
+          <li>Access social apps daily</li>
+        </ul>
+        <h4>Frustrations</h4>
+        <ul class="survey__results__list">
+          <li>Too much unrelated info</li>
+          <li>Too many ads</li>
+          <li>Privacy concerns</li>
+        </ul>
+        <h4>Top Features</h4>
+        <ul class="survey__results__list">
+          <li>Create content</li>
+          <li>Share content</li>
+          <li>Search in-app</li>
+        </ul>
+      </div>
+    </section>
 
     <!-- In Depth Interviews -->
     <p class="section__subheading">In-depth interviews:</p>
@@ -188,7 +194,7 @@
       their web habits as they pertain to Volkswagen. I learned there are 3 major tasks that
       Volkswagen enthusiasts do:</p>
       <div class="verticalline">
-        <ol class="habits numbered">
+        <ol class="list numbered">
           <li>Share and view photos of Volkswagens</li>
           <li>Ask questions to the community</li>
           <li>Upload / share car-related paperwork and documents</li>
@@ -217,53 +223,61 @@
     <p>When I attend Volkswagen events, I observe several types of people. Using my own observations, along
       with survey datal previously discussed, I generated 3 personas:</p>
     <div class="verticalline">
-      <ol class="habits numbered">
+      <ol class="list numbered">
         <li>Enthusiasts</li>
         <li>Creatives (i.e. photographers)</li>
         <li>Learners (i.e. car restoration)</li>
       </ol>
     </div>
 
-    <!-- Persona 1 -->
-    <img src="images/persona_learner.png" alt="Marco. The Learner" class="persona__image">
-    <h3 class="persona__name">Marco</h3>
-    <h4 class="persona__id">The Learner | 27 years old</h4>
-    <h5 class="motivations_frustrations">Motivations:</h5>
-    <p class="persona__description">I love cars and am currently restoring a 1996 Volkswagen Jetta. I want to easily share restoration
-      photos and ask questions to the community.</p>
-    <h5 class="motivations_frustrations">Frustrations:</h5>
-    <p class="persona__description">I find myself sharing content in multiple places. I don’t want to use multiple apps to find and
-      share information.</p>
+    <section class="personas__flex">
+      <!-- Persona 1 -->
+      <div class="persona-one">
+        <img src="images/persona_learner.png" alt="Marco. The Learner" class="persona__image">
+        <h3 class="persona__name">Marco</h3>
+        <h4 class="persona__id">The Learner | 27 years old</h4>
+        <h5 class="motivations_frustrations">Motivations:</h5>
+        <p class="persona__description">I love cars and am currently restoring a 1996 Volkswagen Jetta. I want to easily share restoration
+          photos and ask questions to the community.</p>
+        <h5 class="motivations_frustrations">Frustrations:</h5>
+        <p class="persona__description">I find myself sharing content in multiple places. I don’t want to use multiple apps to find and
+          share information.</p>
+      </div>
 
-    <!-- Persona 2 -->
-    <img src="images/persona_enthusiast.png" alt="Brett. The Enthusiast." class="persona__image">
-    <h3 class="persona__name">Brett</h3>
-    <h4 class="persona__id">The Enthusiast | 65 years old</h4>
-    <h5 class="motivations_frustrations">Motivations:</h5>
-    <p class="persona__description">I consider myself an amateur car restorer, collector, and photographer. I want an app where I can share
-      my passion with others who feel the same.</p>
-    <h5 class="motivations_frustrations">Frustrations:</h5>
-    <p class="persona__description">I can’t find any cohesive apps related to this community. The other platforms I use are cluttered with
-      irrelevant information. </p>
 
-    <!-- Persona 3 -->
-    <img src="images/persona_creative.png" alt="Ellie. The Creative." class="persona__image">
-    <h3 class="persona__name">Ellie</h3>
-    <h4 class="persona__id">The Creative | 34 years old</h4>
-    <h5 class="motivations_frustrations">Motivations:</h5>
-    <p class="persona__description">I manage automobile exhibits for an antique auto museum and enjoy driving my classic VW to auto shows. I want
-      an easy way to create notes and share photos in one app. </p>
-    <h5 class="motivations_frustrations">Frustrations:</h5>
-    <p class="persona__description">Uploading my notes to share with others isn’t easy and I can’t create new content with my current apps.</p>
+      <!-- Persona 2 -->
+      <div class="persona-two">
+        <img src="images/persona_enthusiast.png" alt="Brett. The Enthusiast." class="persona__image">
+        <h3 class="persona__name">Brett</h3>
+        <h4 class="persona__id">The Enthusiast | 65 years old</h4>
+        <h5 class="motivations_frustrations">Motivations:</h5>
+        <p class="persona__description">I consider myself an amateur car restorer, collector, and photographer. I want an app where I can share
+          my passion with others who feel the same.</p>
+        <h5 class="motivations_frustrations">Frustrations:</h5>
+        <p class="persona__description">I can’t find any cohesive apps related to this community. The other platforms I use are cluttered with
+          irrelevant information. </p>
+      </div>
 
+      <!-- Persona 3 -->
+      <div class="persona-three">
+        <img src="images/persona_creative.png" alt="Ellie. The Creative." class="persona__image">
+        <h3 class="persona__name">Ellie</h3>
+        <h4 class="persona__id">The Creative | 34 years old</h4>
+        <h5 class="motivations_frustrations">Motivations:</h5>
+        <p class="persona__description">I manage automobile exhibits for an antique auto museum and enjoy driving my classic VW to auto shows. I want
+          an easy way to create notes and share photos in one app. </p>
+        <h5 class="motivations_frustrations">Frustrations:</h5>
+        <p class="persona__description">Uploading my notes to share with others isn’t easy and I can’t create new content with my current apps.</p>
+      </div>
+    </section>
     <!-- User Stories -->
     <p class="section__subheading">User Stories</p>
     <h3 class="section__heading">Less is more.</h3>
     <p>After researching apps and creating a lengthy list of tasks a user wants to do on the app, I prioritized
       tasks to create an MVP.</p>
-    <p>High Priority Items</p>
-    <div class="verticalline">
-      <ul class="habits">
+    <p class="survey_learning">High Priority Items</p>
+    <!-- <div class="verticalline"> -->
+      <ul class="survey">
         <li>Sign up for new account</li>
         <li>Sign into account</li>
         <li>Create content</li>
@@ -272,7 +286,7 @@
         <li>Comment on content</li>
         <li>Share content</li>
       </ul>
-  </div>
+  <!-- </div> -->
 
     <!-- Lesson -->
     <h3 class="lesson">Lesson: ‘Important’ functionality ≠ ‘high’ priority</h3>
@@ -288,9 +302,8 @@
     <!-- User Flows -->
     <p class="section__subheading">User Flows</p>
     <h3 class="section__heading">Moving right along.</h3>
-    <p>From the highest priority user stories, I sketched flows for the following tasks:</p>
-    <div class="verticalline">
-      <ul class="habits">
+    <p class="user-flows">From the highest priority user stories, I sketched flows for the following tasks:</p>
+      <ul class="survey">
         <li>Sign up / Sign in /Account recovery</li>
         <li>Sign out</li>
         <li>Share</li>
@@ -300,9 +313,10 @@
         <li>Create Content</li>
         <li>Ask a Question</li>
       </ul>
-  </div>
-    <img src="images/userflow_vertical.png" alt="Sign up user flow">
-    <a href="https://drive.google.com/drive/folders/1wp9FvcyRrXDd0Ok_TnNT39sMo-QfHsj6?usp=sharing" target="_blank" class="project_button">View User Flows</a>
+    <section class="flows__flex">
+      <img src="images/userflow_vertical.png" alt="Sign up user flow">
+      <a href="https://drive.google.com/drive/folders/1wp9FvcyRrXDd0Ok_TnNT39sMo-QfHsj6?usp=sharing" target="_blank" class="project_button">View User Flows</a>
+    </section>
     <!-- Wireframes -->
     <p class="section__subheading">Wireframes</p>
     <h3 class="section__heading">Showing the vision.</h3>
@@ -312,17 +326,13 @@
     <p>I tested 10 tasks ranging from signing up for an account, creating content, and logging out of the app.</p>
     <a href="https://docs.google.com/document/d/1vimOICvjCw7Xb6tS7M1PgQ1N_Q4x936pAlQloLpgOH4/edit?usp=sharing" target="_blank" class="project_button">View Tasks</a>
     <p>Results Summary:</p>
-    <ul>
-      <img src="images/number1_sm.png" alt="Number one" class="results-number">
-      <li>Confusion over the differences between the Community Tab and the Home button</li>
-      <img src="images/number2_sm.png" alt="Number two" class="results-number">
-      <li>Extend the landing page to include more info like ‘About’ and ‘Features’</li>
-      <img src="images/number3_sm.png" alt="Number three" class="results-number">
-      <li>Hard to tell if Community and My Content tabs are actually clickable</li>
-      <img src="images/number4_sm.png" alt="Number four" class="results-number">
-      <li>Add organization options like folders or tags within your own content</li>
+    <ol class="results-list">
+      <li><span class="bullet-gap">Confusion over the differences between the Community Tab and the Home button</span></li>
+      <li><span class="bullet-gap">Extend the landing page to include more info like ‘About’ and ‘Features’</span></li>
+      <li><span class="bullet-gap">Hard to tell if Community and My Content tabs are actually clickable</span></li>
+      <li><span class="bullet-gap">Add organization options like folders or tags within your own content</span></li>
       <img src="images/usertesting_round1.png" alt="User testing round one">
-    </ul>
+    </ol>
 
     <!-- Visual Design -->
     <a id="visualdesign"></a>
@@ -402,15 +412,11 @@
     <p>I put my prototype through a second round of user testing going through 14 tasks.</p>
     <a href="https://docs.google.com/document/d/1zy1Kd71hcvqC7heToxzLL7gUabt6f_nm0JcXqGAtcBw/edit?usp=sharing" target="_blank" class="project_button">View Tasks</a>
     <p>Results Summary:</p>
-    <ul>
-      <img src="images/number1_sm.png" alt="Number one">
-      <p>There is a search bar and a search icon. Are they both needed?</p>
-      <img src="images/number2_sm.png" alt="Number two">
-      <p>Replacing or deleting a photo / document isn’t obvious.</p>
-      <img src="images/number3_sm.png" alt="Number three">
-      <p>Sign Out should be more prominently displayed and easier to find.</p>
-      <img src="images/usertesting_round2.png" alt="User testing round two">
-    </ul>
+    <ol class="results-list">
+      <li><span class="bullet-gap">There is a search bar and a search icon. Are they both needed?</span></li>
+      <li><span class="bullet-gap">Replacing or deleting a photo / document isn’t obvious.</span></li>
+      <li><span class="bullet-gap">Sign Out should be more prominently displayed and easier to find.</span></li>
+    </ol>
 
     <!-- Lesson -->
     <h3 class="lesson">Lesson: You wont catch everything the first go around</h3>

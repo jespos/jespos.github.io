@@ -9,21 +9,84 @@ html {
 
 .container {
   margin: 0, auto;
-  width: 375px;
 }
 
 body {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.6em;
+  /* font-size: 1.6em; */
 }
 
 
-/*** Navigation ***/
+/*** NAVIGATION SECTION ***/
+
+/* curtain menu */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+
+
+
+
+.fa.fa-bars {
+  float: right;
+}
+
+.logo {
+  display: inline-block;
+}
 
 nav {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   background-color: #1B1826;
   padding: 20px;
   color: #F2E5E5;
@@ -44,44 +107,39 @@ nav li a{
 }
 
 
-/*** Hero ***/
+/**** HERO SECTION ***/
 .hero {
   background-color: #1B1826;
-  padding: 20px;
   color: #F2E5E5;
+  clear: both;
+  padding: 20px;
 }
 
 .hero__name {
-  font-size: 1.9em;
+  font-size: 4em;
   font-weight: 300;
   line-height: 1.3em;
+  margin-bottom: .5em;
 }
 
-
-.hero__profession{
-  font-size: 1.5em;
-  font-weight: 300;
-  line-height: 1.3em;
-}
 
 .hero__profession {
-  font-size: 1.1em;
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero__story {
+  font-size: 2em;
   font-weight: 300;
   line-height: 1.8em;
 }
 
-
-/* h1, h2, h3 {
-  font-weight: 300;
-}
-
-
-*/
-
 .down-arrow {
-  font-size: 2.5em;
+  font-size: 3.5em;
   text-align: center;
-  padding-top: 3.5rem;
+  padding-top: 1em;
 }
 
 .down-arrow a {
@@ -89,36 +147,41 @@ nav li a{
   color: #F2E5E5;
 }
 
-/***** Projects ****/
+/***** PROJECTS SECTION (on homepage) ****/
 
 .project__title {
-  font-size: 1.4em;
-  font-weight: 300;
+  font-size: 2.4em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
   text-align: center;
 }
 
 .project__summary {
-  font-size: 1em;
+  font-size: 1.7em;
+  font-weight: 400;
   line-height: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
   text-align: center;
+  padding-bottom: 1em;
+  padding-top: 0.2em;
 }
 
-.project_button {
+.project_button_homepage {
   background-color: #35B999;
   border: none;
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
+  cursor: pointer;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.3em;
-  margin-top: 0.5em;
+  font-size: 1.7em;
+  margin-top: 1em;
   margin-bottom: 1.5em;
-  cursor: pointer;
 }
-
 
 .project {
   align-items: center;
@@ -146,63 +209,64 @@ nav li a{
 }
 
 
-/***** Case Study *****/
+/***** CASE STUDY *****/
 
-.centered {
-  position: absolute;
-  top: 3%;
-  left: 50%
-  transform: (-50%, -50%);
+/*hero section of case study*/
+.summary {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.logo__casestudy{
+.project_button {
+  background-color: #35B999;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.7em;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+  width: 12em;
 }
 
+
+
+
+/* Roles & Responsibilities */
 .deliverables {
   background-color: #F5E2FF;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
 }
 
 .deliverables__titles {
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 2.2em;
+  margin-bottom: 0.1em;
   text-align: center;
 }
 
 .deliverables__list {
+  font-size: 1.5em;
   font-weight: 400;
   line-height: 3.5rem;
   text-align: center;
   padding-bottom: 2rem;
 }
 
-h4  {
-  font-weight: 600;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+
+/*Overview*/
+.main__header {
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  font-size: 1.7em;
+  font-weight: 300;
 }
-
-.habits {
-  list-style-type: none;
-  font-weight: 600;
-  line-height: 2.5em;
-  margin-left: 2.5em;
-}
-
-.habits.numbered {
-  list-style-type: decimal;
-  font-weight: 600;
-  line-height: 2.5em;
-  margin-left: 2.5em;
-}
-
-
 
 hr {
   display: block;
@@ -213,123 +277,227 @@ hr {
   border-color: #35B999;
   border-radius: 3px;
   border-style: solid;
-  border-width: 3px;
+  border-width: 2px;
   width: 50%;
 }
+
+.prob-solution {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+
+p {
+  font-size: 1.7em;
+  line-height: 1.9em;
+  padding-bottom: 2em;
+}
+
+
+/* in-project navigation */
+.project__nav {
+  background-color: #1B1826;
+  font-size: 1.7em;
+  line-height: 1.8em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.project__nav a {
+  text-decoration: none;
+  color: #F2E5E5;
+}
+
+
+
+
+
+
+
+
+
+.logo__casestudy{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+
+
+/* Cars and Coffee */
+.list {
+  font-size: 1.6em;
+  font-weight: 600;
+  list-style: none;
+  margin-left: 1.5em;
+  margin-bottom: 2.5em;
+}
+
+.list.numbered li{
+  /* list-style-type: decimal; */
+  line-height: 1.7em;
+  margin-top: 1.2em;
+  counter-increment: li;
+}
+
+ol.list.numbered li::before {
+  content: counter(li);
+  color: #35B999;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+
+
+
+
+/* Lessons */
 
 .lesson {
   background-color: #35B999;
   color: #FFFFFF;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 600;
   line-height: 1.5em;
-  padding-top: 0.5em;
+  padding-top: 0.6em;
 }
 
 .lesson.paragraph {
-  font-size: 1.2em;
+  font-size: 1.7em;
   font-weight: 300;
   line-height: 1.8em;
   padding-top: 0.5em;
-}
-
-.main__header {
-  margin-top: 1em;
-  margin-bottom: 0.3em;
-  font-size: 1.2em;
-  font-weight: 300;
+  padding-bottom: 0.7em;
 }
 
 
-p {
-  font-size: 1.2em;
-  line-height: 1.8em;
-  padding-bottom: 2em;
-}
 
-.prob-solution {
-  font-size: 2em;
-  font-weight: 600;
-}
+/*personas*/
 
-.project__nav {
-  background-color: #FFFFFF;
-}
+
+
+
+
 
 
 .section__subheading {
   margin-top: 1em;
-  font-size: 1.1em;
+  font-size: 1.6em;
   font-weight: 300;
   padding-bottom: 0;
 }
 
 .section__heading {
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: 600;
   padding-bottom: 0.7em;
 }
 
-.survey {
-  height: 15em;
+/*survey*/
+ul.survey {
+  font-size: 1.6em;
   font-weight: 600;
-  line-height: 2.5em;
+  list-style: none;
   margin-left: 1.5em;
+  margin-bottom: 2.5em;
 
 }
 
 .survey_learning {
   font-weight: 300;
-  font-size: 1.2em;
-  line-height: 1.8em;
+  font-size: 1.9em;
+  line-height: 1.6em;
   padding-bottom: 0em;
 }
 
+ul.survey li {
+  line-height: 1.7em;
+  margin-top: 1.2em;
+
+}
+
+ul.survey li::before {
+  content: "\2022";  /* Code/unicode for a bullet */
+  color: #35B999;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 .survey__results {
-  position: relative;
-  text-align: center;
+  background-image: url(../images/results_cloudstorage.png);
+  padding-bottom: 2em;
 }
 
 .survey__results__list {
+  font-size: 1.6em;
   list-style: none;
   line-height: 2em;
+  text-align: center;
 }
 
-.survey__results__nonlist {
-  font-size: 1em;
-  padding-bottom: 1em;
+.survey__results__flexbox {
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-.verticalline {
-  border-left: 3.5px solid black;
-  border-radius: 2.5px;
-  margin-left: 2em;
-  margin-bottom: 2em;
+.section__subheading__results {
+  font-size: 2em;
+  font-weight: 600;
   margin-top: 1em;
+  margin-bottom: 0.5em;
 }
+
+h4  {
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+
 
 /* user personas */
+.personas__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.persona-one, .persona-two, .persona-three {
+  padding-right: 4em;
+}
+
 
 .persona__name {
   font-size: 2em;
   font-weight: 600;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
   text-align: center;
 }
 
 .persona__id {
-  font-size: 1.3em;
+  font-size: 1.6em;
   font-weight: 300;
-  text-align: center;
+  margin-bottom: 1.9em;
   padding: 0;
+  text-align: center;
+
 }
 
 .motivations_frustrations {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 600;
+  margin-bottom: 0.2em;
   text-align: center;
-  margin-top: 1.5em;
 }
 
 .persona__description {
@@ -343,7 +511,93 @@ p {
 }
 
 
+
+/* user flows */
+.user-flows {
+  padding-bottom: 0;
+}
+
+.flows__flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+
+
 /* user testing */
+
+.results-list {
+  counter-reset: li;
+  list-style-type: none;
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-left: 1.5em;
+  margin-bottom: 2.5em;
+}
+
+.results-list li {
+  counter-increment: li;
+  line-height: 1.7em;
+  margin-top: 1.2em;
+  margin-left: 2em;
+  position: relative;
+
+
+}
+
+ol.results-list li::before {
+  content: counter(li);
+  color: white;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.7em; /* Also needed for space (tweak if needed) */
+  margin-left: -2em; /* Also needed for space (tweak if needed) */
+  height: 1.7em;
+  background: #EB0000;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  /* left: 0; */ /* moves the bullets only */
+  top: 0.2em;
+}
+
+span.bullet-gap {
+  position: relative;
+  left: 1em;
+}
+
+
+/* .list {
+  font-size: 1.6em;
+  font-weight: 600;
+  list-style: none;
+  margin-left: 1.5em;
+  margin-bottom: 2.5em;
+} */
+
+/* .list.numbered li{
+  /* list-style-type: decimal; */
+  /* line-height: 1.7em;
+  margin-top: 1.2em;
+  counter-increment: li;
+} */
+
+/* ol.list.numbered li::before {
+  content: counter(li);
+  color: #35B999;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  /* width: 1em; /* Also needed for space (tweak if needed) */
+  /* margin-left: -1em; /* Also needed for space (tweak if needed) */
+
+
+
+
+
+
+
 .results-number {
   float: left;
 }
@@ -351,6 +605,11 @@ p {
 .results-text {
   float: right;
 }
+
+
+
+
+
 
 
 /**** Branding ****/
@@ -365,6 +624,9 @@ p {
 
 
 /*** Footer ***/
+
+
+
 
 .copywrite {
   font-size: .7em;
@@ -451,7 +713,7 @@ footer {
 input, .message {
   border-color: #aaaaaa;
   border-radius: 6px;
-  border-width: 2px;
+  border-width: 1px;
   display: block;
   padding: 0.5em;
   margin: 1em;
