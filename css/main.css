@@ -250,6 +250,7 @@ nav li a:hover::before {
   flex-direction: column;
 }
 
+/*buttons*/
 .project_button {
   background-color: #35B999;
   border: none;
@@ -269,7 +270,11 @@ nav li a:hover::before {
   width: 12em;
 }
 
-
+/* wrapper */
+.casestudy__wrapper {
+  margin-left: 2em;
+  margin-right: 2em;
+}
 
 
 /* Roles & Responsibilities */
@@ -346,13 +351,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
 .logo__casestudy{
   display: block;
   margin-left: auto;
@@ -402,6 +400,8 @@ ol.list.numbered li::before {
   font-weight: 600;
   line-height: 1.5em;
   padding-top: 0.6em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .lesson.paragraph {
@@ -489,6 +489,7 @@ ul.survey li::before {
   font-weight: 600;
   margin-top: 1em;
   margin-bottom: 0.5em;
+  margin-left: 1em;
 }
 
 h4  {
