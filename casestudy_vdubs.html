@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> Case Study | V-DUBS </title>
+    <title> Portfolio | Jolene Esposito </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 
-<!-- Font Awesome  I'm not sure this is up-to-date? -->
+  <!-- Font Awesome  I'm not sure this is up-to-date? -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="scripts.js"></script>
 
   </head>
   <body>
-<!-- Navigation -->
+  <!-- Navigation -->
+  <!-- <header> -->
     <nav>
       <div class="logo">
-        <a href="index.html"><img src="images/logo_je.png" alt="logo"></a>
+        <a href="index.html"><img src="images/logo_je.png" class="header__logo" alt="logo"></a>
       </div>
-        <ul>
-          <li><a href="#work">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <!-- desktop nav -->
+      <!-- <ul class="nav__desktop">
+        <li><a href="#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul> -->
+
+      <!-- hamburger menu -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#work">Work</a>
+          <a href="about.html">About</a>
+          <a href="esposito_resume.pdf" target="_blank">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars"></i></span>
     </nav>
 
     <section class="summary">
@@ -33,7 +49,7 @@
       <picture>
         <source media="(min-width: 750px)" srcset="images/vdubs_isometric_resizeTEST.png">
         <source media="(min-width: 400px)" srcset="images/vdubs_isometric_resizeTEST.png">
-        <img src="images/vdubs_isometric.png" alt="V-DUBS screens" style="width:auto;">
+        <img src="images/vdubs_isometric_resizeTEST.png" alt="V-DUBS screens" style="width:auto;">
       </picture>
       <a href="https://www.figma.com/proto/IRrgH2grlbgydTkzMMs2py/iOS-11-GUI-Assets?node-id=23973%3A0&viewport=6520%2C-10937%2C1&scaling=scale-down" target="_blank" class="project_button">View Protoype</a>
     </section>
@@ -81,15 +97,15 @@
     <section class="overview">
       <h2 class="main__header">Overview</h2>
       <hr>
-      <h3 class="prob-solution">The Problem</h3>
+      <h3 class="prob-sol-con">The Problem</h3>
       <p>Volkswagen enthusiasts have a variety of ways to access information: from online forums
         and Facebook groups for asking questions and posting photos, to personal cloud storage for
         storing car-related documents. But, <span style="font-weight:700">no cohesive app currently exists where Volkswagen
         enthusiasts can store and share their passion from one platform.</span></p>
-      <h3 class="prob-solution">The Solution</h3>
+      <h3 class="prob-sol-con">The Solution</h3>
       <p>V-DUBS is free storage and sharing app for Volkswagen enthusiasts to share photos, tell stories,
         upload documents related to your passion, and ask questions to the community.</p>
-      <img src="images/vdubs_solutions_mobile.png"  alt="How V-DUBS screens look on an iPhone">
+      <img src="images/vdubs_solutions_mobile.png"  alt="How V-DUBS screens look on an iPhone" class="solutions-screens">
     </section>
 
     <!-- In-page Navigation -->
@@ -111,14 +127,13 @@
     <!--User Survey 1: Cloud Storage -->
     <h3 class="section__heading">User Survey: Cloud Storage</h3>
     <p class="survey_learning">What did I want to learn?</p>
-    <div class="verticalline">
-      <ul class="survey">
-        <li>Usage of specific features</li>
-        <li>Likes and dislikes of cloud storage</li>
-        <li>Frequency of accessing cloud storage</li>
-        <li>Device(s) used to access cloud storage</li>
-      </ul>
-    </div>
+    <ul class="survey">
+      <li>Usage of specific features</li>
+      <li>Likes and dislikes of cloud storage</li>
+      <li>Frequency of accessing cloud storage</li>
+      <li>Device(s) used to access cloud storage</li>
+    </ul>
+
     <!-- Results of User Survey 1 -->
     <section class="survey__results">
       <div class="survey__results__flexbox">
@@ -150,15 +165,13 @@
     <!-- User Survey 2: Social Media -->
     <h3 class="section__heading">User Survey: Social Media</h3>
     <p class="survey_learning">What did I want to learn?</p>
-    <div class="verticalline">
-      <ul class="survey">
-        <li>Most used apps</li>
-        <li>How often these apps are accessed</li>
-        <li>How they accessed (mobile, laptop)</li>
-        <li>Likes/Dislikes</li>
-        <li>Most used features</li>
-      </ul>
-    </div>
+    <ul class="survey">
+      <li>Most used apps</li>
+      <li>How often these apps are accessed</li>
+      <li>How they accessed (mobile, laptop)</li>
+      <li>Likes/Dislikes</li>
+      <li>Most used features</li>
+    </ul>
 
     <!-- Results of User Survey 2 -->
     <section class="survey__results">
@@ -193,13 +206,11 @@
     <p>I had coffee with several members of the Volkswagen community to learn more about
       their web habits as they pertain to Volkswagen. I learned there are 3 major tasks that
       Volkswagen enthusiasts do:</p>
-      <div class="verticalline">
-        <ol class="list numbered">
-          <li>Share and view photos of Volkswagens</li>
-          <li>Ask questions to the community</li>
-          <li>Upload / share car-related paperwork and documents</li>
-        </ol>
-      </div>
+      <ol class="list numbered">
+        <li>Share and view photos of Volkswagens</li>
+        <li>Ask questions to the community</li>
+        <li>Upload / share car-related paperwork and documents</li>
+      </ol>
 
     <!-- Lesson -->
     <h3 class="lesson">Lesson: collecting more data isn't bad.</h3>
@@ -222,13 +233,11 @@
     <h3 class="section__heading">Many people. Common Motivations.</h3>
     <p>When I attend Volkswagen events, I observe several types of people. Using my own observations, along
       with survey datal previously discussed, I generated 3 personas:</p>
-    <div class="verticalline">
-      <ol class="list numbered">
-        <li>Enthusiasts</li>
-        <li>Creatives (i.e. photographers)</li>
-        <li>Learners (i.e. car restoration)</li>
-      </ol>
-    </div>
+    <ol class="list numbered">
+      <li>Enthusiasts</li>
+      <li>Creatives (i.e. photographers)</li>
+      <li>Learners (i.e. car restoration)</li>
+    </ol>
 
     <section class="personas__flex">
       <!-- Persona 1 -->
@@ -270,23 +279,22 @@
         <p class="persona__description">Uploading my notes to share with others isn’t easy and I can’t create new content with my current apps.</p>
       </div>
     </section>
+
     <!-- User Stories -->
     <p class="section__subheading">User Stories</p>
     <h3 class="section__heading">Less is more.</h3>
     <p>After researching apps and creating a lengthy list of tasks a user wants to do on the app, I prioritized
       tasks to create an MVP.</p>
     <p class="survey_learning">High Priority Items</p>
-    <!-- <div class="verticalline"> -->
-      <ul class="survey">
-        <li>Sign up for new account</li>
-        <li>Sign into account</li>
-        <li>Create content</li>
-        <li>View content</li>
-        <li>Upload content</li>
-        <li>Comment on content</li>
-        <li>Share content</li>
-      </ul>
-  <!-- </div> -->
+    <ul class="survey">
+      <li>Sign up for new account</li>
+      <li>Sign into account</li>
+      <li>Create content</li>
+      <li>View content</li>
+      <li>Upload content</li>
+      <li>Comment on content</li>
+      <li>Share content</li>
+    </ul>
 
     <!-- Lesson -->
     <h3 class="lesson">Lesson: ‘Important’ functionality ≠ ‘high’ priority</h3>
@@ -314,14 +322,21 @@
         <li>Ask a Question</li>
       </ul>
     <section class="flows__flex">
-      <img src="images/userflow_vertical.png" alt="Sign up user flow">
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/userflow_horizontal.png" class="user-flow-horizontal">
+        <source media="(min-width: 400px)" srcset="images/userflow_vertical.png">
+        <img src="images/userflow_vertical.png" alt="Sign up user flow" class="user-flow-vertical">
+      </picture>
       <a href="https://drive.google.com/drive/folders/1wp9FvcyRrXDd0Ok_TnNT39sMo-QfHsj6?usp=sharing" target="_blank" class="project_button">View User Flows</a>
     </section>
     <!-- Wireframes -->
     <p class="section__subheading">Wireframes</p>
     <h3 class="section__heading">Showing the vision.</h3>
-    <img src="images/vdubs_sketches.png" alt="V-DUBS wireframe sketches">
-    <img src="images/vdubs_wireframes.png" alt="V-DUBS wireframes">
+    <img src="images/vdubs_sketches.png" alt="Wireframe sketches" class="wireframe-sketches">
+    <picture>
+      <source media="(min-width: 400px)" srcset="images/vdubs_wireframes_horizontal.png" class="digital-wireframes-horizontal">
+      <img src="images/vdubs_wireframes.png" alt="Digital wireframes" class="digital-wireframes">
+    </picture>
     <h3 class="section__heading">User Testing Round 1</h3>
     <p>I tested 10 tasks ranging from signing up for an account, creating content, and logging out of the app.</p>
     <a href="https://docs.google.com/document/d/1vimOICvjCw7Xb6tS7M1PgQ1N_Q4x936pAlQloLpgOH4/edit?usp=sharing" target="_blank" class="project_button">View Tasks</a>
@@ -331,8 +346,12 @@
       <li><span class="bullet-gap">Extend the landing page to include more info like ‘About’ and ‘Features’</span></li>
       <li><span class="bullet-gap">Hard to tell if Community and My Content tabs are actually clickable</span></li>
       <li><span class="bullet-gap">Add organization options like folders or tags within your own content</span></li>
-      <img src="images/usertesting_round1.png" alt="User testing round one">
     </ol>
+    <picture>
+      <source media="(min-width: 400px)" srcset="images/usertesting_round1_desktop.png" class="user-testing-desktop">
+      <img src="images/usertesting_round1_mobile.png" alt="User testing results" class="user-testing-mobile">
+    </picture>
+
 
     <!-- Visual Design -->
     <a id="visualdesign"></a>
@@ -341,14 +360,17 @@
     <!-- Branding -->
     <p class="section__subheading">Branding</p>
     <h3 class="section__heading">Don't let simplicity scare you.</h3>
-    <img src="images/vdubs_moodboard.png" alt="Moodboard inspiration for app">
+    <img src="images/vdubs_moodboard.png" alt="Moodboard inspiration for app" class="moodboard">
     <p>Volkswagen is a playful brand with vibrant vehicle colors and humorous, vintage car ads it
       was important for V-DUBS to incorporate these values into the brand. I want the target audience
       to identify with the elements of the app: from the logo design and color palette to typography and imagery.</p>
     <!-- Logo -->
     <p class="section__subheading">Logo</p>
     <h3 class="section__heading">From word cloud to V-DUBS</h3>
-    <img src="images/logo_sketches.png" alt="Word cloud and logo sketches">
+    <picture>
+      <source media="(min-width: 400px)" srcset="images/logo_sketches_desktop.png" class="logo-sketches-desktop">
+      <img src="images/logo_sketches_mobile.png" alt="Logo sketches" class="logo-sketches-mobile">
+    </picture>
     <p>The logo evolved from a word cloud of car-related terms to the final version of a Volkswagen Beetle.
       The logo needed to be clear and easily identifiable. There is almost nothing else more identifiable than
       the shape of a Volkswagen Beetle.</p>
@@ -360,21 +382,39 @@
     <p class="section__subheading">Color Palette</p>
     <h3 class="section__heading">Color me vintage.</h3>
     <p>Primary Colors</p>
-    <img src="images/color_navy.png" alt="Navy color">
-    <p>#003270</p>
-    <img src="images/color_gray.png" alt="Gray color">
-    <p>#BAC3CF</p>
-    <img src="images/color_lightblue.png" alt="Light blue color">
-    <p>#008FE0</p>
+    <section class="palette__flex">
+      <div class="colors">
+        <img src="images/color_navy.png" alt="Navy color">
+        <p>#003270</p>
+      </div>
+      <div class="colors">
+        <img src="images/color_gray.png" alt="Gray color">
+        <p>#BAC3CF</p>
+      </div>
+      <div class="colors">
+        <img src="images/color_lightblue.png" alt="Light blue color">
+        <p>#008FE0</p>
+      </div>
+    </section>
     <p>Secondary Colors</p>
-    <img src="images/color_black.png" alt="Black color">
-    <p>#07040D</p>
-    <img src="images/color_red.png" alt="Red color">
-    <p>#EB0000</p>
-    <img src="images/color_yellow.png" alt="Yellow color">
-    <p>#F9B81C</p>
-    <img src="images/color_white.png" alt="White color">
-    <p>#FDF8F0</p>
+    <section class="palette__flex">
+      <div class="colors">
+        <img src="images/color_black.png" alt="Black color">
+        <p>#07040D</p>
+      </div>
+      <div class="colors">
+        <img src="images/color_red.png" alt="Red color">
+        <p>#EB0000</p>
+      </div>
+      <div class="colors">
+        <img src="images/color_yellow.png" alt="Yellow color">
+        <p>#F9B81C</p>
+      </div>
+      <div class="colors">
+        <img src="images/color_white.png" alt="White color">
+        <p>#FDF8F0</p>
+      </div>
+    </section>
     <p>The palette is composed of classic Volkswagen car colors from the 1960s and 1970s. Primary colors are found mostly
       on the landing page. In the app, the colors remain neutral with subtle pops of color. The focus in-app is on the content
       being shared.</p>
@@ -406,8 +446,8 @@
     <!-- Hi Fi Mockups -->
     <p class="section__subheading">Hi Fi Mockups</p>
     <h3 class="section__heading">It's almost real!</h3>
-    <img src="images/landing_page_full.png"  alt="V-DUBS landing page">
-    <img src="images/vdubs_isometric2.png"  alt="Hi fi mockup of V-DUBS phone screens">
+    <img src="images/landing_page_full.png"  alt="Mobile landing page" class="mobile-landingpage">
+    <img src="images/vdubs_isometric2.png"  alt="Hi-fi mockup screens" class="vdubs-isometric2">
     <h3 class="section__heading">User Testing Round 2</h3>
     <p>I put my prototype through a second round of user testing going through 14 tasks.</p>
     <a href="https://docs.google.com/document/d/1zy1Kd71hcvqC7heToxzLL7gUabt6f_nm0JcXqGAtcBw/edit?usp=sharing" target="_blank" class="project_button">View Tasks</a>
@@ -417,6 +457,11 @@
       <li><span class="bullet-gap">Replacing or deleting a photo / document isn’t obvious.</span></li>
       <li><span class="bullet-gap">Sign Out should be more prominently displayed and easier to find.</span></li>
     </ol>
+    <picture>
+      <source media="(min-width: 400px)" srcset="images/usertesting_round2_desktop.png" class="user-testing-desktop">
+      <img src="images/usertesting_round2_mobile.png" alt="User testing round 2" class="user-testing-mobile">
+    </picture>
+
 
     <!-- Lesson -->
     <h3 class="lesson">Lesson: You wont catch everything the first go around</h3>
@@ -424,24 +469,38 @@
       I should have tested for. They were incorporated into the second round of user testing.</p>
 
     <!-- Conclusion -->
-    <h3>Conclusion</h3>
-    <p>In the Volkswagen community, everyone has a story. V-DUBS is a platform for every VW lover and enthusiast to
-      share their story. Being a Volkswagen enthusiast myself, this project was fun to bring from concept to completion.
-      Though I expected my initial timeline to be shorter, encountering and dealing with these problems in the beginning
-      (i.e. a second user survey to collect more data) made for 1) less assumptions about what users want and 2) an accurate
-      app representing the wants and needs of the community. One of my major challenges was containing / limiting scope creep.
-      I have so many interesting ideas for what the app could be in the future. So, I had to resist the urge to do all the things at once with the app.</p>
-    <img src="images/conclusion.png" alt="Abstract background image for conclusion">
-    <a href="#top">Back to top</a>
+    <section class="conclusion">
+      <h3 class="prob-sol-con">Conclusion</h3>
+      <p>In the Volkswagen community, everyone has a story. V-DUBS is a platform for every VW lover and enthusiast to
+        share their story. Being a Volkswagen enthusiast myself, this project was fun to bring from concept to completion.
+        Though I expected my initial timeline to be shorter, encountering and dealing with these problems in the beginning
+        (i.e. a second user survey to collect more data) made for 1) less assumptions about what users want and 2) an accurate
+        app representing the wants and needs of the community. One of my major challenges was containing / limiting scope creep.
+        I have so many interesting ideas for what the app could be in the future. So, I had to resist the urge to do all the things at once with the app.</p>
+    </section>
+    <ul class="to-top">
+      <li><a href="#top">Back to top</a></li>
+    </ul>
 
 
     <!-- Footer -->
         <footer>
-          <h2>Let's Connect!</h2>
-          <a href="https://www.linkedin.com/in/jolene-esposito"><i class="fa fa-linkedin-square"></i></a>
-          <a href="https://github.com/jespos"><i class="fa fa-github-square"></i></a>
-          <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
-          <p class="footer">© 2020 Jolene Esposito | Designed and Developed by Jolene Esposito</p>
+          <h2 class="footer__connect">Let's Connect!</h2>
+          <section class="social__flex">
+            <div class="social__icons">
+              <a href="https://www.linkedin.com/in/jolene-esposito"><i class="fa fa-linkedin-square"></i></a>
+              <p class="social__text">LinkedIn</p>
+            </div>
+            <div class="social__icons">
+              <a href="https://github.com/jespos"><i class="fa fa-github-square"></i></a>
+              <p class="social__text">Github</p>
+            </div>
+            <div class="social__icons">
+              <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
+              <p class="social__text">Email</p>
+            </div>
+          </section>
+          <p class="copywrite">© 2020 Jolene Esposito | Designed and Developed with <i class="fa fa-heart"></i> by Jolene Esposito</p>
         </footer>
 
   </body>

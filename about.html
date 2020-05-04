@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> About | Jolene Esposito </title>
+    <title> Portfolio | Jolene Esposito </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 
-<!-- Font Awesome  I'm not sure this is up-to-date? -->
+  <!-- Font Awesome  I'm not sure this is up-to-date? -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="scripts.js"></script>
+
   </head>
 
   <body>
-<!-- Navigation -->
+  <!-- Navigation -->
+  <!-- <header> -->
     <nav>
-      <a href="index.html"><img src="images/logo_je.png" alt="Jolene Esposito logo"></a>
-      <a href="index.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="esposito_resume.pdf" target="_blank">Resume</a>
-      <a href="contact.html">Contact</a>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo_je.png" class="header__logo" alt="logo"></a>
+      </div>
+      <!-- desktop nav -->
+      <!-- <ul class="nav__desktop">
+        <li><a href="#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul> -->
+
+      <!-- hamburger menu -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#work">Work</a>
+          <a href="about.html">About</a>
+          <a href="esposito_resume.pdf" target="_blank">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars"></i></span>
     </nav>
 
     <!-- Body -->
     <h2 class="about title">tl;dr My journey to UI/UX can be compared to a road trip with many stops at cool places.</h2>
     <img src="images/about_rock.png" alt="Sitting on a rock" class="about image">
-    <h3 class="about header">I want to learn all the things.</h3>
-    <p>My journey to design hasn’t been a straightforward path. But, the guiding principles of improving peoples’ experiences with a product or service have been an important part everything I do. Growing up, I I wanted to learn everything. A fascination with human behavior led me to study psychology at Penn State and subsequently work there for three years managing scientific research studies. I enjoyed interviewing patients and collecting data....until I got bit by the need to learn something new bug.</p>
-    <h3 class="about header">[Enter: Art, stage left.]</h3>
-    <p>Though I love math and science, I have always enjoyed art and its ability to communicate stories visually. In 2010, I pursued an MFA degree from the Savannah College of Art and Design with a focus on digital photography. An opportunity to study abroad led to my spending several months in Hong Kong. I found myself intrigued by consumer culture as I explored the city. This odd fascination resulted in me using photography to tell stories of consumer culture.</p>
-    <h3 class="about header">From Research to Rogramming.</h3>
-    <p>After completing my MFA degree and a stint as a freelance photographer (don’t worry, I still photograph from time to time), I relocated to Virginia. After a few years, I became a Project Manager at a nonprofit technology start-up advocating for open science. I “wore many hats” including serving as the organization’s designer/marketer, but I found myself most intrigued by what the developers did all day (it looked like puzzles of gibberish, but I like puzzles). A co-worker took time to teach me programming concepts, which we dubbed “learning programming on the rogue” (aka: rogramming). I used Python libraries to create a visual displays of data in order to visually compelling stories that others can easily understand.</p>
-    <h3 class="about header">Are we there yet?</h3>
-    <p>What does all of this have to do with UI/UX? All my seemingly unrelated interests and experiences are in fact related and relevant to UI/UX. I love conducting research on user interactions while creating functional, visually appealing products. UI/UX builds on the amalgamation of my skills and (wait for it!) and creates opportunities to learn new processes, software, and tools.</p>
-    <a href="contact.html" class="project_button">Get in Touch</a>
+    <section class="about__wrapper">
+      <h3 class="about header">I want to learn all the things.</h3>
+      <p>My journey to design hasn’t been a straightforward path. But, the guiding principles of improving peoples’ experiences with a product or service have been an important part everything I do. Growing up, I I wanted to learn everything. A fascination with human behavior led me to study psychology at Penn State and subsequently work there for three years managing scientific research studies. I enjoyed interviewing patients and collecting data....until I got bit by the need to learn something new bug.</p>
+      <h3 class="about header">[Enter: Art, stage left.]</h3>
+      <p>Though I love math and science, I have always enjoyed art and its ability to communicate stories visually. In 2010, I pursued an MFA degree from the Savannah College of Art and Design with a focus on digital photography. An opportunity to study abroad led to my spending several months in Hong Kong. I found myself intrigued by consumer culture as I explored the city. This odd fascination resulted in me using photography to tell stories of consumer culture.</p>
+      <h3 class="about header">From Research to Rogramming.</h3>
+      <p>After completing my MFA degree and a stint as a freelance photographer (don’t worry, I still photograph from time to time), I relocated to Virginia. After a few years, I became a Project Manager at a nonprofit technology start-up advocating for open science. I “wore many hats” including serving as the organization’s designer/marketer, but I found myself most intrigued by what the developers did all day (it looked like puzzles of gibberish, but I like puzzles). A co-worker took time to teach me programming concepts, which we dubbed “learning programming on the rogue” (aka: rogramming). I used Python libraries to create a visual displays of data in order to visually compelling stories that others can easily understand.</p>
+      <h3 class="about header">Are we there yet?</h3>
+      <p>What does all of this have to do with UI/UX? All my seemingly unrelated interests and experiences are in fact related and relevant to UI/UX. I love conducting research on user interactions while creating functional, visually appealing products. UI/UX builds on the amalgamation of my skills and (wait for it!) and creates opportunities to learn new processes, software, and tools.</p>
+    </section>
+    <a href="contact.html" class="project_button contact">Get in Touch</a>
 
 
 
     <!-- Footer -->
     <footer>
-      <h2>Let's Connect!</h2>
-      <a href="https://www.linkedin.com/in/jolene-esposito"><i class="fa fa-linkedin-square"></i></a>
-      <a href="https://github.com/jespos"><i class="fa fa-github-square"></i></a>
-      <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
-      <p class="footer">© 2020 Jolene Esposito | Designed and Developed by Jolene Esposito</p>
+      <h2 class="footer__connect">Let's Connect!</h2>
+      <section class="social__flex">
+        <div class="social__icons">
+          <a href="https://www.linkedin.com/in/jolene-esposito"><i class="fa fa-linkedin-square"></i></a>
+          <p class="social__text">LinkedIn</p>
+        </div>
+        <div class="social__icons">
+          <a href="https://github.com/jespos"><i class="fa fa-github-square"></i></a>
+          <p class="social__text">Github</p>
+        </div>
+        <div class="social__icons">
+          <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
+          <p class="social__text">Email</p>
+        </div>
+      </section>
+      <p class="copywrite">© 2020 Jolene Esposito | Designed and Developed with <i class="fa fa-heart"></i> by Jolene Esposito</p>
     </footer>
 
 

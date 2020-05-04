@@ -10,49 +10,50 @@
 
 <!-- Font Awesome  I'm not sure this is up-to-date? -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="scripts.js"></script>
 
   </head>
   <body>
-  <section class="container">
+    <section class="container">
 <!-- Navigation -->
-    <!-- <header> -->
-      <nav>
-        <div class="logo">
-          <a href="index.html"><img src="images/logo_je.png" alt="logo"></a>
+  <!-- <header> -->
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo_je.png" class="header__logo" alt="logo"></a>
+      </div>
+      <!-- desktop nav -->
+      <!-- <ul class="nav__desktop">
+        <li><a href="#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul> -->
+
+      <!-- hamburger menu -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#work">Work</a>
+          <a href="about.html">About</a>
+          <a href="esposito_resume.pdf" target="_blank">Resume</a>
+          <a href="contact.html">Contact</a>
         </div>
-        <!-- desktop nav -->
-        <!-- <ul>
-          <li><a href="#work">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul> -->
+      </div>
 
-        <!-- hamburger menu -->
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a href="#work">Work</a>
-            <a href="about.html">About</a>
-            <a href="esposito_resume.pdf" target="_blank">Resume</a>
-            <a href="contact.html">Contact</a>
-          </div>
-        </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    </nav>
 
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars"></i></span>
+<!-- Hero -->
+    <section class="hero">
+      <h1 class="hero__name">Hello! I'm <span style="font-weight:600">Jolene Esposito</span></h1>
+      <h2 class="hero__profession"><span style="font-weight:600">UI/UX Designer</span> in <span style="font-weight:600">Virginia</span></h2>
+      <h3 class="hero__story">I tell stories through design, interactions, and pleasant user experiences</h3>
+      <div class="down-arrow">
+        <a href="#work"><i class="fa fa-angle-down"></i></a>
+      </div>
+    </section>
+  <!-- </header> -->
 
-      </nav>
-
-  <!-- Hero -->
-      <section class="hero">
-        <h1 class="hero__name">Hello! I'm <span style="font-weight:600">Jolene Esposito</span></h1>
-        <h2 class="hero__profession"><span style="font-weight:600">UI/UX Designer</span> in <span style="font-weight:600">Virginia</span></h2>
-        <h3 class="hero__story">I tell stories through design, interactions, and pleasant user experiences</h3>
-        <div class="down-arrow">
-          <a href="#work"><i class="fa fa-angle-down"></i></a>
-        </div>
-      </section>
-    <!-- </header> -->
 
 
   <!-- Project1 -->
@@ -66,32 +67,29 @@
         <p class="project__summary">A free storage and sharing app for Volkswagen enthusiasts.</p>
         <a href="casestudy_vdubs.html" class="project_button_homepage">View Case Study</a>
       </section>
+    </section>
+
 
 
   <!-- Footer -->
       <footer>
         <h2 class="footer__connect">Let's Connect!</h2>
-        <div class="social">
-          <a href="https://www.linkedin.com/in/jolene-esposito"><i class="fa fa-linkedin-square"></i></a>
-          <!-- <p class="social__text">LinkedIn</p> -->
-          <a href="https://github.com/jespos"><i class="fa fa-github-square"></i></a>
-          <!-- <p class="social__text">Github</p> -->
-          <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
-          <!-- <p class="social__text">Email</p> -->
-        </div>
-        <p class="copywrite">© 2020 Jolene Esposito | Designed and Developed by Jolene Esposito</p>
+        <section class="social__flex">
+          <div class="social__icons">
+            <a href="https://www.linkedin.com/in/jolene-esposito"><i class="fa fa-linkedin-square"></i></a>
+            <p class="social__text">LinkedIn</p>
+          </div>
+          <div class="social__icons">
+            <a href="https://github.com/jespos"><i class="fa fa-github-square"></i></a>
+            <p class="social__text">Github</p>
+          </div>
+          <div class="social__icons">
+            <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
+            <p class="social__text">Email</p>
+          </div>
+        </section>
+        <p class="copywrite">© 2020 Jolene Esposito | Designed and Developed with <i class="fa fa-heart"></i> by Jolene Esposito</p>
       </footer>
 
-    </section>
-
-    <script>
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
-
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
-    </script>
   </body>
 </html>

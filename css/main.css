@@ -2,24 +2,31 @@
   box-sizing: border-box;
 }
 
+
 html {
   background-color: #FFFFFF;
   font-size: 10px;
 }
 
 .container {
-  margin: 0, auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
   font-family: 'Quicksand', sans-serif;
-  /* font-size: 1.6em; */
+}
+
+a {
+  text-decoration: none;
 }
 
 
 /*** NAVIGATION SECTION ***/
 
 /* curtain menu */
+
+
 .overlay {
   height: 100%;
   width: 0;
@@ -70,40 +77,65 @@ body {
   }
 }
 
-
-
-
-
-
+/***** */
 .fa.fa-bars {
   float: right;
+  padding-top: 0.7em;
 }
 
 .logo {
   display: inline-block;
+  padding-top: 2em;
 }
 
 nav {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
   background-color: #1B1826;
-  padding: 20px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
   color: #F2E5E5;
 }
 
 nav ul{
+  float: right;
+  font-size: 1.8em;
   list-style: none;
+  text-transform: uppercase;
 
 }
 
 nav li{
   display: inline-block;
+  margin-left: 3em;
+  padding-top: 2em;
+  position: relative;
 }
 
 nav li a{
-  text-decoration: none;
   color: #F2E5E5;
+}
+
+nav li a:hover {
+  color: #35B999;
+}
+
+nav li a:active {
+  color: #35B999;
+}
+
+nav li a::before {
+  background-color: #35B999;
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 200ms;
+}
+
+nav li a:hover::before {
+  width: 100%;
 }
 
 
@@ -230,6 +262,8 @@ nav li a{
   text-decoration: none;
   display: block;
   font-size: 1.7em;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 1em;
   margin-bottom: 1.5em;
   width: 12em;
@@ -281,7 +315,7 @@ hr {
   width: 50%;
 }
 
-.prob-solution {
+.prob-sol-con {
   font-size: 2.5em;
   font-weight: 600;
   margin-bottom: 0.3em;
@@ -301,6 +335,8 @@ p {
   line-height: 1.8em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: center;
 }
 
@@ -432,6 +468,7 @@ ul.survey li::before {
 
 .survey__results {
   background-image: url(../images/results_cloudstorage.png);
+  background-size: cover;
   padding-bottom: 2em;
 }
 
@@ -508,6 +545,7 @@ h4  {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 
@@ -570,33 +608,6 @@ span.bullet-gap {
 }
 
 
-/* .list {
-  font-size: 1.6em;
-  font-weight: 600;
-  list-style: none;
-  margin-left: 1.5em;
-  margin-bottom: 2.5em;
-} */
-
-/* .list.numbered li{
-  /* list-style-type: decimal; */
-  /* line-height: 1.7em;
-  margin-top: 1.2em;
-  counter-increment: li;
-} */
-
-/* ol.list.numbered li::before {
-  content: counter(li);
-  color: #35B999;
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  /* width: 1em; /* Also needed for space (tweak if needed) */
-  /* margin-left: -1em; /* Also needed for space (tweak if needed) */
-
-
-
-
-
-
 
 .results-number {
   float: left;
@@ -613,6 +624,15 @@ span.bullet-gap {
 
 
 /**** Branding ****/
+.palette__flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.colors {
+  text-align: center;
+  padding-right: 3em;
+}
 
 .vdubs__large {
   display: block;
@@ -622,17 +642,119 @@ span.bullet-gap {
 }
 
 
+/**** CONCLUSION ****/
+.conclusion {
+  background-image: url(../images/conclusion.png);
+  background-size: cover;
+  margin-top: 4em;
+  padding-top: 2em;
+}
+
+ul.to-top {
+  font-size: 1.8em;
+  font-weight: 600;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: right;
+}
+
+ul.to-top a {
+  color: #35B999;
+}
+
+/**** IMAGES IN CASE STUDY ****/
+.solutions-screens {
+  height: auto;
+  width: 100%;
+}
+
+.user-flow-vertical {
+  height: auto;
+  width: 100%;
+}
+
+.user-flow-horizontal {
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.wireframe-sketches {
+  height: auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+.digital-wireframes {
+  height: auto;
+  width: 100%;
+}
+
+.digital-wireframes-horizontal {
+  height: auto;
+  width: 100%;
+  max-width: 950px;
+}
+
+.user-testing-mobile, .user-testing-desktop {
+  height: auto;
+  width: 100%;
+}
+
+.moodboard {
+  height: auto;
+  width: 100%;
+  max-width: 950px;
+}
+
+.logo-sketches-mobile {
+  height: auto;
+  width: 100%;
+}
+
+.logo-sketches-desktop {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.vdubs__large {
+  max-width: 400px;
+}
+
+
+.mobile-landingpage {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.vdubs-isometric2 {
+  height: auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+
+/*homepage*/
+.vdubs_isometric_resizeTEST {
+  height: auto;
+  width: 100%;
+  /* max-width: 400px; */
+}
+
+
+
+
 
 /*** Footer ***/
 
-
-
-
 .copywrite {
-  font-size: .7em;
-  margin-top: 3rem;
-  line-height: 1.5rem;
+  font-size: 1.3em;
+  margin-top: 2rem;
+  line-height: 2rem;
   text-align: center;
+  padding-bottom: 0;
 }
 
 footer {
@@ -642,40 +764,52 @@ footer {
 }
 
 .footer__connect {
-  font-size: 1.8em;
+  font-size: 3em;
   font-weight: 300;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.6em;
   text-align: center;
 
 }
 
-.social {
-  font-size: 1.5em;
+.social__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+
+}
+
+.social__icons {
   text-align: center;
 }
 
-.social a {
-  text-decoration: none;
+.social__icons a {
   color: #F2E5E5;
-  padding: 1.2rem;
+  font-size: 2.5em;
 }
 
 .social__text {
-  font-size: 0.5em;
-  text-align: center;
+  font-size: 1em;
+  padding-bottom: 0;
 }
+
 
 
 /**** ABOUT SECTION ****/
 
 .about.title {
-  font-size: 1.7em;
+  font-size: 2.3em;
   font-weight: 600;
+  line-height: 1.6em;
   margin-top: 1em;
+  margin-bottom: 1.5em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .about.header {
-  font-size: 1.4em;
+  font-size: 1.9em;
   font-weight: 700;
   margin-bottom: 0.5em;
 }
@@ -684,15 +818,27 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
+
+.about__wrapper {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.project_button.contact {
+  margin-top: 0;
+
+}
+
+
+
 
 
 /**** CONTACT FORM ****/
 
 .contact__title {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 600;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -710,16 +856,26 @@ footer {
   width: 50%;
 }
 
-input, .message {
+input, .message-box {
   border-color: #aaaaaa;
   border-radius: 6px;
   border-width: 1px;
   display: block;
-  padding: 0.5em;
-  margin: 1em;
+  margin-top: .8em;
+  margin-bottom: 2.3em;
 }
 
-.label {
+.input-box {
+  height: 3.5em;
+  width: 100%;
+}
+
+.message-box {
+  height: 9em;
+  width: 100%;
+}
+
+.form-text {
+  font-size: 1.7em;
   font-weight: 600;
-  font-size: 6em;
 }
