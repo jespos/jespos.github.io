@@ -22,11 +22,41 @@ a {
 }
 
 
+
+h1, h2, h3, h4, p {
+  margin-bottom: 1em;
+}
+
+/****************************KEYFRAMES ******************/
+.down-arrow {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.bounce-down {
+    animation-name: bounce-down;
+    animation-timing-function: ease;
+}
+@keyframes bounce-down {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.down-arrow a:hover {
+  color: #35B999;
+}
+
+
+
+
+
+
+
+
 /*** NAVIGATION SECTION ***/
 
 /* curtain menu */
-
-
 .overlay {
   height: 100%;
   width: 0;
@@ -58,14 +88,14 @@ a {
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #35B999;
 }
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+  top: 0.1em;
+  right: 0.3em
+  font-size: 6em;
 }
 
 @media screen and (max-height: 450px) {
@@ -77,22 +107,29 @@ a {
   }
 }
 
-/***** */
+/***************/
 .fa.fa-bars {
   float: right;
   padding-top: 0.7em;
 }
+
+.header__logo {   /*my logo */
+  width: 80%;
+}
+
 
 .logo {
   display: inline-block;
   padding-top: 2em;
 }
 
+
 nav {
   background-color: #1B1826;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
   padding-bottom: 2em;
+  /* padding-top: 2em; */
   color: #F2E5E5;
 }
 
@@ -100,6 +137,7 @@ nav ul{
   float: right;
   font-size: 1.8em;
   list-style: none;
+  padding-top: 0.3em;
   text-transform: uppercase;
 
 }
@@ -130,7 +168,7 @@ nav li a::before {
   height: 3px;
   width: 0%;
   position: absolute;
-  top: 0;
+  top: -5.5px; /* used to be 0 */
   transition: all ease-in-out 200ms;
 }
 
@@ -144,7 +182,10 @@ nav li a:hover::before {
   background-color: #1B1826;
   color: #F2E5E5;
   clear: both;
-  padding: 20px;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 4em;
+  padding-bottom: 2em;
 }
 
 .hero__name {
@@ -178,6 +219,9 @@ nav li a:hover::before {
   text-decoration: none;
   color: #F2E5E5;
 }
+
+
+
 
 /***** PROJECTS SECTION (on homepage) ****/
 
@@ -233,6 +277,7 @@ nav li a:hover::before {
 	display: block; /*needed??*/
 	width: 100%;
 	height: auto;
+  padding: 0;
 }
 
 .vdubs__logo {
@@ -270,17 +315,19 @@ nav li a:hover::before {
   width: 12em;
 }
 
-/* wrapper */
-.casestudy__wrapper {
-  margin-left: 2em;
-  margin-right: 2em;
+.wrapper__casestudy {
+  margin-left: 2.5em;
+  margin-right: 2.5em;
 }
 
 
 /* Roles & Responsibilities */
-.deliverables {
+.deliverables__flex {
   background-color: #F5E2FF;
   padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .deliverables__titles {
@@ -310,38 +357,40 @@ nav li a:hover::before {
 hr {
   display: block;
   margin-top: 0em;
-  margin-bottom: 2em;
-  margin-left: 0em;
+  margin-bottom: 3em;
+  margin-left: -3em;
   margin-right: auto;
   border-color: #35B999;
   border-radius: 3px;
   border-style: solid;
   border-width: 2px;
-  width: 50%;
+  width: 55%;
 }
 
 .prob-sol-con {
   font-size: 2.5em;
   font-weight: 600;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
 }
 
 p {
   font-size: 1.7em;
   line-height: 1.9em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 
 /* in-project navigation */
-.project__nav {
+nav.project__nav {
   background-color: #1B1826;
   font-size: 1.7em;
   line-height: 1.8em;
   margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   text-align: center;
 }
 
@@ -350,13 +399,19 @@ p {
   color: #F2E5E5;
 }
 
+.project__nav a:hover {
+  color: #35B999;
+  }
+}
+
 
 .logo__casestudy{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  width: 28%;
 }
 
 
@@ -395,29 +450,24 @@ ol.list.numbered li::before {
 
 .lesson {
   background-color: #35B999;
-  color: #FFFFFF;
-  font-size: 2em;
-  font-weight: 600;
-  line-height: 1.5em;
-  padding-top: 0.6em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-top: 1.5em;
 }
 
-.lesson.paragraph {
+.lesson__title {
+  color: #FFFFFF;
+  font-size: 2.2em;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.lesson__paragraph {
+  color: #FFFFFF;
   font-size: 1.7em;
   font-weight: 300;
   line-height: 1.8em;
-  padding-top: 0.5em;
-  padding-bottom: 0.7em;
+
 }
-
-
-
-/*personas*/
-
-
-
 
 
 
@@ -427,12 +477,18 @@ ol.list.numbered li::before {
   font-size: 1.6em;
   font-weight: 300;
   padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .section__heading {
   font-size: 2em;
   font-weight: 600;
-  padding-bottom: 0.7em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.section__heading.social {
+  margin-top: 2em;
 }
 
 /*survey*/
@@ -485,19 +541,21 @@ ul.survey li::before {
 }
 
 .section__subheading__results {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 2.4em;
+  font-weight: 700;
   margin-top: 1em;
   margin-bottom: 0.5em;
   margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
 }
 
 h4  {
   font-size: 1.8em;
   font-weight: 700;
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+  padding-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 
@@ -507,10 +565,6 @@ h4  {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.persona-one, .persona-two, .persona-three {
-  padding-right: 4em;
 }
 
 
@@ -528,7 +582,6 @@ h4  {
   margin-bottom: 1.9em;
   padding: 0;
   text-align: center;
-
 }
 
 .motivations_frustrations {
@@ -622,17 +675,59 @@ span.bullet-gap {
 
 
 
-
-
 /**** Branding ****/
 .palette__flex {
   display: flex;
   flex-direction: row;
 }
 
+p.colors__text {
+  font-size: 2em;
+  font-weight: 700;
+  padding-bottom: 0;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
 .colors {
   text-align: center;
   padding-right: 3em;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.navy {
+  background: #003270;
+}
+
+.gray {
+  background: #BAC3CF;
+}
+
+.lightblue {
+  background: #008FE0;
+}
+
+.black {
+  background: #07040D;
+}
+
+.red {
+  background: #EB0000;
+}
+
+.yellow {
+  background: #F9B81C;
+}
+
+.white {
+  background: #FDF8F0;
 }
 
 .vdubs__large {
@@ -643,6 +738,15 @@ span.bullet-gap {
 }
 
 
+/*pref tests*/
+p.preftests__title {
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+}
+
+
+
 /**** CONCLUSION ****/
 .conclusion {
   background-image: url(../images/conclusion.png);
@@ -651,11 +755,53 @@ span.bullet-gap {
   padding-top: 2em;
 }
 
+/*back to top */
+
+.to-top{
+	color: #1B1826;
+	padding-top:1.8em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color: #1B1826;
+	text-decoration:none;
+  text-align: right;
+	transition:all .3s ease-out;
+}
+.to-top:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em white;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:pink;
+	border-color:pink;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
+
+
+
+
+
+
+
 ul.to-top {
   font-size: 1.8em;
   font-weight: 600;
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 2em;
+  margin-right: 2em;
   text-align: right;
 }
 
@@ -665,6 +811,9 @@ ul.to-top a {
 
 /**** IMAGES IN CASE STUDY ****/
 .solutions-screens {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
   width: 100%;
 }
@@ -677,24 +826,25 @@ ul.to-top a {
 .user-flow-horizontal {
   height: auto;
   width: 100%;
-  max-width: 600px;
 }
 
 .wireframe-sketches {
   height: auto;
   width: 100%;
-  max-width: 750px;
+  /* max-width: 750px; */
 }
 
 .digital-wireframes {
   height: auto;
   width: 100%;
+  margin-top: 4em;
+  margin-bottom: 3em;
 }
 
 .digital-wireframes-horizontal {
   height: auto;
   width: 100%;
-  max-width: 950px;
+  /* max-width: 950px; */
 }
 
 .user-testing-mobile, .user-testing-desktop {
@@ -703,14 +853,20 @@ ul.to-top a {
 }
 
 .moodboard {
+  display: block;
   height: auto;
   width: 100%;
-  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
 }
 
 .logo-sketches-mobile {
+  display: block;
   height: auto;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 .logo-sketches-desktop {
@@ -731,14 +887,22 @@ ul.to-top a {
 }
 
 .vdubs-isometric2 {
+  display: block;
   height: auto;
+  /* box-shadow: 4px 2px 12px grey; */
+  filter: drop-shadow(0 0 7px #AFAFAF);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 3em;
   width: 100%;
-  max-width: 750px;
+
+
 }
 
 
 /*homepage*/
-.vdubs_isometric_resizeTEST {
+.isometric__summary-mobile, .isometric__summary-desktop {
   height: auto;
   width: 100%;
   /* max-width: 400px; */
@@ -767,18 +931,17 @@ footer {
 .footer__connect {
   font-size: 3em;
   font-weight: 300;
+  margin-bottom: 0;
   padding-bottom: 0.6em;
   text-align: center;
-
 }
 
 .social__flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 40%;
+  width: 48%;
   margin: auto;
-
 }
 
 .social__icons {
@@ -804,15 +967,411 @@ footer {
   font-weight: 600;
   line-height: 1.6em;
   margin-top: 1em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   margin-left: 2em;
   margin-right: 2em;
+  text-align: center;
 }
 
 .about.header {
   font-size: 1.9em;
   font-weight: 700;
   margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+.about.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 4em; */
+}
+
+.about__wrapper {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.project_button.contact {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+
+
+
+
+/**** CONTACT FORM ****/
+
+
+.wrapper__contact{
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 3em;
+}
+
+
+
+.contact__title {
+  font-size: 3em;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.contact__text {
+  text-align: center;
+}
+
+.contact-form{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+input, .message-box {
+  border-color: #aaaaaa;
+  border-radius: 6px;
+  border-width: 1px;
+  display: block;
+  margin-top: .8em;
+  margin-bottom: 2.3em;
+}
+
+.input-box {
+  height: 3.5em;
+  width: 100%;
+}
+
+.message-box {
+  height: 9em;
+  width: 100%;
+}
+
+.form-text {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+.project_button.send {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+/***** MEDIA QUERIES *****/
+
+@media screen and (min-width: 760px) {
+  .fa.fa-bars {
+    display: none;
+  }
+
+  nav ul{
+    float: right;
+    font-size: 1.8em;
+    list-style: none;
+    text-transform: uppercase;
+
+  }
+
+  nav li{
+    display: inline-block;
+    margin-left: 3em;
+    padding-top: 2em;
+    position: relative;
+  }
+
+  nav li a{
+    color: #F2E5E5;
+  }
+
+  nav li a:hover {
+    color: #35B999;
+  }
+
+  nav li a:active {
+    color: #35B999;
+  }
+
+  nav li a::before {
+    background-color: #35B999;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 200ms;
+  }
+
+  nav li a:hover::before {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  ul.nav__desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .project {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 4px 2px 12px grey;
+    /* border: 5px solid red; */
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .cover {
+    display: none;
+  }
+
+  .project {
+    background: url(../images/vdubs_isometric_resizeTEST.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    /* max-height: 700px; */
+    box-shadow: 4px 2px 12px grey;
+    /* border: 5px solid red; */
+  }
+}
+
+
+/* media query for user personas - rows */
+@media screen and (min-width: 768px) {
+  .personas__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .persona-one, .persona-two, .persona-three {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+}
+
+
+/* footer */
+@media only screen and (min-width: 768px) {
+  .social__flex { /*changing how close together the icons are */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 21%;
+    margin: auto;
+  }
+}
+
+/* contact form */
+@media only screen and (min-width: 768px) {
+  .wrapper__contact{
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 3em;
+  }
+
+  .contact__title {
+    font-size: 3.5em;
+  }
+
+  .contact__text {
+    font-size: 1.8em;
+    margin-left: 9em;
+    margin-right: 9em;
+  }
+
+  .contact-form{
+    width: 55%;
+  }
+}
+
+/* about */
+@media only screen and (min-width: 768px) {
+  .about.title {
+    font-size: 2.5em;
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+
+  .about__wrapper {
+    margin-left: 25em;
+    margin-right: 25em;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* nav bar */
+  nav {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .header__logo {
+    width: 100%;
+  }
+
+  /* hero */
+  .hero__name {
+    font-size: 5.5em;
+    margin-bottom: 0.2em;
+  }
+
+  .hero__profession {
+    font-size: 4em;
+    margin-bottom: 0.2em;
+  }
+
+  .hero__story {
+    font-size: 2.5em;
+  }
+
+
+ /* CASE STUDY intro */
+ .logo__casestudy{
+   margin-bottom: 1em;
+   width: 13%;
+ }
+
+ .project__title {
+   font-size: 3.5em;
+ }
+
+ .project__summary {
+   font-size: 2em;
+   padding-bottom: 0;
+ }
+
+ /* roles & responsibilities */
+ .deliverables__flex {
+   flex-direction: row;
+   justify-content: space-around;
+   padding-bottom: 1em;
+ }
+
+ .vl {
+   border-left: 1px solid purple;
+   height: 310px;
+ }
+
+ .deliverables__titles {
+   font-size: 2.3em;
+   margin-bottom: 0.3em;
+ }
+
+ .deliverables__list {
+   font-size: 1.7em;
+ }
+
+ /* overview */
+.wrapper__casestudy {
+   margin-left: 21em;
+   margin-right: 21em;
+ }
+
+ hr {
+   margin-left: 0;
+   width: 100%;
+ }
+
+ .solutions-screens {
+   margin-left: -5em;
+ }
+
+
+
+ /* images */
+
+ .digital-wireframes {
+   margin-top: 7em;
+   margin-bottom: 5em;
+
+ }
+
+ .user-testing-mobile {
+   margin-top: 7em;
+   margin-bottom: 5em;
+ }
+
+ .logo-sketches-mobile {
+   width: 75%;
+ }
+
+ .vdubs-isometric2 {
+   width: 75%;
+
+ }
+
+
+
+/* things I need queries for:
+padding of nav bar in desktop
+nav {
+  background-color: #1B1826;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-bottom: 2em;
+  color: #F2E5E5;
+}
+
+.footer__connect {
+  font-size: 3em;
+  font-weight: 300;
+  padding-bottom: 0.6em;
+  text-align: center;
+}
+
+.social__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+}
+
+
+
+.about.title {
+  font-size: 2.3em;
+  font-weight: 600;
+  line-height: 1.6em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 6em;
+  margin-right: 6em;
+  text-align: center;
+}
+
+.about.header {
+  font-size: 1.9em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  margin-top: 2em;
 }
 
 .about.image {
@@ -823,20 +1382,21 @@ footer {
 }
 
 .about__wrapper {
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 
 .project_button.contact {
   margin-top: 0;
+}
+
+
+.wrapper__contact {
 
 }
 
 
 
-
-
-/**** CONTACT FORM ****/
 
 .contact__title {
   font-size: 3em;
@@ -880,3 +1440,15 @@ input, .message-box {
   font-size: 1.7em;
   font-weight: 600;
 }
+
+
+
+
+
+
+
+spacing of footer icons in desktop - make width 25%
+
+
+
+*/

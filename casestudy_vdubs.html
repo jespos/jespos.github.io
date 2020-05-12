@@ -14,25 +14,25 @@
 
   </head>
   <body>
-  <!-- Navigation -->
-  <!-- <header> -->
+    <!-- Navigation -->
+    <!-- <header> -->
     <nav>
       <div class="logo">
         <a href="index.html"><img src="images/logo_je.png" class="header__logo" alt="logo"></a>
       </div>
       <!-- desktop nav -->
-      <!-- <ul class="nav__desktop">
-        <li><a href="#work">Work</a></li>
+      <ul class="nav__desktop">
+        <li><a href="index.html#work">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
         <li><a href="contact.html">Contact</a></li>
-      </ul> -->
+      </ul>
 
       <!-- hamburger menu -->
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-          <a href="#work">Work</a>
+          <a href="index.html/#work">Work</a>
           <a href="about.html">About</a>
           <a href="esposito_resume.pdf" target="_blank">Resume</a>
           <a href="contact.html">Contact</a>
@@ -43,58 +43,71 @@
     </nav>
 
     <section class="summary">
-      <img src="images/logo_vdubs.png" alt="V-DUBS logo" class="logo__casestudy">
+      <img src="images/logo_vdubs_lg.png" alt="V-DUBS logo" class="logo__casestudy">
       <h3 class="project__title">Share Your Spirit.</h3>
       <p class="project__summary">A free storage and sharing app for Volkswagen enthusiasts.</p>
       <picture>
-        <source media="(min-width: 750px)" srcset="images/vdubs_isometric_resizeTEST.png">
-        <source media="(min-width: 400px)" srcset="images/vdubs_isometric_resizeTEST.png">
-        <img src="images/vdubs_isometric_resizeTEST.png" alt="V-DUBS screens" style="width:auto;">
+        <source media="(min-width: 750px)" srcset="images/vdubs_isometric_top_desktop.png" class="isometric__summary-desktop">
+        <img src="images/vdubs_isometric_top_desktop.png" alt="V-DUBS screens" class="isometric__summary-mobile">
+
+        <!-- <img src="images/vdubs_isometric_resizeTEST.png" alt="V-DUBS screens" class="isometric__summary-mobile"> -->
       </picture>
       <a href="https://www.figma.com/proto/IRrgH2grlbgydTkzMMs2py/iOS-11-GUI-Assets?node-id=23973%3A0&viewport=6520%2C-10937%2C1&scaling=scale-down" target="_blank" class="project_button">View Protoype</a>
     </section>
 
 <!-- Roles/Responsibilities -->
-    <section class="deliverables">
-      <h3 class="deliverables__titles">Role</h3>
-      <ul class="deliverables__list">
-        <li>Research</li>
-        <li>Branding</li>
-        <li>Visual Design</li>
-        <li>Prototyping</li>
-      </ul>
+    <section class="deliverables__flex">
+      <div class="role">
+        <h3 class="deliverables__titles">Role</h3>
+        <ul class="deliverables__list">
+          <li>Research</li>
+          <li>Branding</li>
+          <li>Visual Design</li>
+          <li>Prototyping</li>
+        </ul>
+      </div>
+      <div class="vl"></div>
 
-      <h3 class="deliverables__titles">Deliverables</h3>
-      <ul class="deliverables__list">
-        <li>User surveys</li>
-        <li>Competitive analyses</li>
-        <li>User personas</li>
-        <li>User stories + Flows</li>
-        <li>Wireframes</li>
-        <li>Hi-fi mockups</li>
-        <li>User testing</li>
-        <li>Final prototype</li>
-      </ul>
+      <div class="deliverables">
+        <h3 class="deliverables__titles">Deliverables</h3>
+        <ul class="deliverables__list">
+          <li>User surveys</li>
+          <li>Competitive analyses</li>
+          <li>User personas</li>
+          <li>User stories + Flows</li>
+          <li>Wireframes</li>
+          <li>Hi-fi mockups</li>
+          <li>User testing</li>
+          <li>Final prototype</li>
+        </ul>
+      </div>
+      <div class="vl"></div>
 
-      <h3 class="deliverables__titles">Tools</h3>
-      <ul class="deliverables__list">
-        <li>Sketch</li>
-        <li>Figma</li>
-        <li>Invision</li>
-        <li>Adobe Illustrator</li>
-        <li>Adobe Photoshop</li>
-        <li>UsabilityHub</li>
-        <li>Google Forms</li>
-      </ul>
+      <div class="tools">
+        <h3 class="deliverables__titles">Tools</h3>
+        <ul class="deliverables__list">
+          <li>Sketch</li>
+          <li>Figma</li>
+          <li>Invision</li>
+          <li>Adobe Illustrator</li>
+          <li>Adobe Photoshop</li>
+          <li>UsabilityHub</li>
+          <li>Google Forms</li>
+        </ul>
+      </div>
+      <div class="vl"></div>
 
-      <h3 class="deliverables__titles">Timeline</h3>
-      <ul class="deliverables__list">
-        <li>3 months</li>
-      </ul>
+      <div class="timeline">
+        <h3 class="deliverables__titles">Timeline</h3>
+        <ul class="deliverables__list">
+          <li>3 months</li>
+        </ul>
+      </div>
+
     </section>
 
     <!-- Overview -->
-    <section class="casestudy__wrapper"> <!-- wrapper -->
+    <div class="wrapper__casestudy">
 
       <section class="overview">
         <h2 class="main__header">Overview</h2>
@@ -107,10 +120,14 @@
         <h3 class="prob-sol-con">The Solution</h3>
         <p>V-DUBS is free storage and sharing app for Volkswagen enthusiasts to share photos, tell stories,
           upload documents related to your passion, and ask questions to the community.</p>
-        <img src="images/vdubs_solutions_mobile.png"  alt="How V-DUBS screens look on an iPhone" class="solutions-screens">
+        <picture>
+          <source media="(min-width: 400px)" srcset="images/vdubs_solutions_desktop.png" class="solutions-screens" style="width:auto;">
+          <img src="images/vdubs_solutions_mobile.png" alt="V-DUBS iPhone screens" class="solutions-screens" style="width:auto;">
+        </picture>
       </section>
 
-    </section>  <!-- wrapper -->
+    </div>
+
 
 
       <!-- In-page Navigation -->
@@ -124,12 +141,13 @@
 
 
       <!-- Research -->
-      <section class="casestudy__wrapper"> <!-- wrapper -->
+      <div class="wrapper__casestudy">
 
         <a id="research"></a>
         <h2 class="main__header">Research</h2>
         <hr>
-        <h3 class="section__heading">User Research</h3>
+        <p class="section__subheading">User Research</p>
+        <h3 class="section__heading">It's about the user</h3>
         <p>I conducted 2 user surveys. The first survey on cloud storage elicited interesting
           results that warranted conducting a second survey on social media usage.</p>
 
@@ -143,7 +161,9 @@
           <li>Device(s) used to access cloud storage</li>
         </ul>
 
-      </section> <!-- wrapper -->
+      </div>
+
+
 
       <!-- Results of User Survey 1 -->
       <section class="survey__results">
@@ -174,9 +194,9 @@
       </section>
 
       <!-- User Survey 2: Social Media -->
-      <section class="casestudy__wrapper"> <!-- wrapper -->
+      <div class="wrapper__casestudy">
 
-        <h3 class="section__heading">User Survey: Social Media</h3>
+        <h3 class="section__heading social">User Survey: Social Media</h3>
         <p class="survey_learning">What did I want to learn?</p>
         <ul class="survey">
           <li>Most used apps</li>
@@ -186,7 +206,8 @@
           <li>Most used features</li>
         </ul>
 
-      </section>
+      </div>
+
 
       <!-- Results of User Survey 2 -->
       <section class="survey__results">
@@ -216,7 +237,8 @@
       </section>
 
       <!-- In Depth Interviews -->
-      <section class="casestudy__wrapper"> <!-- wrapper -->
+    <div class="wrapper__casestudy">
+
 
       <p class="section__subheading">In-depth interviews:</p>
       <h3 class="section__heading">Cars and Coffee</h3>
@@ -229,17 +251,23 @@
           <li>Upload / share car-related paperwork and documents</li>
         </ol>
 
-      </section>
+      </div>
+
 
       <!-- Lesson -->
-      <h3 class="lesson">Lesson: collecting more data isn't bad.</h3>
-      <p class="lesson paragraph">The addition of a second user survey set me back on my  timeline. But, I felt that
-        gathering additional data (especially after analyzing the results of the first survey)
-        in order to create an app that the community wants to use was well worth the extra week
-        and a half.</p>
+      <section class="lesson">
+        <div class="wrapper__casestudy">
+          <h3 class="lesson__title">Lesson: collecting more data isn't bad.</h3>
+          <p class="lesson__paragraph">The addition of a second user survey set me back on my  timeline. But, I felt that
+            gathering additional data (especially after analyzing the results of the first survey)
+            in order to create an app that the community wants to use was well worth the extra week
+            and a half.</p>
+          </div>
+      </section>
+
 
       <!-- Competitive Analysis -->
-      <section class="casestudy__wrapper"> <!-- wrapper -->
+      <div class="wrapper__casestudy">
 
         <p class="section__subheading">Competitive Analysis</p>
         <h3 class="section__heading">Sizing up the competition.</h3>
@@ -259,6 +287,8 @@
           <li>Creatives (i.e. photographers)</li>
           <li>Learners (i.e. car restoration)</li>
         </ol>
+
+      </div>
 
 
 
@@ -303,7 +333,11 @@
         </div>
       </section>
 
+
+
       <!-- User Stories -->
+    <div class="wrapper__casestudy">
+
       <p class="section__subheading">User Stories</p>
       <h3 class="section__heading">Less is more.</h3>
       <p>After researching apps and creating a lengthy list of tasks a user wants to do on the app, I prioritized
@@ -319,17 +353,24 @@
         <li>Share content</li>
       </ul>
 
-  </section>
+    </div>
+
 
     <!-- Lesson -->
-    <h3 class="lesson">Lesson: ‘Important’ functionality ≠ ‘high’ priority</h3>
-    <p class="lesson paragraph">The mistake I originally made was including too many high priority user stories. I decided to re-evaluate
-      each user story using the 80/20 rule. Because a priority isn’t set to high, does not mean I won’t develop it.
-      It will just be developed with less urgency.</p>
+    <section class="lesson">
+      <div class="wrapper__casestudy">
+
+        <h3 class="lesson__title">Lesson: ‘Important’ functionality ≠ ‘high’ priority</h3>
+        <p class="lesson__paragraph">The mistake I originally made was including too many high priority user stories. I decided to re-evaluate
+          each user story using the 80/20 rule. Because a priority isn’t set to high, does not mean I won’t develop it.
+          It will just be developed with less urgency.</p>
+
+      </div>
+    </section>
 
 
     <!-- Information Architecture -->
-    <section class="casestudy__wrapper"> <!-- wrapper -->
+    <div class="wrapper__casestudy">
 
       <a id="informationarchitecture"></a>
       <h2 class="main__header">Information Architecture</h2>
@@ -352,15 +393,20 @@
       <section class="flows__flex">
         <picture>
           <source media="(min-width: 750px)" srcset="images/userflow_horizontal.png" class="user-flow-horizontal">
-          <source media="(min-width: 400px)" srcset="images/userflow_vertical.png">
           <img src="images/userflow_vertical.png" alt="Sign up user flow" class="user-flow-vertical">
         </picture>
         <a href="https://drive.google.com/drive/folders/1wp9FvcyRrXDd0Ok_TnNT39sMo-QfHsj6?usp=sharing" target="_blank" class="project_button">View User Flows</a>
       </section>
+
+    </div>
+
+
+
+
+
     <!-- Wireframes -->
     <p class="section__subheading">Wireframes</p>
     <h3 class="section__heading">Showing the vision.</h3>
-  </section>
 
     <img src="images/vdubs_sketches.png" alt="Wireframe sketches" class="wireframe-sketches">
     <picture>
@@ -368,7 +414,8 @@
       <img src="images/vdubs_wireframes.png" alt="Digital wireframes" class="digital-wireframes">
     </picture>
 
-    <section class="casestudy__wrapper"> <!-- wrapper -->
+
+    <div class="wrapper__casestudy">
 
       <h3 class="section__heading">User Testing Round 1</h3>
       <p>I tested 10 tasks ranging from signing up for an account, creating content, and logging out of the app.</p>
@@ -380,7 +427,8 @@
         <li><span class="bullet-gap">Hard to tell if Community and My Content tabs are actually clickable</span></li>
         <li><span class="bullet-gap">Add organization options like folders or tags within your own content</span></li>
       </ol>
-    </section>
+
+    </div>
 
       <picture>
         <source media="(min-width: 400px)" srcset="images/usertesting_round1_desktop.png" class="user-testing-desktop">
@@ -389,25 +437,38 @@
 
 
     <!-- Visual Design -->
-    <section class="casestudy__wrapper"> <!-- wrapper -->
+    <div class="wrapper__casestudy">
 
       <a id="visualdesign"></a>
       <h2 class="main__header">Visual Design</h2>
       <hr>
+
       <!-- Branding -->
       <p class="section__subheading">Branding</p>
       <h3 class="section__heading">Don't let simplicity scare you.</h3>
+
+    </div>
+
       <img src="images/vdubs_moodboard.png" alt="Moodboard inspiration for app" class="moodboard">
+
+    <div class="wrapper__casestudy">
+
       <p>Volkswagen is a playful brand with vibrant vehicle colors and humorous, vintage car ads it
         was important for V-DUBS to incorporate these values into the brand. I want the target audience
         to identify with the elements of the app: from the logo design and color palette to typography and imagery.</p>
       <!-- Logo -->
       <p class="section__subheading">Logo</p>
       <h3 class="section__heading">From word cloud to V-DUBS</h3>
+
+    </div>
+
       <picture>
         <source media="(min-width: 400px)" srcset="images/logo_sketches_desktop.png" class="logo-sketches-desktop">
         <img src="images/logo_sketches_mobile.png" alt="Logo sketches" class="logo-sketches-mobile">
       </picture>
+
+    <div class="wrapper__casestudy">
+
       <p>The logo evolved from a word cloud of car-related terms to the final version of a Volkswagen Beetle.
         The logo needed to be clear and easily identifiable. There is almost nothing else more identifiable than
         the shape of a Volkswagen Beetle.</p>
@@ -418,37 +479,44 @@
       <!-- Color Palette -->
       <p class="section__subheading">Color Palette</p>
       <h3 class="section__heading">Color me vintage.</h3>
-      <p>Primary Colors</p>
+      <p class="colors__text">Primary Colors</p>
       <section class="palette__flex">
         <div class="colors">
-          <img src="images/color_navy.png" alt="Navy color">
+          <div class="circle navy"></div>
+          <!-- <img src="images/color_navy.png" alt="Navy color"> -->
           <p>#003270</p>
         </div>
         <div class="colors">
-          <img src="images/color_gray.png" alt="Gray color">
+          <div class="circle gray"></div>
+          <!-- <img src="images/color_gray.png" alt="Gray color"> -->
           <p>#BAC3CF</p>
         </div>
         <div class="colors">
-          <img src="images/color_lightblue.png" alt="Light blue color">
+          <div class="circle lightblue"></div>
+          <!-- <img src="images/color_lightblue.png" alt="Light blue color"> -->
           <p>#008FE0</p>
         </div>
       </section>
-      <p>Secondary Colors</p>
+      <p class="colors__text">Secondary Colors</p>
       <section class="palette__flex">
         <div class="colors">
-          <img src="images/color_black.png" alt="Black color">
+          <div class="circle black"></div>
+          <!-- <img src="images/color_black.png" alt="Black color"> -->
           <p>#07040D</p>
         </div>
         <div class="colors">
-          <img src="images/color_red.png" alt="Red color">
+          <div class="circle red"></div>
+          <!-- <img src="images/color_red.png" alt="Red color"> -->
           <p>#EB0000</p>
         </div>
         <div class="colors">
-          <img src="images/color_yellow.png" alt="Yellow color">
+          <div class="circle yellow"></div>
+          <!-- <img src="images/color_yellow.png" alt="Yellow color"> -->
           <p>#F9B81C</p>
         </div>
         <div class="colors">
-          <img src="images/color_white.png" alt="White color">
+          <div class="circle white"></div>
+          <!-- <img src="images/color_white.png" alt="White color"> -->
           <p>#FDF8F0</p>
         </div>
       </section>
@@ -462,30 +530,38 @@
       <img src="images/vdubs_fonts.png" alt="Fonts used in the app">
       <p>FE Font is a display font that mimics the font used on European license plates it is used only for the logo. Lato is a simple,
         modern font to complement the playfulness of Fe Font and is used for all headlines and text throughout the app.</p>
-
+    </div>
 
       <!-- Prototype -->
+    <div class="wrapper__casestudy">
+
       <a id="prototype"></a>
       <h2 class="main__header">Prototype</h2>
       <hr>
       <p class="section__subheading">Preference Testing</p>
       <h3 class="section__heading">Which do you prefer?</h3>
-      <p>Landing Page Background Image</p>
+      <p class="preftests__title">Landing Page Background Image</p>
       <img src="images/preference_testing/background01.png" alt="Landing page background image Volkswagen bus">
       <img src="images/preference_testing/background02.png" alt="Landing page background image Volkswagen emblem">
       <!-- <img src="images/preference_testing/background03.png" alt="Landing page background image Volkswagen wheel"> -->
-      <p>Navigation: Top tabs vs. bottom navigation only</p>
+      <p class="preftests__title">Navigation: Top tabs vs. bottom navigation only</p>
       <img src="images/preference_testing/navigation_tabs.png" alt="Dashboard with top tabs">
       <img src="images/preference_testing/navigation_notabs.png" alt="Dashboard with bottom navigation bar only">
-      <p>Dashboard background color</p>
+      <p class="preftests__title">Dashboard background color</p>
       <img src="images/preference_testing/dashboard_color01.png" alt="Dashboard's gray background color">
       <img src="images/preference_testing/dashboard_color02.png" alt="Dashboard's almost white background color">
 
       <!-- Hi Fi Mockups -->
       <p class="section__subheading">Hi Fi Mockups</p>
       <h3 class="section__heading">It's almost real!</h3>
-      <img src="images/landing_page_full.png"  alt="Mobile landing page" class="mobile-landingpage">
+      <!-- <img src="images/landing_page_full.png"  alt="Mobile landing page" class="mobile-landingpage"> -->
+
+</div>
+
       <img src="images/vdubs_isometric2.png"  alt="Hi-fi mockup screens" class="vdubs-isometric2">
+
+    <div class="wrapper__casestudy">
+
       <h3 class="section__heading">User Testing Round 2</h3>
       <p>I put my prototype through a second round of user testing going through 14 tasks.</p>
       <a href="https://docs.google.com/document/d/1zy1Kd71hcvqC7heToxzLL7gUabt6f_nm0JcXqGAtcBw/edit?usp=sharing" target="_blank" class="project_button">View Tasks</a>
@@ -495,6 +571,8 @@
         <li><span class="bullet-gap">Replacing or deleting a photo / document isn’t obvious.</span></li>
         <li><span class="bullet-gap">Sign Out should be more prominently displayed and easier to find.</span></li>
       </ol>
+    </div>
+
       <picture>
         <source media="(min-width: 400px)" srcset="images/usertesting_round2_desktop.png" class="user-testing-desktop">
         <img src="images/usertesting_round2_mobile.png" alt="User testing round 2" class="user-testing-mobile">
@@ -502,44 +580,54 @@
 
 
     <!-- Lesson -->
-    <h3 class="lesson">Lesson: You wont catch everything the first go around</h3>
-    <p class="lesson paragraph">When moving from user testing round 1 to my hi-fi mockups, I noticed several tasks that
-      I should have tested for. They were incorporated into the second round of user testing.</p>
+    <section class="lesson">
+      <div class="wrapper__casestudy">
+
+        <h3 class="lesson__title">Lesson: You wont catch everything the first go around</h3>
+        <p class="lesson__paragraph">When moving from user testing round 1 to my hi-fi mockups, I noticed several tasks that
+          I should have tested for. They were incorporated into the second round of user testing.</p>
+
+      </div>
+    </section>
 
     <!-- Conclusion -->
     <section class="conclusion">
-      <h3 class="prob-sol-con">Conclusion</h3>
-      <p>In the Volkswagen community, everyone has a story. V-DUBS is a platform for every VW lover and enthusiast to
-        share their story. Being a Volkswagen enthusiast myself, this project was fun to bring from concept to completion.
-        Though I expected my initial timeline to be shorter, encountering and dealing with these problems in the beginning
-        (i.e. a second user survey to collect more data) made for 1) less assumptions about what users want and 2) an accurate
-        app representing the wants and needs of the community. One of my major challenges was containing / limiting scope creep.
-        I have so many interesting ideas for what the app could be in the future. So, I had to resist the urge to do all the things at once with the app.</p>
+      <div class="wrapper__casestudy">
+
+        <h3 class="prob-sol-con">Conclusion</h3>
+        <p>In the Volkswagen community, everyone has a story. V-DUBS is a platform for every VW lover and enthusiast to
+          share their story. Being a Volkswagen enthusiast myself, this project was fun to bring from concept to completion.
+          Though I expected my initial timeline to be shorter, encountering and dealing with these problems in the beginning
+          (i.e. a second user survey to collect more data) made for 1) less assumptions about what users want and 2) an accurate
+          app representing the wants and needs of the community. One of my major challenges was containing / limiting scope creep.
+          I have so many interesting ideas for what the app could be in the future. So, I had to resist the urge to do all the things at once with the app.</p>
+        </div>
     </section>
-    <ul class="to-top">
+    <!-- <ul class="to-top">
       <li><a href="#top">Back to top</a></li>
-    </ul>
+    </ul> -->
+    <a href="#top" class="to-top">Back to top</a>
 
 
     <!-- Footer -->
-        <footer>
-          <h2 class="footer__connect">Let's Connect!</h2>
-          <section class="social__flex">
-            <div class="social__icons">
-              <a href="https://www.linkedin.com/in/jolene-esposito"><i class="fa fa-linkedin-square"></i></a>
-              <p class="social__text">LinkedIn</p>
-            </div>
-            <div class="social__icons">
-              <a href="https://github.com/jespos"><i class="fa fa-github-square"></i></a>
-              <p class="social__text">Github</p>
-            </div>
-            <div class="social__icons">
-              <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
-              <p class="social__text">Email</p>
-            </div>
-          </section>
-          <p class="copywrite">© 2020 Jolene Esposito | Designed and Developed with <i class="fa fa-heart"></i> by Jolene Esposito</p>
-        </footer>
+    <footer>
+      <h2 class="footer__connect">Let's Connect!</h2>
+      <section class="social__flex">
+        <div class="social__icons">
+          <a href="https://www.linkedin.com/in/jolene-esposito" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+          <p class="social__text">LinkedIn</p>
+        </div>
+        <div class="social__icons">
+          <a href="https://github.com/jespos" target="_blank"><i class="fa fa-github-square"></i></a>
+          <p class="social__text">Github</p>
+        </div>
+        <div class="social__icons">
+          <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
+          <p class="social__text">Email</p>
+        </div>
+      </section>
+      <p class="copywrite">© 2020 Jolene Esposito | Designed and Developed with <i class="fa fa-heart"></i> by Jolene Esposito</p>
+    </footer>s
 
   </body>
 </html>

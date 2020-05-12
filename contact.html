@@ -15,25 +15,25 @@
   </head>
 
   <body>
-  <!-- Navigation -->
-  <!-- <header> -->
+    <!-- Navigation -->
+    <!-- <header> -->
     <nav>
       <div class="logo">
         <a href="index.html"><img src="images/logo_je.png" class="header__logo" alt="logo"></a>
       </div>
       <!-- desktop nav -->
-      <!-- <ul class="nav__desktop">
-        <li><a href="#work">Work</a></li>
+      <ul class="nav__desktop">
+        <li><a href="index.html#work">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
         <li><a href="contact.html">Contact</a></li>
-      </ul> -->
+      </ul>
 
       <!-- hamburger menu -->
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-          <a href="#work">Work</a>
+          <a href="index.html/#work">Work</a>
           <a href="about.html">About</a>
           <a href="esposito_resume.pdf" target="_blank">Resume</a>
           <a href="contact.html">Contact</a>
@@ -44,56 +44,58 @@
     </nav>
 
     <!-- Body -->
-    <h2 class="contact__title">Get in Touch!</h2>
-    <p class="contact__text">Want to inquire about my work or just say hello? Reach me at esposito.jolene [at] gmail [dot] com
-      or fill out the form below.</p>
+    <section class="wrapper__contact">
+      <h2 class="contact__title">Get in Touch!</h2>
+      <p class="contact__text">Want to inquire about my work or just say hello? Reach me at esposito.jolene [at] gmail [dot] com
+        or fill out the form below.</p>
+    </section>
 
-    <!-- Form -->
-    <form
-      action="https://formspree.io/xnqbeozr"
-      method="POST"
-      class="contact-form"
-    >
-      <label class="form-text">
-        Name:
-        <input type="text" name="name" class="input-box">
-      </label>
+      <!-- Form -->
+      <form
+        action="https://formspree.io/xnqbeozr"
+        method="POST"
+        class="contact-form"
+      >
+        <label class="form-text">
+          Name:
+          <input type="text" name="name" class="input-box">
+        </label>
 
-      <label class="form-text">
-        Email:
-        <input type="text" name="_replyto" class="input-box">
-      </label>
+        <label class="form-text">
+          Email:
+          <input type="text" name="_replyto" class="input-box">
+        </label>
 
-      <label class="form-text">
-        Message:
-        <textarea name="message" class="message-box"></textarea>
-      </label>
+        <label class="form-text">
+          Message:
+          <textarea name="message" class="message-box"></textarea>
+        </label>
 
-      <button type="submit" class="project_button">Send</button>
-  </form>
-
-
+        <button type="submit" class="project_button send">Send</button>
+    </form>
 
 
-    <!-- Footer -->
-    <footer>
-      <h2 class="footer__connect">Let's Connect!</h2>
-      <section class="social__flex">
-        <div class="social__icons">
-          <a href="https://www.linkedin.com/in/jolene-esposito"><i class="fa fa-linkedin-square"></i></a>
-          <p class="social__text">LinkedIn</p>
-        </div>
-        <div class="social__icons">
-          <a href="https://github.com/jespos"><i class="fa fa-github-square"></i></a>
-          <p class="social__text">Github</p>
-        </div>
-        <div class="social__icons">
-          <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
-          <p class="social__text">Email</p>
-        </div>
-      </section>
-      <p class="copywrite">© 2020 Jolene Esposito | Designed and Developed with <i class="fa fa-heart"></i> by Jolene Esposito</p>
-    </footer>
+
+
+  <!-- Footer -->
+  <footer>
+    <h2 class="footer__connect">Let's Connect!</h2>
+    <section class="social__flex">
+      <div class="social__icons">
+        <a href="https://www.linkedin.com/in/jolene-esposito" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        <p class="social__text">LinkedIn</p>
+      </div>
+      <div class="social__icons">
+        <a href="https://github.com/jespos" target="_blank"><i class="fa fa-github-square"></i></a>
+        <p class="social__text">Github</p>
+      </div>
+      <div class="social__icons">
+        <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
+        <p class="social__text">Email</p>
+      </div>
+    </section>
+    <p class="copywrite">© 2020 Jolene Esposito | Designed and Developed with <i class="fa fa-heart"></i> by Jolene Esposito</p>
+  </footer>
 
 
   </body>

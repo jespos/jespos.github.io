@@ -1,95 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title> Portfolio | Jolene Esposito </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+<head>
+  <title> Portfolio | Jolene Esposito </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/main.css">
 
-<!-- Font Awesome  I'm not sure this is up-to-date? -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="scripts.js"></script>
+  <!-- Font Awesome  I'm not sure this is up-to-date? -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="scripts.js"></script>
 
-  </head>
-  <body>
-    <section class="container">
-<!-- Navigation -->
-  <!-- <header> -->
+</head>
+<body>
+  <section class="container">
+    <!-- Navigation -->
+    <!-- <header> -->
     <nav>
       <div class="logo">
         <a href="index.html"><img src="images/logo_je.png" class="header__logo" alt="logo"></a>
       </div>
       <!-- desktop nav -->
-      <!-- <ul class="nav__desktop">
+      <ul class="nav__desktop">
         <li><a href="#work">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
         <li><a href="contact.html">Contact</a></li>
-      </ul> -->
+      </ul>
 
       <!-- hamburger menu -->
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-          <a href="#work">Work</a>
+          <a href="index.html#work">Work</a>
           <a href="about.html">About</a>
           <a href="esposito_resume.pdf" target="_blank">Resume</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
 
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars"></i></span>
+      <span style="font-size:2.5em;cursor:pointer" onclick="openNav()"><i class="fa fa-bars fa-sm"></i></span>
     </nav>
 
-<!-- Hero -->
+    <!-- Hero -->
     <section class="hero">
       <h1 class="hero__name">Hello! I'm <span style="font-weight:600">Jolene Esposito</span></h1>
       <h2 class="hero__profession"><span style="font-weight:600">UI/UX Designer</span> in <span style="font-weight:600">Virginia</span></h2>
       <h3 class="hero__story">I tell stories through design, interactions, and pleasant user experiences</h3>
-      <div class="down-arrow">
+      <div class="down-arrow bounce-down">
         <a href="#work"><i class="fa fa-angle-down"></i></a>
       </div>
     </section>
-  <!-- </header> -->
+    <!-- </header> -->
 
 
 
-  <!-- Project1 -->
-      <a id="work"></a>
-      <section class="project vdubs">
-        <!-- <a href="casestudy_vdubs.html"><img class="cover" src="images/vdubs_isometric_homepage.png" alt="V-DUBS iPhone images"></a> -->
-        <a href="casestudy_vdubs.html"><img class="cover" src="images/vdubs_isometric_resizeTEST.png" alt="V-DUBS iPhone images"></a>
+    <!-- Project1 -->
+    <a id="work"></a>
+    <section class="project vdubs">
+      <a href="casestudy_vdubs.html"><img class="cover" id="vdubs" src="images/vdubs_isometric_resizeTEST.png" alt="V-DUBS iPhone images"></a>
 
-        <img src="images/logo_vdubs.png" alt="V-DUBS logo" class="vdubs__logo">
-        <h3 class="project__title">Share Your Spirit.</h3>
-        <p class="project__summary">A free storage and sharing app for Volkswagen enthusiasts.</p>
-        <a href="casestudy_vdubs.html" class="project_button_homepage">View Case Study</a>
-      </section>
+      <img src="images/logo_vdubs.png" alt="V-DUBS logo" class="vdubs__logo">
+      <h3 class="project__title">Share Your Spirit.</h3>
+      <p class="project__summary">A free storage and sharing app for Volkswagen enthusiasts.</p>
+      <a href="casestudy_vdubs.html" class="project_button_homepage">View Case Study</a>
     </section>
+  </section>
 
 
 
   <!-- Footer -->
-      <footer>
-        <h2 class="footer__connect">Let's Connect!</h2>
-        <section class="social__flex">
-          <div class="social__icons">
-            <a href="https://www.linkedin.com/in/jolene-esposito"><i class="fa fa-linkedin-square"></i></a>
-            <p class="social__text">LinkedIn</p>
-          </div>
-          <div class="social__icons">
-            <a href="https://github.com/jespos"><i class="fa fa-github-square"></i></a>
-            <p class="social__text">Github</p>
-          </div>
-          <div class="social__icons">
-            <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
-            <p class="social__text">Email</p>
-          </div>
-        </section>
-        <p class="copywrite">© 2020 Jolene Esposito | Designed and Developed with <i class="fa fa-heart"></i> by Jolene Esposito</p>
-      </footer>
-
-  </body>
+  <footer>
+    <h2 class="footer__connect">Let's Connect!</h2>
+    <section class="social__flex">
+      <div class="social__icons">
+        <a href="https://www.linkedin.com/in/jolene-esposito" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        <p class="social__text">LinkedIn</p>
+      </div>
+      <div class="social__icons">
+        <a href="https://github.com/jespos" target="_blank"><i class="fa fa-github-square"></i></a>
+        <p class="social__text">Github</p>
+      </div>
+      <div class="social__icons">
+        <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
+        <p class="social__text">Email</p>
+      </div>
+    </section>
+    <p class="copywrite">© 2020 Jolene Esposito | Designed and Developed with <i class="fa fa-heart"></i> by Jolene Esposito</p>
+  </footer>
+</body>
 </html>
