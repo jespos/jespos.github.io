@@ -32,7 +32,7 @@
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-          <a href="index.html/#work">Work</a>
+          <a href="index.html#work">Work</a>
           <a href="about.html">About</a>
           <a href="esposito_resume.pdf" target="_blank">Resume</a>
           <a href="contact.html">Contact</a>
@@ -120,6 +120,9 @@
         <h3 class="prob-sol-con">The Solution</h3>
         <p>V-DUBS is free storage and sharing app for Volkswagen enthusiasts to share photos, tell stories,
           upload documents related to your passion, and ask questions to the community.</p>
+
+    </div>
+
         <picture>
           <source media="(min-width: 400px)" srcset="images/vdubs_solutions_desktop.png" class="solutions-screens" style="width:auto;">
           <img src="images/vdubs_solutions_mobile.png" alt="V-DUBS iPhone screens" class="solutions-screens" style="width:auto;">
@@ -132,7 +135,7 @@
 
       <!-- In-page Navigation -->
       <nav class="project__nav">
-        <a href="#research">Research &ensp;|</a>
+        <a href="#research">Discovery &ensp;|</a>
         <a href="#informationarchitecture"> &ensp;Information Architecture &ensp;|</a>
         <a href="#visualdesign">&ensp;Visual Design &ensp;|</a>
         <a href="#prototype">&ensp;Prototype</a>
@@ -144,7 +147,7 @@
       <div class="wrapper__casestudy">
 
         <a id="research"></a>
-        <h2 class="main__header">Research</h2>
+        <h2 class="main__header">Discovery</h2>
         <hr>
         <p class="section__subheading">User Research</p>
         <h3 class="section__heading">It's about the user</h3>
@@ -152,7 +155,7 @@
           results that warranted conducting a second survey on social media usage.</p>
 
         <!--User Survey 1: Cloud Storage -->
-        <h3 class="section__heading">User Survey: Cloud Storage</h3>
+        <h3 class="section__heading__survey">User Survey: Cloud Storage</h3>
         <p class="survey_learning">What did I want to learn?</p>
         <ul class="survey">
           <li>Usage of specific features</li>
@@ -167,36 +170,44 @@
 
       <!-- Results of User Survey 1 -->
       <section class="survey__results">
+        <h3 class="section__subheading__results">Results: Cloud Storage</h3>
         <div class="survey__results__flexbox">
-          <h3 class="section__subheading__results">Results: Cloud Storage</h3>
-          <h4>Most Popular</h4>
-          <ul class="survey__results__list">
-            <li>Google Drive</li>
-            <li>Dropbox</li>
-            <li>Microsoft OneDrive</li>
-          </ul>
-          <h4>Common Actions</h4>
-          <ul class="survey__results__list">
-            <li>Save</li>
-            <li>Upload</li>
-            <li>Organize</li>
-            <li>Create files/folders</li>
-          </ul>
+          <div class="results__summary">
+            <h4>Most Popular</h4>
+            <ul class="survey__results__list">
+              <li>Google Drive</li>
+              <li>Dropbox</li>
+              <li>Microsoft OneDrive</li>
+            </ul>
+          </div>
+          <div class="results__summary">
+            <h4>Common Actions</h4>
+            <ul class="survey__results__list">
+              <li>Save</li>
+              <li>Upload</li>
+              <li>Organize</li>
+              <li>Create files/folders</li>
+            </ul>
+          </div>
+          <div class="results__summary">
           <h4>80%</h4>
-          <ul class="survey__results__list">
-            <li>Collaborate</li>
-          </ul>
-          <h4>94%</h4>
-          <ul class="survey__results__list">
-            <li>Share files and folders</li>
-          </ul>
+            <ul class="survey__results__list">
+              <li>Collaborate</li>
+            </ul>
+          </div>
+          <div class="results__summary">
+            <h4>94%</h4>
+            <ul class="survey__results__list">
+              <li>Share files and folders</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- User Survey 2: Social Media -->
       <div class="wrapper__casestudy">
 
-        <h3 class="section__heading social">User Survey: Social Media</h3>
+        <h3 class="section__heading__survey social">User Survey: Social Media</h3>
         <p class="survey_learning">What did I want to learn?</p>
         <ul class="survey">
           <li>Most used apps</li>
@@ -211,28 +222,36 @@
 
       <!-- Results of User Survey 2 -->
       <section class="survey__results">
+        <h3 class="section__subheading__results">Results: Social Media</h3>
         <div class="survey__results__flexbox">
-          <h3 class="section__subheading__results">Results: Social Media</h3>
-          <h4>80%</h4>
-          <ul class="survey__results__list">
-            <li>Access social apps from mobile device</li>
-          </ul>
+          <div class="results__summary">
+            <h4>80%</h4>
+            <ul class="survey__results__list">
+              <li>Access social apps from mobile device</li>
+            </ul>
+          </div>
+          <div class="results__summary">
           <h4>93%</h4>
-          <ul class="survey__results__list">
-            <li>Access social apps daily</li>
-          </ul>
+            <ul class="survey__results__list">
+              <li>Access social apps daily</li>
+            </ul>
+          </div>
+          <div class="results__summary">
           <h4>Frustrations</h4>
-          <ul class="survey__results__list">
-            <li>Too much unrelated info</li>
-            <li>Too many ads</li>
-            <li>Privacy concerns</li>
-          </ul>
-          <h4>Top Features</h4>
-          <ul class="survey__results__list">
-            <li>Create content</li>
-            <li>Share content</li>
-            <li>Search in-app</li>
-          </ul>
+            <ul class="survey__results__list">
+              <li>Too much unrelated info</li>
+              <li>Too many ads</li>
+              <li>Privacy concerns</li>
+            </ul>
+          </div>
+          <div class="results__summary">
+            <h4>Top Features</h4>
+            <ul class="survey__results__list">
+              <li>Create content</li>
+              <li>Share content</li>
+              <li>Search in-app</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -327,7 +346,7 @@
           <h4 class="persona__id">The Creative | 34 years old</h4>
           <h5 class="motivations_frustrations">Motivations:</h5>
           <p class="persona__description">I manage automobile exhibits for an antique auto museum and enjoy driving my classic VW to auto shows. I want
-            an easy way to create notes and share photos in one app. </p>
+            an easy way to create notes and share photos in one app.</p>
           <h5 class="motivations_frustrations">Frustrations:</h5>
           <p class="persona__description">Uploading my notes to share with others isn’t easy and I can’t create new content with my current apps.</p>
         </div>
@@ -337,7 +356,7 @@
 
       <!-- User Stories -->
     <div class="wrapper__casestudy">
-
+      <hr>
       <p class="section__subheading">User Stories</p>
       <h3 class="section__heading">Less is more.</h3>
       <p>After researching apps and creating a lengthy list of tasks a user wants to do on the app, I prioritized
@@ -405,8 +424,12 @@
 
 
     <!-- Wireframes -->
-    <p class="section__subheading">Wireframes</p>
-    <h3 class="section__heading">Showing the vision.</h3>
+    <div class="wrapper__casestudy">
+
+      <p class="section__subheading">Wireframes</p>
+      <h3 class="section__heading">Showing the vision.</h3>
+      
+    </div>
 
     <img src="images/vdubs_sketches.png" alt="Wireframe sketches" class="wireframe-sketches">
     <picture>
@@ -603,10 +626,9 @@
           I have so many interesting ideas for what the app could be in the future. So, I had to resist the urge to do all the things at once with the app.</p>
         </div>
     </section>
-    <!-- <ul class="to-top">
+    <ul class="to-top">
       <li><a href="#top">Back to top</a></li>
-    </ul> -->
-    <a href="#top" class="to-top">Back to top</a>
+    </ul>
 
 
     <!-- Footer -->

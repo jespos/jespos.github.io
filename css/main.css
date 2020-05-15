@@ -23,6 +23,8 @@ a {
 
 
 
+
+
 h1, h2, h3, h4, p {
   margin-bottom: 1em;
 }
@@ -225,21 +227,24 @@ nav li a:hover::before {
 
 /***** PROJECTS SECTION (on homepage) ****/
 
-.project__title {
+.project__title__homepage {
+  color: black;
   font-size: 2.4em;
   font-weight: 600;
-  margin-bottom: 0.3em;
+  margin-bottom: 0;
   text-align: center;
 }
 
-.project__summary {
+.project__summary__homepage {
+  color: black;
   font-size: 1.7em;
   font-weight: 400;
   line-height: 1.5em;
   margin-left: 1em;
   margin-right: 1em;
+  margin-bottom: 0;
   text-align: center;
-  padding-bottom: 1em;
+  padding-bottom: 0;
   padding-top: 0.2em;
 }
 
@@ -281,8 +286,8 @@ nav li a:hover::before {
 }
 
 .vdubs__logo {
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 
@@ -351,7 +356,8 @@ nav li a:hover::before {
   margin-top: 1em;
   margin-bottom: 0.3em;
   font-size: 1.7em;
-  font-weight: 300;
+  text-transform: uppercase;
+  /* font-weight: 300; */
 }
 
 hr {
@@ -496,16 +502,22 @@ ul.survey {
   font-size: 1.6em;
   font-weight: 600;
   list-style: none;
-  margin-left: 1.5em;
+  margin-left: 2em;
   margin-bottom: 2.5em;
 
 }
 
+.section__heading__survey {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+  margin-top: 0.5em;
+}
+
 .survey_learning {
-  font-weight: 300;
-  font-size: 1.9em;
-  line-height: 1.6em;
-  padding-bottom: 0em;
+  font-size: 1.7em;
+  margin-bottom: 1em;
+  padding-bottom: 0;
 }
 
 ul.survey li {
@@ -522,17 +534,20 @@ ul.survey li::before {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
-.survey__results {
-  background-image: url(../images/results_cloudstorage.png);
-  background-size: cover;
-  padding-bottom: 2em;
-}
 
 .survey__results__list {
   font-size: 1.6em;
   list-style: none;
   line-height: 2em;
   text-align: center;
+}
+
+.survey__results {
+  background-image: url(../images/results_cloudstorage.png);
+  background-size: cover;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  margin-bottom: 3em;
 }
 
 .survey__results__flexbox {
@@ -757,17 +772,18 @@ p.preftests__title {
 
 /*back to top */
 
-.to-top{
+/* .to-top{
 	color: #1B1826;
 	padding-top:1.8em;
-	display:inline-block;/* or block */
+	display:inline-block;
 	position:relative;
 	border-color: #1B1826;
 	text-decoration:none;
   text-align: right;
 	transition:all .3s ease-out;
-}
-.to-top:before{
+} */
+
+/* .to-top:before{
 	content:'▲';
 	font-size:.9em;
 	position:absolute;
@@ -781,14 +797,16 @@ p.preftests__title {
 	line-height:1.3em;
 	border-color:inherit;
 	transition:transform .5s ease-in;
-}
-.to-top:hover{
+} */
+
+/* .to-top:hover{
 	color:pink;
 	border-color:pink;
-}
-.to-top:hover:before{
+} */
+
+/* .to-top:hover:before{
 	transform: rotate(360deg);
-}
+} */
 
 
 
@@ -939,8 +957,8 @@ footer {
 .social__flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 48%;
+  justify-content: space-around;
+  width: 50%;
   margin: auto;
 }
 
@@ -1063,6 +1081,8 @@ input, .message-box {
 
 /***** MEDIA QUERIES *****/
 
+
+/*nav bar */
 @media screen and (min-width: 760px) {
   .fa.fa-bars {
     display: none;
@@ -1111,30 +1131,15 @@ input, .message-box {
   }
 }
 
+
 @media screen and (max-width: 759px) {
   ul.nav__desktop {
     display: none;
   }
 }
 
-@media screen and (min-width: 530px) {
-  .project {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    text-align: center;
-    width: 80%;
-    max-width: 400px;
-    box-shadow: 4px 2px 12px grey;
-    /* border: 5px solid red; */
-  }
-}
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .cover {
     display: none;
   }
@@ -1143,37 +1148,33 @@ input, .message-box {
     background: url(../images/vdubs_isometric_resizeTEST.png) no-repeat;
     background-position: center;
     background-size: cover;
-
     align-items: center;
     display: flex;
     flex-direction: column;
+    /* height: 30em; */
     justify-content: center;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 2rem;
     margin-bottom: 5rem;
-    text-align: center;
     width: 80%;
     max-width: 500px;
-    /* max-height: 700px; */
-    box-shadow: 4px 2px 12px grey;
-    /* border: 5px solid red; */
+    box-shadow: none;
+    /* box-shadow: 4px 2px 12px grey; */
+    filter: drop-shadow(4px 2px 12px gray);
+
+  }
+
+  .project-overlay {
+    visibility: hidden;
+  }
+
+  .project:hover .project-overlay {
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.78);
   }
 }
 
 
-/* media query for user personas - rows */
-@media screen and (min-width: 768px) {
-  .personas__flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .persona-one, .persona-two, .persona-three {
-    margin-left: 4em;
-    margin-right: 4em;
-  }
-}
 
 
 /* footer */
@@ -1181,7 +1182,7 @@ input, .message-box {
   .social__flex { /*changing how close together the icons are */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 21%;
     margin: auto;
   }
@@ -1254,12 +1255,14 @@ input, .message-box {
 
  /* CASE STUDY intro */
  .logo__casestudy{
+   margin-top: 2.5em;
    margin-bottom: 1em;
    width: 13%;
  }
 
  .project__title {
    font-size: 3.5em;
+   margin-bottom: 0.2em;
  }
 
  .project__summary {
@@ -1290,8 +1293,13 @@ input, .message-box {
 
  /* overview */
 .wrapper__casestudy {
-   margin-left: 21em;
-   margin-right: 21em;
+   margin-left: 40em;
+   margin-right: 40em;
+ }
+
+ .section__subheading {
+   font-size: 1.7em;
+   margin-bottom: -5px;
  }
 
  hr {
@@ -1299,9 +1307,62 @@ input, .message-box {
    width: 100%;
  }
 
- .solutions-screens {
-   margin-left: -5em;
+ /* .solutions-screens {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: auto;
+   width: 100%;
+ } */
+
+
+/* surveys */
+
+ .section__heading__survey {
+   font-size: 1.8em;
+   font-weight: 600;
+   margin-bottom: 0.2em;
+   margin-top: 0.5em;
  }
+
+ .survey_learning {
+   font-size: 1.7em;
+   margin-bottom: 1em;
+ }
+
+ .survey__results__flexbox {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin-left: 15em;
+   margin-right: 15em;
+ }
+
+ .results__summary {
+   max-width: 18em;
+ }
+
+
+/* personas */
+
+  .personas__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .persona-one, .persona-two, .persona-three {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+
+ .persona__description {
+   max-width: 16em;
+   text-align: center;
+ }
+
+
+
 
 
 
