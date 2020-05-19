@@ -1369,8 +1369,24 @@ input, .message-box {
   }
 }
 
-/* about */
+/* About -- tablet media queries */
 @media only screen and (min-width: 768px) {
+  .about.title {
+    font-size: 2.5em;
+    margin-left: 4.5em;
+    margin-right: 4.5em;
+  }
+
+  .about__wrapper {
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+}
+
+
+
+/* About -- desktop media queries */
+@media only screen and (min-width: 1024px) {
   .about.title {
     font-size: 2.5em;
     margin-left: 7em;
@@ -1411,7 +1427,35 @@ input, .message-box {
   }
 
 
- /* CASE STUDY intro media queries */
+
+/************************
+  TABLET MEDIA QUERIES
+*************************/
+
+ /* Case Study Hero -- tablet media queries */
+ .logo__casestudy{
+   margin-top: 2.5em;
+   margin-bottom: 0.5em;
+   width: 11%;
+ }
+
+ .project__title {
+   font-size: 3em;
+   margin-top: 0;
+   margin-bottom: 0;
+ }
+
+ .project__summary {
+   font-size: 2em;
+   padding-bottom: 0;
+ }
+
+ /*******************************
+   DESKTOP-LAPTOP MEDIA QUERIES
+ ********************************/
+
+ /* Case Study Hero -- desktop media queries */
+@media only screen and (min-width: 1024px) {
  .logo__casestudy{
    margin-top: 2.5em;
    margin-bottom: 1em;
@@ -1428,7 +1472,9 @@ input, .message-box {
    padding-bottom: 0;
  }
 
- /* roles & responsibilities */
+
+ /* Roles & Responsibilities -- desktop media queries */
+ @media only screen and (min-width: 1024px) {
  .deliverables__flex {
    flex-direction: row;
    justify-content: space-around;
@@ -1449,7 +1495,8 @@ input, .message-box {
    font-size: 1.7em;
  }
 
- /* overview */
+
+ /* Overview -- desktop media queries */
  .wrapper__casestudy {
    margin-left: 27em;
    margin-right: 27em;
@@ -1478,7 +1525,7 @@ input, .message-box {
 
 
 
-/* surveys */
+/* Surveys -- desktop media queries */
 
  .section__heading__survey {
    font-size: 1.8em;
@@ -1505,8 +1552,7 @@ input, .message-box {
  }
 
 
-/* personas */
-
+/* Personas -- desktop media queries */
   .personas__flex {
     display: flex;
     flex-direction: row;
@@ -1524,16 +1570,11 @@ input, .message-box {
  }
 
 
-
-
-
-
- /* images */
+ /* Images -- desktop media queries */
 
  .digital-wireframes {
    margin-top: 7em;
    margin-bottom: 5em;
-
  }
 
  .user-testing-mobile {
@@ -1550,34 +1591,33 @@ input, .message-box {
  }
 
 
- /* grid for wireframes */
- @media only screen and (min-width: 767px) {
-   .wireframe__img {
-     box-shadow: 4px 2px 12px grey;
-     margin-top: 3em;
-     vertical-align: middle;
-     width: 100%;
-     /* display: block;
-     width: 100%;
-     height: auto; */
-   }
-
-   .row {
-     display: flex;
-     flex-wrap: wrap;
-     padding: 0 5em;
-   }
-
-   .column {
-     flex: 25%;
-     max-width: 25%;
-     padding: 0 2em;
-   }
+ /* Grid for wireframes -- desktop media queries */
+@media only screen and (min-width: 1024px) {
+ .wireframe__img {
+   box-shadow: 4px 2px 12px grey;
+   margin-top: 3em;
+   vertical-align: middle;
+   width: 100%;
+   /* display: block;
+   width: 100%;
+   height: auto; */
  }
 
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 5em;
+ }
 
- /* branding */
+ .column {
+   flex: 25%;
+   max-width: 25%;
+   padding: 0 2em;
+ }
+}
 
+
+ /* Branding -- desktop media queries */
  .circle {
    border-radius: 50%;
    width: 5em;
@@ -1585,7 +1625,7 @@ input, .message-box {
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  }
 
- /* user testing round 1 media query */
+ /* User Testing Round 1 -- desktop media queries */
  .usertesting1 {
    display: block;
    margin-left: auto;
@@ -1594,7 +1634,7 @@ input, .message-box {
  }
 
 
-/* pref tests media queries */
+/* Pref Tests -- desktop media queries */
   p.preftests__title {
     font-size: 2em;
     font-weight: 600;
@@ -1627,7 +1667,7 @@ input, .message-box {
     background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
   }
 
-  /* user testing round2 media query */
+  /* User Testing Round 2 -- desktop media queries */
   .usertesting2 {
     display: block;
     margin-left: auto;
