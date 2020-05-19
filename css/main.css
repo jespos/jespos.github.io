@@ -49,6 +49,45 @@ h1, h2, h3, h4, p {
   color: #35B999;
 }
 
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
 
 
 
@@ -298,6 +337,21 @@ nav li a:hover::before {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.logo__casestudy {
+  margin-top: 2.5em;
+}
+
+.project__title {
+  font-size: 2.3em;
+  margin-top: 0.5em;
+}
+
+.project__summary {
+  font-size: 1.6em;
+  text-align: center;
+  padding-bottom: 0;
 }
 
 /*buttons*/
@@ -580,6 +634,9 @@ h4  {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: rgb(238,238,238);
+  background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
+  padding-top: 3em;
 }
 
 
@@ -686,6 +743,13 @@ span.bullet-gap {
   float: right;
 }
 
+.usertesting1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
 
 
 
@@ -706,14 +770,20 @@ p.colors__text {
 
 .colors {
   text-align: center;
-  padding-right: 3em;
+  padding-right: 2em;
 }
 
 .circle {
   border-radius: 50%;
-  width: 5em;
-  height: 5em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 3em;
+  width: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hex {
+  font-size: 1.4em;
 }
 
 
@@ -755,16 +825,58 @@ p.colors__text {
 
 /*pref tests*/
 p.preftests__title {
+  font-size: 1.9em;
   font-weight: 600;
   margin-bottom: 0;
   padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+.img-preftest {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+.preftests__text {
+  font-size: 1.6em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+.preftests__text-bold {
+  font-weight: 700;
+}
+
+.wrapper__background__color-preftests {
+  background: rgb(238,238,238);
+  background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.5em;
+}
+
+/*user testing round 2 */
+
+.usertesting2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 
 
 /**** CONCLUSION ****/
 .conclusion {
-  background-image: url(../images/conclusion.png);
+  /* background-image: url(../images/conclusion.png); */
   background-size: cover;
   margin-top: 4em;
   padding-top: 2em;
@@ -914,9 +1026,55 @@ ul.to-top a {
   margin-top: 1em;
   margin-bottom: 3em;
   width: 100%;
-
-
 }
+
+/* grid for wireframes */
+/* .wireframes {
+  column-count: 4;
+  column-gap: 4em;
+  max-height: 85em;
+} */
+
+/* .item {
+  background-color: white;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+} */
+
+.wireframe__img {
+  box-shadow: 4px 2px 12px grey;
+  margin-top: 1em;
+  vertical-align: middle;
+  width: 100%;
+  /* display: block;
+  width: 100%;
+  height: auto; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5em;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 2em;
+}
+
+/* pref test */
+
+
+
+
+
+
+
 
 
 /*homepage*/
@@ -1237,7 +1395,7 @@ input, .message-box {
     width: 100%;
   }
 
-  /* hero */
+  /* hero media queries */
   .hero__name {
     font-size: 5.5em;
     margin-bottom: 0.2em;
@@ -1253,7 +1411,7 @@ input, .message-box {
   }
 
 
- /* CASE STUDY intro */
+ /* CASE STUDY intro media queries */
  .logo__casestudy{
    margin-top: 2.5em;
    margin-bottom: 1em;
@@ -1292,9 +1450,19 @@ input, .message-box {
  }
 
  /* overview */
-.wrapper__casestudy {
-   margin-left: 40em;
-   margin-right: 40em;
+ .wrapper__casestudy {
+   margin-left: 27em;
+   margin-right: 27em;
+  }
+
+ .wrapper__background__color {
+   background: rgb(238,238,238);
+   background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
+ }
+
+ .wrapper__casestudy__img {
+   margin-left: 15em;
+   margin-right: 15em;
  }
 
  .section__subheading {
@@ -1307,13 +1475,7 @@ input, .message-box {
    width: 100%;
  }
 
- /* .solutions-screens {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   height: auto;
-   width: 100%;
- } */
+
 
 
 /* surveys */
@@ -1385,131 +1547,89 @@ input, .message-box {
 
  .vdubs-isometric2 {
    width: 75%;
-
  }
 
 
+ /* grid for wireframes */
+ @media only screen and (min-width: 767px) {
+   .wireframe__img {
+     box-shadow: 4px 2px 12px grey;
+     margin-top: 3em;
+     vertical-align: middle;
+     width: 100%;
+     /* display: block;
+     width: 100%;
+     height: auto; */
+   }
 
-/* things I need queries for:
-padding of nav bar in desktop
-nav {
-  background-color: #1B1826;
-  padding-left: 4em;
-  padding-right: 4em;
-  padding-bottom: 2em;
-  color: #F2E5E5;
-}
+   .row {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0 5em;
+   }
 
-.footer__connect {
-  font-size: 3em;
-  font-weight: 300;
-  padding-bottom: 0.6em;
-  text-align: center;
-}
-
-.social__flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 40%;
-  margin: auto;
-}
-
+   .column {
+     flex: 25%;
+     max-width: 25%;
+     padding: 0 2em;
+   }
+ }
 
 
-.about.title {
-  font-size: 2.3em;
-  font-weight: 600;
-  line-height: 1.6em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  margin-left: 6em;
-  margin-right: 6em;
-  text-align: center;
-}
+ /* branding */
 
-.about.header {
-  font-size: 1.9em;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-  margin-top: 2em;
-}
+ .circle {
+   border-radius: 50%;
+   width: 5em;
+   height: 5em;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
 
-.about.image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4em;
-}
-
-.about__wrapper {
-  margin-left: 4em;
-  margin-right: 4em;
-}
-
-.project_button.contact {
-  margin-top: 0;
-}
+ /* user testing round 1 media query */
+ .usertesting1 {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 70%;
+ }
 
 
-.wrapper__contact {
+/* pref tests media queries */
+  p.preftests__title {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    text-align: center;
+  }
 
-}
+  .img-preftest {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: auto;
+  }
 
+  p.preftests__text {
+    font-size: 1.8em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 3.5em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    text-align: center;
+  }
 
+  .wrapper__background__color-preftests {
+    background: rgb(238,238,238);
+    background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
+  }
 
-
-.contact__title {
-  font-size: 3em;
-  font-weight: 600;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  text-align: center;
-}
-
-.contact__text {
-  text-align: center;
-}
-
-.contact-form{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-input, .message-box {
-  border-color: #aaaaaa;
-  border-radius: 6px;
-  border-width: 1px;
-  display: block;
-  margin-top: .8em;
-  margin-bottom: 2.3em;
-}
-
-.input-box {
-  height: 3.5em;
-  width: 100%;
-}
-
-.message-box {
-  height: 9em;
-  width: 100%;
-}
-
-.form-text {
-  font-size: 1.7em;
-  font-weight: 600;
-}
-
-
-
-
-
-
-
-spacing of footer icons in desktop - make width 25%
-
-
-
-*/
+  /* user testing round2 media query */
+  .usertesting2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
