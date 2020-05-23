@@ -21,10 +21,6 @@ a {
   text-decoration: none;
 }
 
-
-
-
-
 h1, h2, h3, h4, p {
   margin-bottom: 1em;
 }
@@ -128,14 +124,14 @@ h1, h2, h3, h4, p {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+/* .overlay a:hover, .overlay a:focus {
   color: #35B999;
-}
+} */
 
 .overlay .closebtn {
   position: absolute;
   top: 0.1em;
-  right: 0.3em
+  right: 0.3em;
   font-size: 6em;
 }
 
@@ -151,7 +147,7 @@ h1, h2, h3, h4, p {
 /***************/
 .fa.fa-bars {
   float: right;
-  padding-top: 0.7em;
+  padding-top: 1em;
 }
 
 .header__logo {   /*my logo */
@@ -185,7 +181,8 @@ nav ul{
 
 nav li{
   display: inline-block;
-  margin-left: 3em;
+  /* margin-left: 3em; */
+  margin: 0 2em;
   padding-top: 2em;
   position: relative;
 }
@@ -221,13 +218,38 @@ nav li a:hover::before {
 /**** HERO SECTION ***/
 .hero {
   background-color: #1B1826;
-  color: #F2E5E5;
+  /* color: #F2E5E5; */
   clear: both;
+  /* padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 4em;
+  padding-bottom: 2em;  */
+}
+
+.hero__maintext {
+  color: #F2E5E5;
   padding-left: 4em;
   padding-right: 4em;
   padding-top: 4em;
   padding-bottom: 2em;
 }
+
+.underline {
+  display: inline-block;
+  border-bottom: 1.5px solid #35B999;
+  line-height: 1.5em;
+}
+
+.hero__hello {
+  /* display: inline; */
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  /* border-bottom: 1.5px solid #35B999; */
+  /* padding-bottom: 0.3em;  */
+}
+
+
 
 .hero__name {
   font-size: 4em;
@@ -267,15 +289,15 @@ nav li a:hover::before {
 /***** PROJECTS SECTION (on homepage) ****/
 
 .project__title__homepage {
-  color: black;
-  font-size: 2.4em;
+  color: #1B1826;
+  font-size: 3em;
   font-weight: 600;
   margin-bottom: 0;
   text-align: center;
 }
 
 .project__summary__homepage {
-  color: black;
+  color: #1B1826;
   font-size: 1.7em;
   font-weight: 400;
   line-height: 1.5em;
@@ -285,6 +307,12 @@ nav li a:hover::before {
   text-align: center;
   padding-bottom: 0;
   padding-top: 0.2em;
+}
+
+.vdubs__logo {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 13%;
 }
 
 .project_button_homepage {
@@ -309,12 +337,11 @@ nav li a:hover::before {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   text-align: center;
   width: 80%;
   box-shadow: 4px 2px 12px grey;
-/* border: 5px solid red; */
 }
 
 .cover {
@@ -324,10 +351,7 @@ nav li a:hover::before {
   padding: 0;
 }
 
-.vdubs__logo {
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
+
 
 
 /***** CASE STUDY *****/
@@ -337,21 +361,29 @@ nav li a:hover::before {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: rgb(238,238,238);
+  background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
 }
 
 .logo__casestudy {
-  margin-top: 2.5em;
+  width: 15%;
 }
 
 .project__title {
   font-size: 2.3em;
-  margin-top: 0.5em;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .project__summary {
-  font-size: 1.6em;
+  font-size: 1.8em;
   text-align: center;
+  margin-top: 1em;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
   padding-bottom: 0;
+  line-height: 1.4em;
 }
 
 /*buttons*/
@@ -382,10 +414,10 @@ nav li a:hover::before {
 
 /* Roles & Responsibilities */
 .deliverables__flex {
-  background-color: #F5E2FF;
   padding-top: 2.5rem;
   display: flex;
   flex-direction: column;
+  /* flex-flow: wrap; */
   justify-content: space-between;
 }
 
@@ -404,27 +436,52 @@ nav li a:hover::before {
   padding-bottom: 2rem;
 }
 
+.fa.deliverables-icons {
+  font-size: 2.7em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.role {
+  text-align: center;
+}
+
 
 /*Overview*/
 .main__header {
-  margin-top: 1em;
-  margin-bottom: 0.3em;
+  /* margin-top: 1em; */
+  margin-bottom: 2.3em;
   font-size: 1.7em;
+  font-weight: 500;
   text-transform: uppercase;
-  /* font-weight: 300; */
+  position: relative;
+  color: #35B999;
 }
+
+/* .main__header::before {
+  display: inline-block;
+  content: "";
+  border-top: 1.5px solid #35B999;
+  width: 4rem;
+  margin: 0 1rem;
+  margin-left: 0;
+  transform: translateY(-0.5rem);
+} */
+
+
+
+
 
 hr {
   display: block;
-  margin-top: 0em;
-  margin-bottom: 3em;
-  margin-left: -3em;
+  margin-top: 4em;
+  margin-left: 0;
   margin-right: auto;
   border-color: #35B999;
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
-  width: 55%;
+  border-width: 1px;
+  width: 13%;
 }
 
 .prob-sol-con {
@@ -479,7 +536,7 @@ nav.project__nav {
 
 /* Cars and Coffee */
 .list {
-  font-size: 1.6em;
+  font-size: 1.7em;
   font-weight: 600;
   list-style: none;
   margin-left: 1.5em;
@@ -487,9 +544,8 @@ nav.project__nav {
 }
 
 .list.numbered li{
-  /* list-style-type: decimal; */
   line-height: 1.7em;
-  margin-top: 1.2em;
+  margin-top: 1em;
   counter-increment: li;
 }
 
@@ -534,14 +590,14 @@ ol.list.numbered li::before {
 
 .section__subheading {
   margin-top: 1em;
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: 300;
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin-bottom: -0.5em;
 }
 
 .section__heading {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 600;
   line-height: 1.5em;
   margin-bottom: 1em;
@@ -553,29 +609,24 @@ ol.list.numbered li::before {
 
 /*survey*/
 ul.survey {
-  font-size: 1.6em;
+  font-size: 1.7em;
   font-weight: 600;
   list-style: none;
   margin-left: 2em;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
 
 }
 
 .section__heading__survey {
-  font-size: 1.8em;
-  font-weight: 600;
+  font-size: 2.2em;
+  font-weight: 300;
   margin-bottom: 0.2em;
   margin-top: 0.5em;
 }
 
-.survey_learning {
-  font-size: 1.7em;
-  margin-bottom: 1em;
-  padding-bottom: 0;
-}
 
 ul.survey li {
-  line-height: 1.7em;
+  line-height: 1.6em;
   margin-top: 1.2em;
 
 }
@@ -642,38 +693,50 @@ h4  {
 
 .persona__name {
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
   text-align: center;
 }
 
 .persona__id {
-  font-size: 1.6em;
+  font-size: 1.7em;
   font-weight: 300;
-  margin-bottom: 1.9em;
+  margin-bottom: 2.5em;
   padding: 0;
   text-align: center;
 }
 
 .motivations_frustrations {
-  font-size: 1.8em;
-  font-weight: 600;
+  font-size: 1.9em;
+  font-weight: 700;
   margin-bottom: 0.2em;
   text-align: center;
 }
 
 .persona__description {
   text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .persona__image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  margin-top: 3em;
 }
 
+.persona__image.one {
+  margin-top: 0.5em;
+}
+
+/* user stories */
+.userstories {
+  margin-bottom: 1.5em;
+  padding-bottom: 0;
+  line-height: 0;
+}
 
 
 /* user flows */
@@ -693,6 +756,12 @@ h4  {
 
 
 /* user testing */
+
+.section__heading__survey.results-one {
+  margin-bottom: 0;
+  margin-top: 2em;
+  padding-bottom: 0;
+}
 
 .results-list {
   counter-reset: li;
@@ -745,6 +814,7 @@ span.bullet-gap {
 
 .usertesting1 {
   display: block;
+  margin-bottom: 10em;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -761,7 +831,7 @@ span.bullet-gap {
 }
 
 p.colors__text {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 700;
   padding-bottom: 0;
   margin-top: 1em;
@@ -770,7 +840,8 @@ p.colors__text {
 
 .colors {
   text-align: center;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .circle {
@@ -825,8 +896,8 @@ p.colors__text {
 
 /*pref tests*/
 p.preftests__title {
-  font-size: 1.9em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 700;
   margin-bottom: 0;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
@@ -842,7 +913,7 @@ p.preftests__title {
 }
 
 .preftests__text {
-  font-size: 1.6em;
+  font-size: 1.7em;
   margin-left: 1em;
   margin-right: 1em;
   margin-bottom: 2em;
@@ -879,50 +950,7 @@ p.preftests__title {
   /* background-image: url(../images/conclusion.png); */
   background-size: cover;
   margin-top: 4em;
-  padding-top: 2em;
 }
-
-/*back to top */
-
-/* .to-top{
-	color: #1B1826;
-	padding-top:1.8em;
-	display:inline-block;
-	position:relative;
-	border-color: #1B1826;
-	text-decoration:none;
-  text-align: right;
-	transition:all .3s ease-out;
-} */
-
-/* .to-top:before{
-	content:'▲';
-	font-size:.9em;
-	position:absolute;
-	top:0;
-	left:50%;
-	margin-left:-.7em;
-	border:solid .13em white;
-	border-radius:10em;
-	width:1.4em;
-	height:1.4em;
-	line-height:1.3em;
-	border-color:inherit;
-	transition:transform .5s ease-in;
-} */
-
-/* .to-top:hover{
-	color:pink;
-	border-color:pink;
-} */
-
-/* .to-top:hover:before{
-	transform: rotate(360deg);
-} */
-
-
-
-
 
 
 
@@ -1058,13 +1086,14 @@ ul.to-top a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 5em;
+  padding: 0 1em;
+  margin-bottom: 5.5em;
 }
 
 .column {
   flex: 50%;
   max-width: 50%;
-  padding: 0 2em;
+  padding: 0 1.5em;
 }
 
 /* pref test */
@@ -1109,6 +1138,7 @@ footer {
   font-weight: 300;
   margin-bottom: 0;
   padding-bottom: 0.6em;
+  padding-top: 0.2em;
   text-align: center;
 }
 
@@ -1144,9 +1174,8 @@ footer {
   line-height: 1.6em;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 2em;
-  margin-right: 2em;
-  text-align: center;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
 }
 
 .about.header {
@@ -1158,8 +1187,7 @@ footer {
 
 .about.image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   /* margin-bottom: 4em; */
 }
 
@@ -1170,7 +1198,7 @@ footer {
 
 .project_button.contact {
   margin-top: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 
@@ -1202,8 +1230,7 @@ footer {
 
 .contact-form{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 60%;
 }
 
@@ -1240,96 +1267,60 @@ input, .message-box {
 /***** MEDIA QUERIES *****/
 
 
-/*nav bar */
-@media screen and (min-width: 760px) {
+/*Nav bar -- tablet media queries */
+@media screen and (min-width: 768px) {
   .fa.fa-bars {
     display: none;
   }
 
-  nav ul{
-    float: right;
-    font-size: 1.8em;
-    list-style: none;
-    text-transform: uppercase;
-
-  }
-
   nav li{
-    display: inline-block;
-    margin-left: 3em;
-    padding-top: 2em;
-    position: relative;
-  }
-
-  nav li a{
-    color: #F2E5E5;
-  }
-
-  nav li a:hover {
-    color: #35B999;
-  }
-
-  nav li a:active {
-    color: #35B999;
-  }
-
-  nav li a::before {
-    background-color: #35B999;
-    content: '';
-    display: block;
-    height: 3px;
-    width: 0%;
-    position: absolute;
-    top: 0;
-    transition: all ease-in-out 200ms;
-  }
-
-  nav li a:hover::before {
-    width: 100%;
-  }
+    margin: 0 1em;
 }
 
 
-@media screen and (max-width: 759px) {
-  ul.nav__desktop {
+@media only screen and (max-width: 767px) {
+  nav ul {
     display: none;
+
   }
 }
 
 
 @media screen and (min-width: 768px) {
   .cover {
-    display: none;
+    display: block;
   }
 
   .project {
-    background: url(../images/vdubs_isometric_resizeTEST.png) no-repeat;
+    /* background: url(../images/vdubs_isometric_resizeTEST.png) no-repeat; */
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
     align-items: center;
     display: flex;
     flex-direction: column;
     /* height: 30em; */
     justify-content: center;
     /* margin: auto; */
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
     width: 80%;
     max-width: 500px;
-    box-shadow: none;
-    /* box-shadow: 4px 2px 12px grey; */
-    filter: drop-shadow(4px 2px 12px gray);
-
+    /* box-shadow: none; */
+    /* filter: drop-shadow(4px 2px 12px gray); */
   }
 
-  .project-overlay {
+  .vdubs__logo {
+    width: 10%;
+  }
+
+  /* .project-overlay {
     visibility: hidden;
-  }
+  } */
 
-  .project:hover .project-overlay {
+  /* .project:hover .project-overlay {
     visibility: visible;
     background-color: rgba(255, 255, 255, 0.78);
-  }
+  } */
 }
 
 
@@ -1344,14 +1335,12 @@ input, .message-box {
     width: 21%;
     margin: auto;
   }
-}
 
 /* contact form */
-@media only screen and (min-width: 768px) {
   .wrapper__contact{
-    margin-left: 4em;
-    margin-right: 4em;
+    margin: 0 auto;
     margin-bottom: 3em;
+    width: 55%;
   }
 
   .contact__title {
@@ -1360,21 +1349,17 @@ input, .message-box {
 
   .contact__text {
     font-size: 1.8em;
-    margin-left: 9em;
-    margin-right: 9em;
   }
 
   .contact-form{
     width: 55%;
   }
-}
 
 /* About -- tablet media queries */
-@media only screen and (min-width: 768px) {
   .about.title {
     font-size: 2.5em;
-    margin-left: 4.5em;
-    margin-right: 4.5em;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
   }
 
   .about__wrapper {
@@ -1393,12 +1378,20 @@ input, .message-box {
     margin-right: 7em;
   }
 
+  .about.image {
+    width: 45%;
+  }
+
   .about__wrapper {
-    margin-left: 25em;
-    margin-right: 25em;
+    margin: 0 auto;
+    width: 45%;
   }
 }
 
+
+/************************
+  TABLET MEDIA QUERIES
+*************************/
 
 @media only screen and (min-width: 768px) {
   /* nav bar */
@@ -1411,55 +1404,86 @@ input, .message-box {
     width: 100%;
   }
 
-  /* hero media queries */
+  /* hero -- tablet media queries */
+
   .hero__name {
     font-size: 5.5em;
-    margin-bottom: 0.2em;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
   }
 
   .hero__profession {
-    font-size: 4em;
+    font-size: 3.7em;
+    letter-spacing: 0.9px;
     margin-bottom: 0.2em;
   }
 
   .hero__story {
     font-size: 2.5em;
+    letter-spacing: 0.9px;
+
+  }
+
+  .project__title__homepage { /*this cover desktop as well */
+    font-size: 3.5em;
+  }
+
+  .project__summary__homepage {
+    font-size: 1.8em;
   }
 
 
 
-/************************
-  TABLET MEDIA QUERIES
-*************************/
-
  /* Case Study Hero -- tablet media queries */
  .logo__casestudy{
-   margin-top: 2.5em;
-   margin-bottom: 0.5em;
-   width: 11%;
+   margin-top: 2em;
+   margin-bottom: 1em;
+   width: 10%;
  }
 
  .project__title {
    font-size: 3em;
-   margin-top: 0;
+   margin-top: 1.5em;
    margin-bottom: 0;
  }
 
  .project__summary {
-   font-size: 2em;
+   font-size: 2.4em;
    padding-bottom: 0;
+   line-height: 1.5em;
  }
+
+ /* overview -- tablet media queries */
+
+ hr {
+   width: 6%;
+ }
+
+ /* roles and Responsibilities -- tablet media queries */
+
+
 
  /*******************************
    DESKTOP-LAPTOP MEDIA QUERIES
  ********************************/
 
- /* Case Study Hero -- desktop media queries */
+
+
 @media only screen and (min-width: 1024px) {
- .logo__casestudy{
+  .hero__maintext {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  /* Case study on homepage -- desktop */
+
+
+  /* Case Study Hero -- desktop media queries */
+ .logo__casestudy {
    margin-top: 2.5em;
    margin-bottom: 1em;
-   width: 13%;
+   width: 9%;
  }
 
  .project__title {
@@ -1474,15 +1498,18 @@ input, .message-box {
 
 
  /* Roles & Responsibilities -- desktop media queries */
- @media only screen and (min-width: 1024px) {
  .deliverables__flex {
    flex-direction: row;
    justify-content: space-around;
    padding-bottom: 1em;
+   margin-left: 15em;
+   margin-right: 15em;
+   margin-top: 3em;
+   margin-bottom: 5em;
  }
 
  .vl {
-   border-left: 1px solid purple;
+   border-left: 1px solid #d4d4d4;
    height: 310px;
  }
 
@@ -1498,8 +1525,8 @@ input, .message-box {
 
  /* Overview -- desktop media queries */
  .wrapper__casestudy {
-   margin-left: 27em;
-   margin-right: 27em;
+   margin-left: 25em;
+   margin-right: 25em;
   }
 
  .wrapper__background__color {
@@ -1519,11 +1546,8 @@ input, .message-box {
 
  hr {
    margin-left: 0;
-   width: 100%;
+   width: 7%;
  }
-
-
-
 
 /* Surveys -- desktop media queries */
 
@@ -1589,6 +1613,7 @@ input, .message-box {
  .vdubs-isometric2 {
    width: 75%;
  }
+}
 
 
  /* Grid for wireframes -- desktop media queries */
