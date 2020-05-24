@@ -917,8 +917,7 @@ p.preftests__title {
 
 .preftests__text {
   font-size: 1.7em;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: 0 auto;
   margin-bottom: 2em;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
@@ -932,8 +931,7 @@ p.preftests__title {
 .wrapper__background__color-preftests {
   background: rgb(238,238,238);
   background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 0 2em;
   padding-bottom: 0.5em;
 }
 
@@ -1514,13 +1512,37 @@ input, .message-box {
    width: 78%;
  }
 
- /* overview -- tablet media queries */
+ /* OVERVIEW -- TABLET MEDIA QUERY */
 
  hr {
    width: 6%;
  }
 
- /* roles and Responsibilities -- tablet media queries */
+ /* PERSONAS WRAPPER -- TABLET MEDIA QUERY */
+
+ .wrapper__personas {
+   margin: 0 auto;
+   width: 75%;
+ }
+
+ /* COLOR PALETTE -- TABLET MEDIA QUERY */
+ .circle {
+   height: 5em;
+   width: 5em;
+ }
+
+ .colors {
+   padding: 0 2.5em;
+ }
+
+ /* PREF TESTS -- TABLET MEDIA QUERY */
+ .preftests__text {
+   width: 80%;
+ }
+
+ .wrapper__background__color-preftests {
+   padding: 0 4em;
+ }
 
 }
 
@@ -1636,7 +1658,7 @@ input, .message-box {
  }
 
 
-/* Personas -- desktop media queries */
+/* PERSONAS -- desktop media queries */
   .personas__flex {
     display: flex;
     flex-direction: row;
@@ -1648,9 +1670,18 @@ input, .message-box {
     margin-right: 4em;
   }
 
+  .persona__image.one {
+    margin-top: 3em;
+  }
+
  .persona__description {
    max-width: 16em;
    text-align: center;
+ }
+
+ /* PREF TESTS -- DESKTOP MEDIA QUERY */
+ .wrapper__background__color-preftests {
+   padding: 0 10em;
  }
 
 
@@ -1737,10 +1768,9 @@ input, .message-box {
     height: auto;
   }
 
-  p.preftests__text {
+  .preftests__text {
     font-size: 1.8em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 0 auto;
     margin-bottom: 3.5em;
     padding-bottom: 0.5em;
     padding-top: 0.5em;

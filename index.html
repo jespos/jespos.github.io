@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167525485-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167525485-1');
+  </script>
+  
   <title> Portfolio | Jolene Esposito </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +45,7 @@
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-          <a href="index.html#work">Work</a>
+          <a href="index.html#work" onclick="closeNav()">Work</a>
           <a href="about.html">About</a>
           <a href="esposito_resume.pdf" target="_blank">Resume</a>
           <a href="contact.html">Contact</a>
