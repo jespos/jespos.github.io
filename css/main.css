@@ -101,18 +101,20 @@ h1, h2, h3, h4, p {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  /* background-color: rgb(0,0,0); */
+  background-color: rgba(0,0,0, 0.97);
   overflow-x: hidden;
   transition: 0.5s;
 }
 
 .overlay-content {
+  line-height: 4.5em;
+  margin-top: 3em;
   position: relative;
   top: 25%;
-  width: 100%;
   text-align: center;
-  margin-top: 30px;
+  width: 100%;
+
 }
 
 .overlay a {
@@ -130,7 +132,7 @@ h1, h2, h3, h4, p {
 
 .overlay .closebtn {
   position: absolute;
-  top: 0.1em;
+  top: -0.1em;
   right: 0.3em;
   font-size: 6em;
 }
@@ -147,7 +149,7 @@ h1, h2, h3, h4, p {
 /***************/
 .fa.fa-bars {
   float: right;
-  padding-top: 1em;
+  padding-top: 0.2em;
 }
 
 .header__logo {   /*my logo */
@@ -157,7 +159,6 @@ h1, h2, h3, h4, p {
 
 .logo {
   display: inline-block;
-  padding-top: 2em;
 }
 
 
@@ -166,7 +167,7 @@ nav {
   padding-left: 3em;
   padding-right: 3em;
   padding-bottom: 2em;
-  /* padding-top: 2em; */
+  padding-top: 2em;
   color: #F2E5E5;
 }
 
@@ -174,16 +175,15 @@ nav ul{
   float: right;
   font-size: 1.8em;
   list-style: none;
-  padding-top: 0.3em;
+  /* padding-top: 0.3em; */
   text-transform: uppercase;
 
 }
 
 nav li{
   display: inline-block;
-  /* margin-left: 3em; */
-  margin: 0 2em;
-  padding-top: 2em;
+  margin: 0 1.5em;
+  padding-top: 1em;
   position: relative;
 }
 
@@ -333,15 +333,13 @@ nav li a:hover::before {
 
 .project {
   align-items: center;
+  box-shadow: 4px 2px 12px grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin: 5em auto;
   text-align: center;
   width: 80%;
-  box-shadow: 4px 2px 12px grey;
 }
 
 .cover {
@@ -366,20 +364,22 @@ nav li a:hover::before {
 }
 
 .logo__casestudy {
+  display: block;
+  margin: 0 auto;
+  margin-top: 3em;
   width: 15%;
 }
 
 .project__title {
-  font-size: 2.3em;
+  font-size: 3em;
   font-weight: 700;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 .project__summary {
   font-size: 1.8em;
   text-align: center;
-  margin-top: 1em;
   margin-left: 0.7em;
   margin-right: 0.7em;
   padding-bottom: 0;
@@ -522,39 +522,42 @@ nav.project__nav {
 }
 
 
-.logo__casestudy{
+/* .logo__casestudy{
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
   margin-bottom: 2em;
   width: 28%;
-}
+} */
 
 
 
 
 /* Cars and Coffee */
-.list {
+ol.numbered {
   font-size: 1.7em;
   font-weight: 600;
   list-style: none;
-  margin-left: 1.5em;
-  margin-bottom: 2.5em;
+  margin-left: 2em;
+  margin-bottom: 2em;
 }
 
-.list.numbered li{
+.numbered li {
+  font-size: 1.7em;
+  font-weight: 600;
   line-height: 1.7em;
   margin-top: 1em;
   counter-increment: li;
+
 }
 
-ol.list.numbered li::before {
+ol.numbered li::before {
   content: counter(li);
   color: #35B999;
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-left: 1em; /* Also needed for space (tweak if needed) */
 }
 
 
@@ -590,16 +593,16 @@ ol.list.numbered li::before {
 
 .section__subheading {
   margin-top: 1em;
-  font-size: 2em;
-  font-weight: 300;
+  font-size: 2.2em;
+  /* font-weight: 300; */
   padding-bottom: 0;
-  margin-bottom: -0.5em;
+  margin-bottom: -0.3em;
 }
 
 .section__heading {
-  font-size: 2.5em;
-  font-weight: 600;
-  line-height: 1.5em;
+  font-size: 2.8em;
+  font-weight: 700;
+  line-height: 1.2em;
   margin-bottom: 1em;
 }
 
@@ -1117,14 +1120,21 @@ ul.to-top a {
 
 
 
-/*** Footer ***/
+/*******************
+      Footer
+********************/
 
 .copywrite {
   font-size: 1.3em;
-  margin-top: 2rem;
+  letter-spacing: 0.07em;
   line-height: 2rem;
-  text-align: center;
+  margin-top: 2rem;
   padding-bottom: 0;
+  text-align: center;
+}
+
+.fa.fa-heart {
+  color: #35B999;
 }
 
 footer {
@@ -1146,7 +1156,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 50%;
+  width: 55%;
   margin: auto;
 }
 
@@ -1267,29 +1277,68 @@ input, .message-box {
 /***** MEDIA QUERIES *****/
 
 
-/*Nav bar -- tablet media queries */
+/*nav bar */
 @media screen and (min-width: 768px) {
   .fa.fa-bars {
     display: none;
   }
 
+  nav ul{
+    float: right;
+    font-size: 1.8em;
+    list-style: none;
+    text-transform: uppercase;
+
+  }
+
   nav li{
+    display: inline-block;
+    /* margin-left: 3em; */
     margin: 0 1em;
+    /* padding-top: 2em; */
+    position: relative;
+  }
+
+  nav li a{
+    color: #F2E5E5;
+  }
+
+  nav li a:hover {
+    color: #35B999;
+  }
+
+  nav li a:active {
+    color: #35B999;
+  }
+
+  nav li a::before {
+    background-color: #35B999;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 200ms;
+  }
+
+  nav li a:hover::before {
+    width: 100%;
+  }
 }
 
 
-@media only screen and (max-width: 767px) {
-  nav ul {
+@media screen and (max-width: 767px) {
+  ul.nav__desktop {
     display: none;
-
   }
 }
 
 
 @media screen and (min-width: 768px) {
-  .cover {
+  /* .cover {
     display: block;
-  }
+  } */
 
   .project {
     /* background: url(../images/vdubs_isometric_resizeTEST.png) no-repeat; */
@@ -1329,11 +1378,8 @@ input, .message-box {
 /* footer */
 @media only screen and (min-width: 768px) {
   .social__flex { /*changing how close together the icons are */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 21%;
-    margin: auto;
+    width: 27%;
+
   }
 
 /* contact form */
@@ -1435,23 +1481,37 @@ input, .message-box {
 
 
 
- /* Case Study Hero -- tablet media queries */
+ /* CASE STUDY HERO -- tablet media queries */
+
+ .casestudy__hero__top {
+   margin: 0 auto;
+   width: 73%;
+ }
+
  .logo__casestudy{
+   margin: 0 auto;
    margin-top: 2em;
    margin-bottom: 1em;
    width: 10%;
  }
 
  .project__title {
-   font-size: 3em;
-   margin-top: 1.5em;
+   font-size: 3.4em;
+   margin-top: 0;
    margin-bottom: 0;
+   text-align: center;
  }
 
  .project__summary {
    font-size: 2.4em;
    padding-bottom: 0;
    line-height: 1.5em;
+ }
+
+ /* WRAPPER -- TABLET MEDIA QUERY */
+ .wrapper__casestudy {
+   margin: 0 auto;
+   width: 78%;
  }
 
  /* overview -- tablet media queries */
@@ -1462,13 +1522,11 @@ input, .message-box {
 
  /* roles and Responsibilities -- tablet media queries */
 
-
+}
 
  /*******************************
    DESKTOP-LAPTOP MEDIA QUERIES
  ********************************/
-
-
 
 @media only screen and (min-width: 1024px) {
   .hero__maintext {
@@ -1476,8 +1534,10 @@ input, .message-box {
     width: 85%;
   }
 
-  /* Case study on homepage -- desktop */
-
+  /* NAVIGATION -- desktop */
+  nav li {
+    margin: 0 1.5em;
+  }
 
   /* Case Study Hero -- desktop media queries */
  .logo__casestudy {
@@ -1525,8 +1585,8 @@ input, .message-box {
 
  /* Overview -- desktop media queries */
  .wrapper__casestudy {
-   margin-left: 25em;
-   margin-right: 25em;
+   margin: 0 auto;
+   width: 55%;
   }
 
  .wrapper__background__color {
@@ -1639,7 +1699,7 @@ input, .message-box {
    max-width: 25%;
    padding: 0 2em;
  }
-}
+
 
 
  /* Branding -- desktop media queries */
@@ -1698,3 +1758,9 @@ input, .message-box {
     margin-left: auto;
     margin-right: auto;
   }
+
+/* FOOTER - desktop media query */
+ .social__flex {
+   width: 37%;
+ }
+}
