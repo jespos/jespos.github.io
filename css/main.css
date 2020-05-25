@@ -519,18 +519,6 @@ nav.project__nav {
 .project__nav a:hover {
   color: #35B999;
   }
-}
-
-
-/* .logo__casestudy{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3em;
-  margin-bottom: 2em;
-  width: 28%;
-} */
-
 
 
 
@@ -539,14 +527,12 @@ ol.numbered {
   font-size: 1.7em;
   font-weight: 600;
   list-style: none;
-  margin-left: 2em;
+  line-height: 1.7em;
+  margin-left: 1em;
   margin-bottom: 2em;
 }
 
 .numbered li {
-  font-size: 1.7em;
-  font-weight: 600;
-  line-height: 1.7em;
   margin-top: 1em;
   counter-increment: li;
 
@@ -556,8 +542,9 @@ ol.numbered li::before {
   content: counter(li);
   color: #35B999;
   display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
+  font-weight: 700;
   margin-left: 1em; /* Also needed for space (tweak if needed) */
+  width: 1em; /* Also needed for space (tweak if needed) */
 }
 
 
@@ -817,9 +804,8 @@ span.bullet-gap {
 
 .usertesting1 {
   display: block;
-  margin-bottom: 10em;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-bottom: 10em; */
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -943,6 +929,14 @@ p.preftests__title {
   margin-right: auto;
   width: 80%;
 }
+
+.wrapper__background__color {
+  background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
+  padding: 3em 0;
+  margin-bottom: 5em;
+}
+
+
 
 
 
@@ -1088,7 +1082,7 @@ ul.to-top a {
   display: flex;
   flex-wrap: wrap;
   padding: 0 1em;
-  margin-bottom: 5.5em;
+  margin-bottom: 1em;
 }
 
 .column {
@@ -1612,7 +1606,6 @@ input, .message-box {
   }
 
  .wrapper__background__color {
-   background: rgb(238,238,238);
    background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
  }
 
@@ -1744,8 +1737,7 @@ input, .message-box {
  /* User Testing Round 1 -- desktop media queries */
  .usertesting1 {
    display: block;
-   margin-left: auto;
-   margin-right: auto;
+   margin: 0 auto;
    width: 70%;
  }
 
