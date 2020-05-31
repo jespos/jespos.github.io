@@ -6,6 +6,7 @@
 html {
   background-color: #FFFFFF;
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -24,6 +25,43 @@ a {
 h1, h2, h3, h4, p {
   margin-bottom: 1em;
 }
+
+
+/****************************/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: #35B999; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  /*padding: 15px; Some padding */
+  border-radius: 50%; /* circle */
+  font-size: 18px; /* Increase font size */
+  box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.25);
+  height: 3em;
+  width: 3em;
+}
+
+.fa.fa-angle-up {
+  font-size: 2em;
+}
+
+#myBtn:hover {
+  background-color: #E5E5E5; /*grey background on hover */
+}
+
+
+
+
+
+
+
+
 
 /****************************KEYFRAMES ******************/
 .down-arrow {
@@ -249,8 +287,6 @@ nav li a:hover::before {
   /* padding-bottom: 0.3em;  */
 }
 
-
-
 .hero__name {
   font-size: 4em;
   font-weight: 300;
@@ -282,7 +318,6 @@ nav li a:hover::before {
   text-decoration: none;
   color: #F2E5E5;
 }
-
 
 
 
@@ -327,8 +362,8 @@ nav li a:hover::before {
   text-decoration: none;
   display: inline-block;
   font-size: 1.7em;
-  margin-top: 1em;
-  margin-bottom: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .project_button_homepage:hover {
@@ -463,20 +498,6 @@ nav li a:hover::before {
   color: #35B999;
 }
 
-/* .main__header::before {
-  display: inline-block;
-  content: "";
-  border-top: 1.5px solid #35B999;
-  width: 4rem;
-  margin: 0 1rem;
-  margin-left: 0;
-  transform: translateY(-0.5rem);
-} */
-
-
-
-
-
 hr {
   display: block;
   margin-top: 4em;
@@ -523,7 +544,9 @@ nav.project__nav {
 
 .project__nav a:hover {
   color: #35B999;
-  }
+}
+
+
 
 
 
@@ -902,7 +925,7 @@ p.preftests__title {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
@@ -977,13 +1000,19 @@ ul.to-top a {
 }
 
 .user-flow-vertical {
+  display: block;
   height: auto;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .user-flow-horizontal {
   height: auto;
   width: 100%;
+  border-color: #aaaaaa;
+  border-radius: 6px;
+  border-width: 10px;
+
 }
 
 .wireframe-sketches {
@@ -1013,10 +1042,8 @@ ul.to-top a {
 .moodboard {
   display: block;
   height: auto;
+  margin: 2em auto;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2em;
 }
 
 .logo-sketches-mobile {
@@ -1086,8 +1113,9 @@ ul.to-top a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 1em;
-  margin-bottom: 1em;
+  /* padding: 0 1em;
+  margin-bottom: 1em; */
+  margin: 2em auto;
 }
 
 .column {
@@ -1179,10 +1207,7 @@ footer {
   font-size: 2.3em;
   font-weight: 600;
   line-height: 1.6em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 1.2em;
-  margin-right: 1.2em;
+  margin: 1em 1.3em;
 }
 
 .about.header {
@@ -1195,12 +1220,11 @@ footer {
 .about.image {
   display: block;
   margin: 0 auto;
-  /* margin-bottom: 4em; */
+  width: 100%;
 }
 
 .about__wrapper {
-  margin-left: 3em;
-  margin-right: 3em;
+  margin: 0 3em;
 }
 
 .project_button.contact {
@@ -1399,36 +1423,40 @@ input, .message-box {
     width: 55%;
   }
 
-/* About -- tablet media queries */
+  /* ABOUT PAGE -- TABLET */
   .about.title {
     font-size: 2.5em;
-    margin-left: 3.5em;
-    margin-right: 3.5em;
-  }
-
-  .about__wrapper {
-    margin-left: 10em;
-    margin-right: 10em;
-  }
-}
-
-
-
-/* About -- desktop media queries */
-@media only screen and (min-width: 1024px) {
-  .about.title {
-    font-size: 2.5em;
-    margin-left: 7em;
-    margin-right: 7em;
+    margin: 1em auto;
+    width: 60%;
   }
 
   .about.image {
-    width: 45%;
+    width: 60%;
   }
 
   .about__wrapper {
     margin: 0 auto;
-    width: 45%;
+    width: 60%;
+  }
+
+}
+
+
+
+/* ABOUT PAGE  -- DESKTOP */
+@media only screen and (min-width: 1024px) {
+  .about.title {
+    font-size: 3.1em;
+    margin: 1em auto;
+  }
+
+  .about.image {
+    width: 60%;
+  }
+
+  .about__wrapper {
+    margin: 0 auto;
+    width: 60%;
   }
 }
 
@@ -1479,6 +1507,8 @@ input, .message-box {
 
 
 
+
+
  /* CASE STUDY HERO -- tablet media queries */
 
  .casestudy__hero__top {
@@ -1519,9 +1549,13 @@ input, .message-box {
  }
 
  /* PERSONAS WRAPPER -- TABLET MEDIA QUERY */
-
  .wrapper__personas {
    margin: 0 auto;
+   width: 75%;
+ }
+
+ /* WIREFRAMES -- TABLET */
+ .row {
    width: 75%;
  }
 
@@ -1584,10 +1618,8 @@ input, .message-box {
    flex-direction: row;
    justify-content: space-around;
    padding-bottom: 1em;
-   margin-left: 15em;
-   margin-right: 15em;
-   margin-top: 3em;
-   margin-bottom: 5em;
+   margin: 0 auto;
+   width: 85%;
  }
 
  .vl {
@@ -1648,8 +1680,9 @@ input, .message-box {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
-   margin-left: 15em;
-   margin-right: 15em;
+   margin: 0 auto;
+   max-width: 75%;
+
  }
 
  .results__summary {
@@ -1662,12 +1695,18 @@ input, .message-box {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 0 auto;
+    width: 94%;
   }
 
-  .persona-one, .persona-two, .persona-three {
+  .wrapper__personas {
+    width: 100%;
+  }
+
+  /* .persona-one, .persona-two, .persona-three {
     margin-left: 4em;
     margin-right: 4em;
-  }
+  } */
 
   .persona__image.one {
     margin-top: 3em;
@@ -1721,7 +1760,7 @@ input, .message-box {
  .row {
    display: flex;
    flex-wrap: wrap;
-   padding: 0 5em;
+   padding: 0 9em;
  }
 
  .column {
@@ -1738,6 +1777,10 @@ input, .message-box {
    width: 5em;
    height: 5em;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ .moodboard {
+   max-width: 70%;
  }
 
  /* User Testing Round 1 -- desktop media queries */
@@ -1762,7 +1805,7 @@ input, .message-box {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
+    width: 60%;
     height: auto;
   }
 
@@ -1793,6 +1836,69 @@ input, .message-box {
  }
 }
 
+/***************************
+ LARGE SCREEN MEDIA QUERIES
+ ***************************/
+@media only screen and (min-width: 1201px) {
+  /* CONTACT PAGE */
+  .contactandform__wrapper {
+    max-width: 65%;
+    margin: 0 auto;
+  }
+
+  .social__flex {
+    max-width: 17%;
+  }
+
+  /* ABOUT PAGE */
+  .about.title {
+    font-size: 3.2em;
+    margin: 1em auto;
+    max-width: 42%;
+  }
+
+  .about.image {
+    max-width: 42%
+  }
+
+  .about__wrapper {
+    max-width: 42%;
+  }
+
+  /* CASE STUDY - LARGE SCREENS */
+  .wrapper__casestudy {
+    max-width: 50%;
+  }
+
+  .deliverables__flex {
+    max-width: 70%;
+  }
+
+  .survey__results__flexbox { /* survey results display */
+    max-width: 60%;
+  }
+
+  .personas__flex {
+    max-width: 80%;
+  }
+
+  .moodboard {
+    max-width: 65%;
+  }
+
+  .row { /* wireframe screens */
+    padding: 0 17em;
+  }
+
+
+
+
+}
+
+
+
+/* FOOTER */
+
 
 .contactpage__container {
   position: relative;
@@ -1808,5 +1914,5 @@ input, .message-box {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 17em;
+  height: 18em;
 }
