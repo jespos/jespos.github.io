@@ -446,6 +446,10 @@ nav li a:hover::before {
   width: 12em;
 }
 
+.project_button:hover {
+  background-color: #85D5C1;
+}
+
 .wrapper__casestudy {
   margin-left: 2.5em;
   margin-right: 2.5em;
@@ -1231,6 +1235,9 @@ footer {
   margin-top: 1.5em;
   margin-bottom: 3em;
 }
+.project_button.contact:hover {
+  background-color: #85D5C1;
+}
 
 
 
@@ -1295,11 +1302,19 @@ input, .message-box {
   margin-bottom: 2em;
 }
 
+.project_button.send:hover {
+  background-color: #85D5C1;
+}
+
+
 
 /***** MEDIA QUERIES *****/
 
+/************************
+  TABLET MEDIA QUERIES
+*************************/
 
-/*nav bar */
+/*NAV BAR -- TABLET */
 @media screen and (min-width: 768px) {
   .fa.fa-bars {
     display: none;
@@ -1350,6 +1365,10 @@ input, .message-box {
 }
 
 
+/******************************************
+TRANSITION FROM HAMBURGER TO NAVIGATION BAR
+*******************************************/
+
 @media screen and (max-width: 767px) {
   ul.nav__desktop {
     display: none;
@@ -1392,16 +1411,14 @@ input, .message-box {
     visibility: visible;
     background-color: rgba(255, 255, 255, 0.78);
   } */
-}
+
 
 
 
 
 /* footer */
-@media only screen and (min-width: 768px) {
   .social__flex { /*changing how close together the icons are */
     width: 27%;
-
   }
 
 /* contact form */
@@ -1439,33 +1456,7 @@ input, .message-box {
     width: 60%;
   }
 
-}
 
-
-
-/* ABOUT PAGE  -- DESKTOP */
-@media only screen and (min-width: 1024px) {
-  .about.title {
-    font-size: 3.1em;
-    margin: 1em auto;
-  }
-
-  .about.image {
-    width: 60%;
-  }
-
-  .about__wrapper {
-    margin: 0 auto;
-    width: 60%;
-  }
-}
-
-
-/************************
-  TABLET MEDIA QUERIES
-*************************/
-
-@media only screen and (min-width: 768px) {
   /* nav bar */
   nav {
     padding-left: 5em;
@@ -1476,7 +1467,7 @@ input, .message-box {
     width: 100%;
   }
 
-  /* hero -- tablet media queries */
+  /* HERO -- TABLET */
 
   .hero__name {
     font-size: 5.5em;
@@ -1505,11 +1496,7 @@ input, .message-box {
     font-size: 1.8em;
   }
 
-
-
-
-
- /* CASE STUDY HERO -- tablet media queries */
+ /* CASE STUDY HERO -- TABLET */
 
  .casestudy__hero__top {
    margin: 0 auto;
@@ -1536,19 +1523,19 @@ input, .message-box {
    line-height: 1.5em;
  }
 
- /* WRAPPER -- TABLET MEDIA QUERY */
+ /* WRAPPER -- TABLET  */
  .wrapper__casestudy {
    margin: 0 auto;
    width: 78%;
  }
 
- /* OVERVIEW -- TABLET MEDIA QUERY */
+ /* OVERVIEW -- TABLET  */
 
  hr {
    width: 6%;
  }
 
- /* PERSONAS WRAPPER -- TABLET MEDIA QUERY */
+ /* PERSONAS WRAPPER -- TABLET  */
  .wrapper__personas {
    margin: 0 auto;
    width: 75%;
@@ -1577,7 +1564,6 @@ input, .message-box {
  .wrapper__background__color-preftests {
    padding: 0 4em;
  }
-
 }
 
  /*******************************
@@ -1595,7 +1581,7 @@ input, .message-box {
     margin: 0 1.5em;
   }
 
-  /* Case Study Hero -- desktop media queries */
+  /* Case Study Hero -- desktop  */
  .logo__casestudy {
    margin-top: 2.5em;
    margin-bottom: 1em;
@@ -1613,7 +1599,7 @@ input, .message-box {
  }
 
 
- /* Roles & Responsibilities -- desktop media queries */
+ /* Roles & Responsibilities -- desktop  */
  .deliverables__flex {
    flex-direction: row;
    justify-content: space-around;
@@ -1637,7 +1623,7 @@ input, .message-box {
  }
 
 
- /* Overview -- desktop media queries */
+ /* Overview -- desktop  */
  .wrapper__casestudy {
    margin: 0 auto;
    width: 55%;
@@ -1662,7 +1648,7 @@ input, .message-box {
    width: 7%;
  }
 
-/* Surveys -- desktop media queries */
+/* Surveys -- desktop */
 
  .section__heading__survey {
    font-size: 1.8em;
@@ -1690,7 +1676,7 @@ input, .message-box {
  }
 
 
-/* PERSONAS -- desktop media queries */
+/* PERSONAS -- desktop  */
   .personas__flex {
     display: flex;
     flex-direction: row;
@@ -1717,13 +1703,13 @@ input, .message-box {
    text-align: center;
  }
 
- /* PREF TESTS -- DESKTOP MEDIA QUERY */
+ /* PREF TESTS -- DESKTOP  */
  .wrapper__background__color-preftests {
    padding: 0 10em;
  }
 
 
- /* Images -- desktop media queries */
+ /* Images -- desktop  */
 
  .digital-wireframes {
    margin-top: 7em;
@@ -1742,11 +1728,10 @@ input, .message-box {
  .vdubs-isometric2 {
    width: 75%;
  }
-}
 
 
- /* Grid for wireframes -- desktop media queries */
-@media only screen and (min-width: 1024px) {
+
+ /* Grid for wireframes -- desktop  */
  .wireframe__img {
    box-shadow: 4px 2px 12px grey;
    margin-top: 3em;
@@ -1771,7 +1756,7 @@ input, .message-box {
 
 
 
- /* Branding -- desktop media queries */
+ /* Branding -- desktop */
  .circle {
    border-radius: 50%;
    width: 5em;
@@ -1783,7 +1768,7 @@ input, .message-box {
    max-width: 70%;
  }
 
- /* User Testing Round 1 -- desktop media queries */
+ /* User Testing Round 1 -- desktop  */
  .usertesting1 {
    display: block;
    margin: 0 auto;
@@ -1791,7 +1776,7 @@ input, .message-box {
  }
 
 
-/* Pref Tests -- desktop media queries */
+/* Pref Tests -- desktop  */
   p.preftests__title {
     font-size: 2em;
     font-weight: 600;
@@ -1823,18 +1808,35 @@ input, .message-box {
     background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
   }
 
-  /* User Testing Round 2 -- desktop media queries */
+  /* User Testing Round 2 -- Desktop */
   .usertesting2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-/* FOOTER - desktop media query */
- .social__flex {
-   width: 37%;
- }
+
+  /* ABOUT PAGE  -- DESKTOP */
+  .about.title {
+    font-size: 3.1em;
+    margin: 1em auto;
+  }
+
+  .about.image {
+    width: 60%;
+  }
+
+  .about__wrapper {
+    margin: 0 auto;
+    width: 60%;
+  }
 }
+
+/* FOOTER - desktop media query */
+ /* .social__flex {
+   width: 37%;
+ } */
+
 
 /***************************
  LARGE SCREEN MEDIA QUERIES
@@ -1889,17 +1891,11 @@ input, .message-box {
   .row { /* wireframe screens */
     padding: 0 17em;
   }
-
-
-
-
 }
 
 
 
 /* FOOTER */
-
-
 .contactpage__container {
   position: relative;
   min-height: 100vh;
