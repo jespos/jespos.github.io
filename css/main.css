@@ -43,12 +43,12 @@ h1, h2, h3, h4, p {
   border-radius: 50%; /* circle */
   font-size: 18px; /* Increase font size */
   box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.25);
-  height: 3em;
-  width: 3em;
+  height: 2.5em;
+  width: 2.5em;
 }
 
 .fa.fa-angle-up {
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
 #myBtn:hover {
