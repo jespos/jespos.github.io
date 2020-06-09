@@ -190,9 +190,9 @@ h1, h2, h3, h4, p {
   padding-top: 0.2em;
 }
 
-.header__logo {   /*my logo */
-  width: 80%;
-}
+/* .header__logo {
+  max-width: 150px;
+} */
 
 
 .logo {
@@ -451,18 +451,26 @@ nav li a:hover::before {
 }
 
 .wrapper__casestudy {
-  margin-left: 2.5em;
-  margin-right: 2.5em;
+  margin: 0 2.5em;
 }
 
 
 /* Roles & Responsibilities */
-.deliverables__flex {
-  padding-top: 2.5rem;
+/* .deliverables__flex {
   display: flex;
   flex-direction: column;
-  /* flex-flow: wrap; */
+  flex-flow: wrap;
   justify-content: space-between;
+  margin-top: 3em;
+  margin-bottom: 7em;
+} */
+
+.deliverables__flex-row {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  margin-bottom: 7em;
+
 }
 
 .deliverables__titles {
@@ -498,7 +506,7 @@ nav li a:hover::before {
   font-size: 1.7em;
   font-weight: 500;
   text-transform: uppercase;
-  position: relative;
+  /* position: relative; */
   color: #35B999;
 }
 
@@ -528,7 +536,7 @@ p {
 
 
 /* in-project navigation */
-nav.project__nav {
+#project__nav {
   background-color: #1B1826;
   font-size: 1.7em;
   line-height: 1.8em;
@@ -541,15 +549,20 @@ nav.project__nav {
   text-align: center;
 }
 
-.project__nav a {
+#project__nav a {
   text-decoration: none;
   color: #F2E5E5;
 }
 
-.project__nav a:hover {
+#project__nav a:hover {
   color: #35B999;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 
 
@@ -559,7 +572,7 @@ ol.numbered {
   font-size: 1.7em;
   font-weight: 600;
   list-style: none;
-  line-height: 1.7em;
+  line-height: 1em;
   margin-left: 1em;
   margin-bottom: 2em;
 }
@@ -586,9 +599,15 @@ ol.numbered li::before {
 
 /* Lessons */
 
+.wrapper__lessons {
+  margin: 0 2.5em;
+}
+
 .lesson {
   background-color: #35B999;
-  padding-top: 1.5em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-bottom: 3em;
 }
 
 .lesson__title {
@@ -604,6 +623,7 @@ ol.numbered li::before {
   font-size: 1.7em;
   font-weight: 300;
   line-height: 1.8em;
+  padding-bottom: 0;
 
 }
 
@@ -616,6 +636,7 @@ ol.numbered li::before {
   /* font-weight: 300; */
   padding-bottom: 0;
   margin-bottom: -0.3em;
+  margin-top: 3em;
 }
 
 .section__heading {
@@ -642,15 +663,14 @@ ul.survey {
 .section__heading__survey {
   font-size: 2.2em;
   font-weight: 300;
-  margin-bottom: 0.2em;
+  margin-bottom: 1em;
   margin-top: 0.5em;
 }
 
 
 ul.survey li {
   line-height: 1.6em;
-  margin-top: 1.2em;
-
+  margin-bottom: 0.5em;
 }
 
 ul.survey li::before {
@@ -672,8 +692,8 @@ ul.survey li::before {
 .survey__results {
   background-image: url(../images/results_cloudstorage.png);
   background-size: cover;
-  padding-bottom: 2em;
-  padding-top: 1em;
+  padding-bottom: 3.5em;
+  padding-top: 3.5em;
   margin-bottom: 3em;
 }
 
@@ -706,10 +726,16 @@ h4  {
 .personas__flex {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background: rgb(238,238,238);
-  background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
+  align-items: center;
   padding-top: 3em;
+  margin: 3em auto;
+}
+
+.persona-one, .persona-two, .persona-three {
+  background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
+  border-radius: 2.5em;
+  max-width: 40.0em;
+  margin-bottom: 3em; /* adds bottom space between each card */
 }
 
 
@@ -743,15 +769,13 @@ h4  {
 }
 
 .persona__image {
+  border-radius: 2.5em 2.5em 0 0;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3em;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
-.persona__image.one {
-  margin-top: 0.5em;
-}
 
 /* user stories */
 .userstories {
@@ -996,11 +1020,12 @@ ul.to-top a {
 
 /**** IMAGES IN CASE STUDY ****/
 .solutions-screens {
+  box-shadow: 7px 2px 13px #c7c7c7;
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  width: 100%;
+  width: 50%;
 }
 
 .user-flow-vertical {
@@ -1269,7 +1294,7 @@ footer {
 .contact-form{
   display: block;
   margin: 0 auto;
-  width: 60%;
+  width: 87%;
 }
 
 input, .message-box {
@@ -1463,9 +1488,9 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
     padding-right: 5em;
   }
 
-  .header__logo {
-    width: 100%;
-  }
+  /* .header__logo {
+    max-width: 150px;
+  } */
 
   /* HERO -- TABLET */
 
@@ -1529,11 +1554,34 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
    width: 78%;
  }
 
+ /* LESSONS WRAPPER -- TABLET */
+ .wrapper__lessons {
+   margin: 0 auto;
+   width: 78%;
+ }
+
  /* OVERVIEW -- TABLET  */
 
  hr {
    width: 6%;
  }
+
+ /* ROLES & RESPONSIBILITIES -- TABLET */
+
+ .deliverables__flex-row {
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin-left: auto;
+   margin-right: auto;
+   width: 70%;
+ }
+
+ .deliverables__flex-column {
+   flex: 50%;
+ }
+
+
+
 
  /* PERSONAS WRAPPER -- TABLET  */
  .wrapper__personas {
@@ -1600,18 +1648,27 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
 
 
  /* Roles & Responsibilities -- desktop  */
- .deliverables__flex {
+ /* .deliverables__flex {
    flex-direction: row;
    justify-content: space-around;
-   padding-bottom: 1em;
+   padding-bottom: 6em;
    margin: 0 auto;
    width: 85%;
+ } */
+
+ .deliverables__flex-row {
+   width: 85%;
+   max-width: 85%;
  }
 
- .vl {
+ .deliverables__flex-column {
+   flex: 25%;
+ }
+
+ /* .vl {
    border-left: 1px solid #d4d4d4;
    height: 310px;
- }
+ } */
 
  .deliverables__titles {
    font-size: 2.3em;
@@ -1627,6 +1684,11 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
  .wrapper__casestudy {
    margin: 0 auto;
    width: 55%;
+  }
+
+  .wrapper__lessons {
+    margin: 0 auto;
+    width: 55%;
   }
 
  .wrapper__background__color {
@@ -1652,8 +1714,8 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
 
  .section__heading__survey {
    font-size: 1.8em;
-   font-weight: 600;
-   margin-bottom: 0.2em;
+   font-weight: 300;
+   margin-bottom: 1em;
    margin-top: 0.5em;
  }
 
@@ -1680,28 +1742,30 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
   .personas__flex {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     justify-content: space-around;
     margin: 0 auto;
-    width: 94%;
+    width: 85%;
+  }
+
+  .persona-one, .persona-two, .persona-three {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
   }
 
   .wrapper__personas {
     width: 100%;
   }
 
-  /* .persona-one, .persona-two, .persona-three {
-    margin-left: 4em;
-    margin-right: 4em;
-  } */
-
-  .persona__image.one {
-    margin-top: 3em;
-  }
-
  .persona__description {
    max-width: 16em;
-   text-align: center;
  }
+
+ /* USER STORIES BULLETED LIST -- DESKTOP */
+ .user-stories {
+   column-count: 2;
+ }
+
 
  /* PREF TESTS -- DESKTOP  */
  .wrapper__background__color-preftests {
@@ -1872,6 +1936,10 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
     max-width: 50%;
   }
 
+  .wrapper__lessons {
+    max-width: 50%;
+  }
+
   .deliverables__flex {
     max-width: 70%;
   }
@@ -1911,4 +1979,30 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
   bottom: 0;
   width: 100%;
   height: 18em;
+}
+
+
+
+
+
+
+.deliverables__TESTROW {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deliverables__TESTCOLUMN {
+  flex: 25%;
+}
+
+@media screen and (max-width: 1000px) {
+  .deliverables__TESTCOLUMN {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .deliverables__TESTROW {
+    flex-direction: column;
+  }
 }

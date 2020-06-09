@@ -22,6 +22,7 @@
 
   <!-- Font Awesome  I'm not sure this is up-to-date? -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="scripts.js"></script>
 
   </head>
@@ -72,58 +73,125 @@
 
 
 <!-- Roles/Responsibilities -->
-    <section class="deliverables__flex">
-      <div class="role">
-        <i class="fa fa-user-circle-o deliverables-icons"></i>
-        <h3 class="deliverables__titles">Role</h3>
-        <ul class="deliverables__list">
-          <li>Research</li>
-          <li>Branding</li>
-          <li>Visual Design</li>
-          <li>Prototyping</li>
-        </ul>
-      </div>
-      <div class="vl"></div>
+    <!-- <section class="deliverables__flex">
+      <div class="deliverables__column">
+        <div class="role">
+          <i class="fa fa-user-circle-o deliverables-icons"></i>
+          <h3 class="deliverables__titles">Role</h3>
+          <ul class="deliverables__list">
+            <li>Research</li>
+            <li>Branding</li>
+            <li>Visual Design</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- <div class="vl"></div> -->
 
-      <div class="role">
-        <i class="fa fa-clone deliverables-icons"></i>
-        <h3 class="deliverables__titles">Deliverables</h3>
-        <ul class="deliverables__list">
-          <li>User surveys</li>
-          <li>Competitive analyses</li>
-          <li>User personas</li>
-          <li>User stories + Flows</li>
-          <li>Wireframes</li>
-          <li>Hi-fi mockups</li>
-          <li>User testing</li>
-          <li>Final prototype</li>
-        </ul>
-      </div>
-      <div class="vl"></div>
-      <div class="role">
-        <i class="fa fa-pencil deliverables-icons"></i>
-        <h3 class="deliverables__titles">Tools</h3>
-        <ul class="deliverables__list">
-          <li>Sketch</li>
-          <li>Figma</li>
-          <li>Invision</li>
-          <li>Adobe Illustrator</li>
-          <li>Adobe Photoshop</li>
-          <li>UsabilityHub</li>
-          <li>Google Forms</li>
-        </ul>
-      </div>
-      <div class="vl"></div>
+      <!-- <div class="deliverables__column">
+        <div class="role">
+          <i class="fa fa-clone deliverables-icons"></i>
+          <h3 class="deliverables__titles">Deliverables</h3>
+          <ul class="deliverables__list">
+            <li>User surveys</li>
+            <li>Competitive analyses</li>
+            <li>User personas</li>
+            <li>User stories + Flows</li>
+            <li>Wireframes</li>
+            <li>Hi-fi mockups</li>
+            <li>User testing</li>
+            <li>Final prototype</li>
+          </ul>
+        </div>
+    </div> -->
+    <!-- <div class="vl"></div> -->
 
-      <div class="role">
-        <i class="fa fa-clock-o deliverables-icons"></i>
-        <h3 class="deliverables__titles">Timeline</h3>
-        <ul class="deliverables__list">
-          <li>3 months</li>
-        </ul>
-      </div>
+      <!-- <div class="deliverables__column">
+        <div class="role">
+          <i class="fa fa-pencil deliverables-icons"></i>
+          <h3 class="deliverables__titles">Tools</h3>
+          <ul class="deliverables__list">
+            <li>Sketch</li>
+            <li>Figma</li>
+            <li>Invision</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Photoshop</li>
+            <li>UsabilityHub</li>
+            <li>Google Forms</li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- <div class="vl"></div> -->
 
-    </section>
+        <!-- <div class="deliverables__column">
+          <div class="role">
+            <i class="fa fa-clock-o deliverables-icons"></i>
+            <h3 class="deliverables__titles">Timeline</h3>
+            <ul class="deliverables__list">
+              <li>3 months</li>
+            </ul>
+          </div>
+        </div>
+
+    </section> -->
+
+ <!-- Roles/Responsibilities -->
+     <section class="deliverables__flex-row">
+       <div class="deliverables__flex-column">
+         <div class="role">
+           <i class="fa fa-user-circle-o deliverables-icons"></i>
+           <h3 class="deliverables__titles">Role</h3>
+           <ul class="deliverables__list">
+             <li>Research</li>
+             <li>Branding</li>
+             <li>Visual Design</li>
+             <li>Prototyping</li>
+           </ul>
+         </div>
+       </div>
+
+       <div class="deliverables__flex-column">
+         <div class="role">
+           <i class="fa fa-clone deliverables-icons"></i>
+           <h3 class="deliverables__titles">Deliverables</h3>
+           <ul class="deliverables__list">
+             <li>User surveys</li>
+             <li>Competitive analyses</li>
+             <li>User personas</li>
+             <li>User stories + Flows</li>
+             <li>Wireframes</li>
+             <li>Hi-fi mockups</li>
+             <li>User testing</li>
+             <li>Final prototype</li>
+           </ul>
+         </div>
+     </div>
+       <div class="deliverables__flex-column">
+         <div class="role">
+           <i class="fa fa-pencil deliverables-icons"></i>
+           <h3 class="deliverables__titles">Tools</h3>
+           <ul class="deliverables__list">
+             <li>Sketch</li>
+             <li>Figma</li>
+             <li>Invision</li>
+             <li>Adobe Illustrator</li>
+             <li>Adobe Photoshop</li>
+             <li>UsabilityHub</li>
+             <li>Google Forms</li>
+           </ul>
+         </div>
+       </div>
+         <div class="deliverables__flex-column">
+           <div class="role">
+             <i class="fa fa-clock-o deliverables-icons"></i>
+             <h3 class="deliverables__titles">Timeline</h3>
+             <ul class="deliverables__list">
+               <li>3 months</li>
+             </ul>
+           </div>
+         </div>
+     </section>
+
 
     <!-- Overview -->
     <div class="wrapper__casestudy">
@@ -142,11 +210,13 @@
 
     </div>
 
-        <picture>
+      <img src="images/vdubs_casestudy_card.jpg" alt="V-DUBS iPhone screens" class="solutions-screens" style="width:auto;">
+
+        <!-- <picture>
           <source media="(min-width: 1000px)" srcset="images/vdubs_solutions_desktop.png" alt="V-DUBS iPhone screens" class="solutions-screens" style="width:auto;">
           <source media="(min-width: 600px)" srcset="images/vdubs_solutions_tablet.png" alt="V-DUBS iPhone screens" class="solutions-screens" style="width:auto;">
           <img src="images/vdubs_solutions_mobile.png" alt="V-DUBS iPhone screens" class="solutions-screens" style="width:auto;">
-        </picture>
+        </picture> -->
       </section>
 
     </div>
@@ -154,7 +224,7 @@
 
 
       <!-- In-page Navigation -->
-      <nav class="project__nav">
+      <nav id="project__nav">
         <a href="#research">Discovery &ensp;|</a>
         <a href="#informationarchitecture"> &ensp;Information Architecture &ensp;|</a>
         <a href="#visualdesign">&ensp;Visual Design &ensp;|</a>
@@ -210,15 +280,17 @@
           </div>
           <div class="results__summary">
           <h4>80%</h4>
-            <ul class="survey__results__list">
-              <li>Collaborate</li>
-            </ul>
+          <ul class="survey__results__list">
+            <li>Collaborate</li>
+          </ul>
+          <canvas id="pieChartCollaborate"></canvas>
           </div>
           <div class="results__summary">
             <h4>94%</h4>
             <ul class="survey__results__list">
               <li>Share files and folders</li>
             </ul>
+            <canvas id="pieChartShare"></canvas>
           </div>
         </div>
       </section>
@@ -245,14 +317,16 @@
           <div class="results__summary">
             <h4>80%</h4>
             <ul class="survey__results__list">
-              <li>Access social apps from mobile device</li>
+              <li>Access from mobile</li>
             </ul>
+            <canvas id="pieChartSocialAccess"></canvas>
           </div>
           <div class="results__summary">
           <h4>93%</h4>
             <ul class="survey__results__list">
               <li>Access social apps daily</li>
             </ul>
+            <canvas id="pieChartSocialUsage"></canvas>
           </div>
           <div class="results__summary">
           <h4>Frustrations</h4>
@@ -293,7 +367,7 @@
 
       <!-- Lesson -->
       <section class="lesson">
-        <div class="wrapper__casestudy">
+        <div class="wrapper__lessons">
           <h3 class="lesson__title">Lesson Learned: Collecting more data isn't bad.</h3>
           <p class="lesson__paragraph">The addition of a second user survey set my timeline back. But, gathering more data (especially after analyzing the results of the first survey)
             in order to create an app that the community wants to use was well worth the extra time.</p>
@@ -330,7 +404,7 @@
       <section class="personas__flex">
         <!-- Persona 1 -->
         <div class="persona-one">
-          <img src="images/persona_learner.png" alt="Marco. The Learner" class="persona__image one">
+          <img src="images/personas/persona01.jpg" alt="Marco. The Learner" class="persona__image one">
           <h3 class="persona__name">Marco</h3>
           <h4 class="persona__id">The Learner | 27 years old</h4>
           <div class ="wrapper__personas">
@@ -346,7 +420,7 @@
 
         <!-- Persona 2 -->
         <div class="persona-two">
-          <img src="images/persona_enthusiast.png" alt="Brett. The Enthusiast." class="persona__image">
+          <img src="images/personas/persona02.jpg" alt="Brett. The Enthusiast." class="persona__image">
           <h3 class="persona__name">Brett</h3>
           <h4 class="persona__id">The Enthusiast | 65 years old</h4>
           <div class ="wrapper__personas">
@@ -361,7 +435,7 @@
 
         <!-- Persona 3 -->
         <div class="persona-three">
-          <img src="images/persona_creative.png" alt="Ellie. The Creative." class="persona__image">
+          <img src="images/personas/persona03.jpg" alt="Ellie. The Creative." class="persona__image">
           <h3 class="persona__name">Ellie</h3>
           <h4 class="persona__id">The Creative | 34 years old</h4>
           <div class ="wrapper__personas">
@@ -383,7 +457,7 @@
       <p>After researching apps and creating a lengthy list of user tasks, I prioritized
         these tasks to create an MVP.</p>
       <p class="section__heading__survey userstories">High Priority Items</p>
-      <ul class="survey">
+      <ul class="survey user-stories">
         <li>Sign up for new account</li>
         <li>Sign into account</li>
         <li>Create content</li>
@@ -398,7 +472,7 @@
 
     <!-- Lesson -->
     <section class="lesson">
-      <div class="wrapper__casestudy">
+      <div class="wrapper__lessons">
 
         <h3 class="lesson__title">Lesson Learned: ‘Important’ functionality ≠ ‘high’ priority</h3>
         <p class="lesson__paragraph">The mistake I originally made was including too many high priority user stories. I decided to re-evaluate
@@ -419,8 +493,8 @@
       <p class="section__subheading">User Flows</p>
       <h3 class="section__heading">Moving right along.</h3>
       <p class="user-flows">From the highest priority user stories, I sketched flows for the following tasks:</p>
-        <ul class="survey">
-          <li>Sign up / Sign in /Account recovery</li>
+        <ul class="survey user-stories">
+          <li>Sign up/Sign in</li>
           <li>Sign out</li>
           <li>Share</li>
           <li>Search</li>
@@ -644,7 +718,7 @@
 
     <!-- Lesson -->
     <section class="lesson">
-      <div class="wrapper__casestudy">
+      <div class="wrapper__lessons">
 
         <h3 class="lesson__title">Lesson Learned: You wont catch everything the time around</h3>
         <p class="lesson__paragraph">When moving from user testing round 1 to my hi-fi mockups, I noticed several tasks that
@@ -711,6 +785,100 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+////////////////// COLLABORATE PIE CHART ////////////////////////////////////
+    var ctx = document.getElementById('pieChartCollaborate').getContext('2d');
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'pie',
+
+    // The data for our dataset
+    data: {
+          labels: ["Collaborate", "Don't Collaborate"],
+          datasets: [{
+            label: "Collaboration tools",
+            backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+            data: [16,4]
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          }
+        }
+    });
+
+////////////////// SHARE PIE CHART ////////////////////////////////////
+    var ctx = document.getElementById('pieChartShare').getContext('2d');
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'pie',
+
+    // The data for our dataset
+    data: {
+          labels: ["Share Files & Folders", "Don't Share Files & Folders"],
+          datasets: [{
+            label: "Sharing Files and Folders",
+            backgroundColor: ["#3cba9f", "#c45850"],
+            data: [15,1]
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          }
+        }
+    });
+
+
+////////////////// SOCIAL MEDIA USAGE PIE CHART ////////////////////////////////////
+    var ctx = document.getElementById('pieChartSocialUsage').getContext('2d');
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'pie',
+
+    // The data for our dataset
+    data: {
+          labels: ["Daily", "Weekly"],
+          datasets: [{
+            label: "How often do you use social media?",
+            backgroundColor: ["#728CDB", "#CB1DA7"],
+            data: [14,1]
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          }
+        }
+    });
+
+////////////////// SOCIAL MEDIA MOBILE PIE CHART ////////////////////////////////////
+    var ctx = document.getElementById('pieChartSocialAccess').getContext('2d');
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'pie',
+
+    // The data for our dataset
+    data: {
+          labels: ["Mobile", "Laptop", "Desktop"],
+          datasets: [{
+            label: "How often do you use social media?",
+            backgroundColor: ["#7A4EAC", "#44C7BA", "#B6BB6A"],
+            data: [12,2, 1]
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          }
+        }
+    });
+
+
+
+
+
     </script>
 
 
