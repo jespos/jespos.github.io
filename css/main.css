@@ -187,7 +187,7 @@ h1, h2, h3, h4, p {
 /***************/
 .fa.fa-bars {
   float: right;
-  padding-top: 0.2em;
+  padding-top: 0.5em;
 }
 
 /* .header__logo {
@@ -197,6 +197,8 @@ h1, h2, h3, h4, p {
 
 .logo {
   display: inline-block;
+  max-width: 151px;
+  padding-top: 0.5em;
 }
 
 
@@ -345,6 +347,8 @@ nav li a:hover::before {
 }
 
 .vdubs__logo {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
   margin-top: 2em;
   margin-bottom: 1em;
   width: 13%;
@@ -395,11 +399,12 @@ nav li a:hover::before {
 
 /*hero section of case study*/
 .summary {
-  display: flex;
   align-items: center;
-  flex-direction: column;
-  background: rgb(238,238,238);
   background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3em;
+
 }
 
 .logo__casestudy {
@@ -450,8 +455,23 @@ nav li a:hover::before {
   background-color: #85D5C1;
 }
 
-.wrapper__casestudy {
-  margin: 0 2.5em;
+.wrapper__casestudy { /* mobile */
+  margin: 7em 2.5em;
+}
+
+.wrapper__overview {
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+  margin-top: 3em;
+  margin-bottom: 7em;
+}
+
+.wrapper__casestudy.wireframes {
+  margin-bottom: 2.5em;
+}
+
+.wrapper__casestudy.prototype {
+  margin-bottom: 1em;
 }
 
 
@@ -501,18 +521,14 @@ nav li a:hover::before {
 
 /*Overview*/
 .main__header {
-  /* margin-top: 1em; */
-  margin-bottom: 2.3em;
   font-size: 1.7em;
   font-weight: 500;
   text-transform: uppercase;
-  /* position: relative; */
   color: #35B999;
 }
 
 hr {
   display: block;
-  margin-top: 4em;
   margin-left: 0;
   margin-right: auto;
   border-color: #35B999;
@@ -540,13 +556,11 @@ p {
   background-color: #1B1826;
   font-size: 1.7em;
   line-height: 1.8em;
-  margin-top: 1.5em;
-  margin-bottom: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding: 1em 0.5em;
+  position: sticky;
+  top: -1px;
   text-align: center;
+  z-index: 999;
 }
 
 #project__nav a {
@@ -633,7 +647,6 @@ ol.numbered li::before {
 .section__subheading {
   margin-top: 1em;
   font-size: 2.2em;
-  /* font-weight: 300; */
   padding-bottom: 0;
   margin-bottom: -0.3em;
   margin-top: 3em;
@@ -648,6 +661,10 @@ ol.numbered li::before {
 
 .section__heading.social {
   margin-top: 2em;
+}
+
+.section__subheading.personas {
+  margin-top: 5.5em;
 }
 
 /*survey*/
@@ -703,7 +720,7 @@ ul.survey li::before {
 }
 
 .section__subheading__results {
-  font-size: 2.4em;
+  font-size: 2.7em;
   font-weight: 700;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -713,7 +730,7 @@ ul.survey li::before {
 }
 
 h4  {
-  font-size: 1.8em;
+  font-size: 2.3em;
   font-weight: 700;
   text-align: center;
   padding-top: 1.5em;
@@ -805,7 +822,7 @@ h4  {
 
 .section__heading__survey.results-one {
   margin-bottom: 0;
-  margin-top: 2em;
+  margin-top: 4em;
   padding-bottom: 0;
 }
 
@@ -970,20 +987,28 @@ p.preftests__title {
   font-weight: 700;
 }
 
-.wrapper__background__color-preftests {
-  background: rgb(238,238,238);
+.wrapper__preftests {
   background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
+  border-radius: 2.5em;
   padding: 0 2em;
   padding-bottom: 0.5em;
+  margin: 4em auto;
+  max-width: 90em;
+}
+
+.wrapper__preftests.first-test {
+  margin-top: 1.5em;
 }
 
 /*user testing round 2 */
 
 .usertesting2 {
   display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  max-width: 95%;
 }
 
 .wrapper__background__color {
@@ -1022,11 +1047,9 @@ ul.to-top a {
 .solutions-screens {
   box-shadow: 7px 2px 13px #c7c7c7;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 7em;
+  margin: 0 auto;
   height: auto;
-  width: 50%;
+  width: 100%;
 }
 
 .user-flow-vertical {
@@ -1550,8 +1573,15 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
  }
 
  /* WRAPPER -- TABLET  */
- .wrapper__casestudy {
+ .wrapper__overview {
    margin: 0 auto;
+   margin-top: 3em;
+   margin-bottom: 7em;
+   width: 78%;
+ }
+
+ .wrapper__casestudy {
+   margin: 7em auto;
    width: 78%;
  }
 
@@ -1682,8 +1712,15 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
 
 
  /* Overview -- desktop  */
- .wrapper__casestudy {
+ .wrapper__overview {
    margin: 0 auto;
+   margin-top: 3em;
+   margin-bottom: 7em;
+   width: 55%;
+ }
+
+ .wrapper__casestudy {
+   margin: 7em auto;
    width: 55%;
   }
 
@@ -1843,11 +1880,11 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
 
 /* Pref Tests -- desktop  */
   p.preftests__title {
-    font-size: 2em;
+    font-size: 2.4em;
     font-weight: 600;
     margin-bottom: 0;
     padding-bottom: 0.5em;
-    padding-top: 0.5em;
+    padding-top: 1.5em;
     text-align: center;
   }
 
@@ -1862,13 +1899,12 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
   .preftests__text {
     font-size: 1.8em;
     margin: 0 auto;
-    margin-bottom: 3.5em;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
     text-align: center;
   }
 
-  .wrapper__background__color-preftests {
+  .wrapper__preftests {
     background: rgb(238,238,238);
     background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
   }
@@ -1933,6 +1969,11 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
   }
 
   /* CASE STUDY - LARGE SCREENS */
+
+  .wrapper__overview {
+    width: 50%;
+  }
+
   .wrapper__casestudy {
     max-width: 50%;
   }
@@ -2006,4 +2047,43 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
   .deliverables__TESTROW {
     flex-direction: column;
   }
+}
+
+
+
+
+
+
+
+#pieChartCollaborate {
+  margin-top: 1px;
+}
+
+#pieChartShare {
+  margin-top: 31px;
+}
+
+
+
+
+
+.img-preftest1, .img-preftest2 {
+  max-width: 46%;
+  width: 30%; /*take this off for mobile
+  /* display: inline-block; */
+  margin-left: auto;
+  margin-right: auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+
+}
+
+
+
+.wrapper__eachtest {
+  text-align: center;
+}
+
+.img-preftest1 {
+  margin-right: 2em;
 }
