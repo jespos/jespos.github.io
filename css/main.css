@@ -404,13 +404,13 @@ nav li a:hover::before {
   display: flex;
   flex-direction: column;
   padding-bottom: 3em;
+  padding-top: 3em;
 
 }
 
 .logo__casestudy {
   display: block;
   margin: 0 auto;
-  margin-top: 3em;
   width: 15%;
 }
 
@@ -521,10 +521,11 @@ nav li a:hover::before {
 
 /*Overview*/
 .main__header {
+  color: #35B999;
   font-size: 1.7em;
   font-weight: 500;
+  margin-bottom: 2em;
   text-transform: uppercase;
-  color: #35B999;
 }
 
 hr {
@@ -642,14 +643,11 @@ ol.numbered li::before {
 }
 
 
-
-
 .section__subheading {
-  margin-top: 1em;
   font-size: 2.2em;
   padding-bottom: 0;
   margin-bottom: -0.3em;
-  margin-top: 3em;
+  margin-top: 1em;
 }
 
 .section__heading {
@@ -661,6 +659,10 @@ ol.numbered li::before {
 
 .section__heading.social {
   margin-top: 2em;
+}
+
+.section__subheading.competitive {
+  margin-top: 4em;
 }
 
 .section__subheading.personas {
@@ -744,7 +746,6 @@ h4  {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 3em;
   margin: 3em auto;
 }
 
@@ -752,7 +753,11 @@ h4  {
   background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
   border-radius: 2.5em;
   max-width: 40.0em;
-  margin-bottom: 3em; /* adds bottom space between each card */
+  margin-bottom: 4em;
+}
+
+.persona-three {
+  margin-bottom: 0;
 }
 
 
@@ -786,7 +791,7 @@ h4  {
 }
 
 .persona__image {
-  border-radius: 2.5em 2.5em 0 0;
+  /* border-radius: 2.5em 2.5em 0 0; */
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -822,7 +827,7 @@ h4  {
 
 .section__heading__survey.results-one {
   margin-bottom: 0;
-  margin-top: 4em;
+  margin-top: 5em;
   padding-bottom: 0;
 }
 
@@ -885,9 +890,28 @@ span.bullet-gap {
 
 
 
-
-
 /**** Branding ****/
+
+.branding-text {
+  margin-top: -2.5em;
+  margin-bottom: 2em;
+  padding-bottom: 0;
+}
+
+.logo-text, .logo-text-two {
+  margin-top: -2.5em;
+  margin-bottom: 3em;
+  padding-bottom: 0;
+}
+
+.logo-text {
+  margin-bottom: 0;
+}
+
+.logo-text-two {
+  margin-top: 0;
+}
+
 .palette__flex {
   display: flex;
   flex-direction: row;
@@ -949,11 +973,15 @@ p.colors__text {
   background: #FDF8F0;
 }
 
+.palette {
+  margin-bottom: 2.5em;
+}
+
+
+
 .vdubs__large {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2em;
+  margin: 2em auto;
 }
 
 
@@ -1001,6 +1029,14 @@ p.preftests__title {
   margin-top: 1.5em;
 }
 
+
+/*Hi Fi Mockups */
+.mockups {
+  margin-top: 6em;
+}
+
+
+
 /*user testing round 2 */
 
 .usertesting2 {
@@ -1015,7 +1051,6 @@ p.preftests__title {
 .wrapper__background__color {
   background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
   padding: 3em 0;
-  margin-bottom: 5em;
 }
 
 
@@ -1057,17 +1092,9 @@ ul.to-top a {
   display: block;
   height: auto;
   margin: 0 auto;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
-.user-flow-horizontal {
-  height: auto;
-  width: 100%;
-  border-color: #aaaaaa;
-  border-radius: 6px;
-  border-width: 10px;
-
-}
 
 .wireframe-sketches {
   height: auto;
@@ -1097,6 +1124,7 @@ ul.to-top a {
   display: block;
   height: auto;
   margin: 0 auto;
+  margin-top: -2.5em;
   width: 100%;
 }
 
@@ -1105,6 +1133,7 @@ ul.to-top a {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -2.5em;
   width: 90%;
 }
 
@@ -1112,6 +1141,10 @@ ul.to-top a {
   height: auto;
   width: 100%;
   max-width: 500px;
+}
+
+.logo-text {
+  margin-bottom: 0;
 }
 
 .vdubs__large {
@@ -1128,11 +1161,10 @@ ul.to-top a {
 .vdubs-isometric2 {
   display: block;
   height: auto;
-  /* box-shadow: 4px 2px 12px grey; */
   filter: drop-shadow(0 0 7px #AFAFAF);
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1em;
+  margin-top: -2.5em;
   margin-bottom: 3em;
   width: 100%;
 }
@@ -1755,7 +1787,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
    font-size: 1.8em;
    font-weight: 300;
    margin-bottom: 1em;
-   margin-top: 0.5em;
  }
 
  .survey_learning {
@@ -1791,6 +1822,11 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
     box-shadow: 5px 3px 18px #D2D2D2;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .persona__image {
+    border-radius: 2.5em 2.5em 0 0;
   }
 
   .wrapper__personas {
