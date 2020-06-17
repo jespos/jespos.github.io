@@ -877,9 +877,10 @@ span.bullet-gap {
 
 .usertesting1 {
   display: block;
-  /* margin-bottom: 10em; */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
   margin: 0 auto;
-  width: 80%;
+  max-width: 85%;
 }
 
 
@@ -1095,7 +1096,7 @@ ul.to-top a {
 .moodboard {
   display: block;
   height: auto;
-  margin: 2em auto;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -1155,12 +1156,12 @@ ul.to-top a {
 
 .wireframe__img {
   box-shadow: 4px 2px 12px grey;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
   margin-top: 1em;
   vertical-align: middle;
   width: 100%;
-  /* display: block;
-  width: 100%;
-  height: auto; */
+
 }
 
 .row {
@@ -1787,6 +1788,7 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
   }
 
   .persona-one, .persona-two, .persona-three {
+    box-shadow: 5px 3px 18px #D2D2D2;
     margin-left: 1.5em;
     margin-right: 1.5em;
   }
@@ -1848,6 +1850,7 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
    display: flex;
    flex-wrap: wrap;
    padding: 0 9em;
+   width: 90%;
  }
 
  .column {
@@ -1874,7 +1877,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
  .usertesting1 {
    display: block;
    margin: 0 auto;
-   width: 70%;
  }
 
 
