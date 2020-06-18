@@ -1139,7 +1139,7 @@ ul.to-top a {
 .vdubs-isometric2 {
   display: block;
   height: auto;
-  filter: drop-shadow(0 0 7px #AFAFAF);
+  filter: drop-shadow(1px 9px 7px #AFAFAF);
   margin-left: auto;
   margin-right: auto;
   margin-top: -2.5em;
