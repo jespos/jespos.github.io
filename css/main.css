@@ -139,7 +139,6 @@ h1, h2, h3, h4, p {
   z-index: 1;
   top: 0;
   left: 0;
-  /* background-color: rgb(0,0,0); */
   background-color: rgba(0,0,0, 0.97);
   overflow-x: hidden;
   transition: 0.5s;
@@ -164,9 +163,6 @@ h1, h2, h3, h4, p {
   transition: 0.3s;
 }
 
-/* .overlay a:hover, .overlay a:focus {
-  color: #35B999;
-} */
 
 .overlay .closebtn {
   position: absolute;
@@ -190,10 +186,6 @@ h1, h2, h3, h4, p {
   padding-top: 0.5em;
 }
 
-/* .header__logo {
-  max-width: 150px;
-} */
-
 
 .logo {
   display: inline-block;
@@ -215,7 +207,6 @@ nav ul{
   float: right;
   font-size: 1.8em;
   list-style: none;
-  /* padding-top: 0.3em; */
   text-transform: uppercase;
 
 }
@@ -258,12 +249,8 @@ nav li a:hover::before {
 /**** HERO SECTION ***/
 .hero {
   background-color: #1B1826;
-  /* color: #F2E5E5; */
   clear: both;
-  /* padding-left: 4em;
-  padding-right: 4em;
-  padding-top: 4em;
-  padding-bottom: 2em;  */
+
 }
 
 .hero__maintext {
@@ -281,12 +268,9 @@ nav li a:hover::before {
 }
 
 .hero__hello {
-  /* display: inline; */
   font-size: 2.5em;
   text-transform: uppercase;
   margin-bottom: 1em;
-  /* border-bottom: 1.5px solid #35B999; */
-  /* padding-bottom: 0.3em;  */
 }
 
 .hero__name {
@@ -476,14 +460,6 @@ nav li a:hover::before {
 
 
 /* Roles & Responsibilities */
-/* .deliverables__flex {
-  display: flex;
-  flex-direction: column;
-  flex-flow: wrap;
-  justify-content: space-between;
-  margin-top: 3em;
-  margin-bottom: 7em;
-} */
 
 .deliverables__flex-row {
   display: flex;
@@ -791,7 +767,6 @@ h4  {
 }
 
 .persona__image {
-  /* border-radius: 2.5em 2.5em 0 0; */
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -1053,13 +1028,16 @@ p.preftests__title {
   padding: 3em 0;
 }
 
+.wrapper__background__color.usertesting1bkg {
+  margin-bottom: 7em;
+}
+
 
 
 
 
 /**** CONCLUSION ****/
 .conclusion {
-  /* background-image: url(../images/conclusion.png); */
   background-size: cover;
   margin-top: 4em;
 }
@@ -1169,22 +1147,6 @@ ul.to-top a {
   width: 100%;
 }
 
-/* grid for wireframes */
-/* .wireframes {
-  column-count: 4;
-  column-gap: 4em;
-  max-height: 85em;
-} */
-
-/* .item {
-  background-color: white;
-  display: inline-block;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  width: 100%;
-} */
 
 .wireframe__img {
   box-shadow: 4px 2px 12px grey;
@@ -1199,8 +1161,6 @@ ul.to-top a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  /* padding: 0 1em;
-  margin-bottom: 1em; */
   margin: 2em auto;
 }
 
@@ -1209,15 +1169,6 @@ ul.to-top a {
   max-width: 50%;
   padding: 0 1.5em;
 }
-
-/* pref test */
-
-
-
-
-
-
-
 
 
 /*homepage*/
@@ -1412,9 +1363,7 @@ input, .message-box {
 
   nav li{
     display: inline-block;
-    /* margin-left: 3em; */
     margin: 0 1em;
-    /* padding-top: 2em; */
     position: relative;
   }
 
@@ -1464,7 +1413,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
   } */
 
   .project {
-    /* background: url(../images/vdubs_isometric_resizeTEST.png) no-repeat; */
     background-position: center;
     /* background-size: cover; */
     align-items: center;
@@ -1477,7 +1425,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
     margin-bottom: 5rem;
     width: 80%;
     max-width: 500px;
-    /* box-shadow: none; */
     /* filter: drop-shadow(4px 2px 12px gray); */
   }
 
@@ -1493,8 +1440,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
     visibility: visible;
     background-color: rgba(255, 255, 255, 0.78);
   } */
-
-
 
 
 
@@ -1545,9 +1490,7 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
     padding-right: 5em;
   }
 
-  /* .header__logo {
-    max-width: 150px;
-  } */
+
 
   /* HERO -- TABLET */
 
@@ -1712,13 +1655,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
 
 
  /* Roles & Responsibilities -- desktop  */
- /* .deliverables__flex {
-   flex-direction: row;
-   justify-content: space-around;
-   padding-bottom: 6em;
-   margin: 0 auto;
-   width: 85%;
- } */
 
  .deliverables__flex-row {
    width: 85%;
@@ -1729,10 +1665,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
    flex: 25%;
  }
 
- /* .vl {
-   border-left: 1px solid #d4d4d4;
-   height: 310px;
- } */
 
  .deliverables__titles {
    font-size: 2.3em;
@@ -1877,9 +1809,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
    margin-top: 3em;
    vertical-align: middle;
    width: 100%;
-   /* display: block;
-   width: 100%;
-   height: auto; */
  }
 
  .row {
@@ -1970,11 +1899,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
     width: 60%;
   }
 }
-
-/* FOOTER - desktop media query */
- /* .social__flex {
-   width: 37%;
- } */
 
 
 /***************************
@@ -2107,8 +2031,7 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
 
 .img-preftest1, .img-preftest2 {
   max-width: 46%;
-  width: 30%; /*take this off for mobile
-  /* display: inline-block; */
+  width: 30%; /*take this off for mobile*/
   margin-left: auto;
   margin-right: auto;
   image-rendering: -webkit-optimize-contrast;
