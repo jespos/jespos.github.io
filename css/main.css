@@ -376,6 +376,10 @@ nav li a:hover::before {
   padding: 0;
 }
 
+.project.vdubs:hover {
+  opacity: .5;
+}
+
 
 
 
@@ -548,6 +552,8 @@ p {
 #project__nav a:hover {
   color: #35B999;
 }
+
+
 
 .sticky {
   position: fixed;
@@ -740,8 +746,8 @@ h4  {
 .persona__name {
   font-size: 2em;
   font-weight: 700;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
   text-align: center;
 }
 
@@ -1272,6 +1278,11 @@ footer {
   background-color: #85D5C1;
 }
 
+.project_button.contact_casestudy {
+  margin-top: -2.5em;
+  margin-bottom: 2.5em;
+}
+
 
 
 
@@ -1331,8 +1342,9 @@ input, .message-box {
 }
 
 .project_button.send {
+  font-family: "Quicksand", "sans-serif";
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
 }
 
 .project_button.send:hover {
