@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+/* * {
+  border: 1px solid red !important;
+} */
+
 
 html {
   background-color: #FFFFFF;
@@ -313,7 +317,10 @@ nav li a:hover::before {
   color: #1B1826;
   font-size: 3em;
   font-weight: 600;
-  margin-bottom: 0;
+  line-height: 1.2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0.3em;
   text-align: center;
 }
 
@@ -333,9 +340,18 @@ nav li a:hover::before {
 .vdubs__logo {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: auto;
-  margin-top: 2em;
+  margin-top: 3.5em;
   margin-bottom: 1em;
   width: 13%;
+}
+
+.sickfix__logo__homepage {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
+  margin-top: 3.5em;
+  margin-bottom: 1em;
+  max-width: 200px;
+  /* width: 90%; */
 }
 
 .project_button_homepage {
@@ -360,7 +376,7 @@ nav li a:hover::before {
 
 .project {
   align-items: center;
-  box-shadow: 4px 2px 12px grey;
+  box-shadow: 6px 5px 25px #b2b1b1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,6 +396,10 @@ nav li a:hover::before {
   opacity: .5;
 }
 
+.project.sickfix:hover {
+  opacity: .5;
+}
+
 
 
 
@@ -396,17 +416,35 @@ nav li a:hover::before {
 
 }
 
-.logo__casestudy {
+.logo__casestudy { /* default, v-dubs */
   display: block;
   margin: 0 auto;
   width: 15%;
 }
+
+.logo__casestudy__sickfix { /* SickFix Logo */
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2.5em;
+  width: 70%;
+  max-width: 350px;
+}
+
 
 .project__title {
   font-size: 3em;
   font-weight: 700;
   margin-top: 0.5em;
   margin-bottom: 0.3em;
+  text-align: center;
+}
+
+.project__title__sickfix {
+  color: #29429E;
+  font-size: 3em;
+  font-weight: 300;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
   text-align: center;
 }
 
@@ -420,7 +458,7 @@ nav li a:hover::before {
 }
 
 /*buttons*/
-.project_button {
+.project_button { /*default, V-Dubs */
   background-color: #35B999;
   border: none;
   border-radius: 30px;
@@ -443,7 +481,30 @@ nav li a:hover::before {
   background-color: #85D5C1;
 }
 
+.project_button__sickfix {
+  background-color: #35B999;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1.7em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 0.3em;
+  width: 12em;
+}
+
 .wrapper__casestudy { /* mobile */
+  margin: 7em 2.5em;
+}
+
+.wrapper__casestudy__sickfix { /* mobile */
   margin: 7em 2.5em;
 }
 
@@ -564,30 +625,66 @@ p {
 
 
 
-/* Cars and Coffee */
+/* Indepth Interviews */
 ol.numbered {
-  font-size: 1.7em;
+  counter-reset: li;
+  list-style-type: none;
+  font-size: 1.6em;
   font-weight: 600;
-  list-style: none;
-  line-height: 1em;
-  margin-left: 1em;
-  margin-bottom: 2em;
+  margin-left: 1.5em;
+  margin-bottom: 2.5em;
 }
 
 .numbered li {
-  margin-top: 1em;
   counter-increment: li;
-
+  line-height: 1.7em;
+  margin-top: 1.2em;
+  margin-left: 2em;
+  position: relative;
 }
 
 ol.numbered li::before {
   content: counter(li);
   color: #35B999;
   display: inline-block; /* Needed to add space between the bullet and the text */
-  font-weight: 700;
-  margin-left: 1em; /* Also needed for space (tweak if needed) */
-  width: 1em; /* Also needed for space (tweak if needed) */
+  width: 1.7em; /* Also needed for space (tweak if needed) */
+  margin-left: -2em; /* Also needed for space (tweak if needed) */
+  /* height: 1.7em; */
+  text-align: center;
+  position: absolute;
+  /* left: 0; */ /* moves the bullets only */
+  top: 0.1em;
 }
+
+
+
+/****** TEST *****/
+
+
+.results-list li {
+  counter-increment: li;
+  line-height: 1.7em;
+  margin-top: 1.2em;
+  margin-left: 2em;
+  position: relative;
+}
+
+ol.results-list li::before {
+  content: counter(li);
+  color: white;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.7em; /* Also needed for space (tweak if needed) */
+  margin-left: -2em; /* Also needed for space (tweak if needed) */
+  height: 1.7em;
+  background: #EB0000;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  /* left: 0; */ /* moves the bullets only */
+  top: 0.2em;
+}
+/****** TEST *****/
+
 
 
 
@@ -658,14 +755,24 @@ ul.survey {
   list-style: none;
   margin-left: 2em;
   margin-bottom: 2em;
-
 }
+
+.survey.user-stories.sickfix__userstories__list { /* SickFix user stories list */
+  font-weight: 400;
+}
+
+
 
 .section__heading__survey {
   font-size: 2.2em;
   font-weight: 300;
   margin-bottom: 1em;
   margin-top: 0.5em;
+}
+
+.section__heading__survey.sickfix__userstories { /* SickFix user stories text */
+  font-weight: 700;
+  line-height: 1.5em;
 }
 
 
@@ -698,6 +805,10 @@ ul.survey li::before {
   margin-bottom: 3em;
 }
 
+.survey__results.sickfix__results {
+  background: linear-gradient(70deg, rgba(238,235,236,1) 16%, rgba(244,229,232,1) 100%);
+}
+
 .survey__results__flexbox {
   display: flex;
   flex-direction: column;
@@ -713,12 +824,21 @@ ul.survey li::before {
   text-align: center;
 }
 
-h4  {
+h4  { /* Default, V-Dubs */
   font-size: 2.3em;
   font-weight: 700;
   text-align: center;
   padding-top: 1.5em;
   margin-bottom: 0.5em;
+}
+
+.sickfix__results__header { /* Sickfix H4 results header */
+  margin-top: 2em;
+}
+
+.results__text__sickfix { /*sickfix results text*/
+  padding: 0 1.5em;
+  text-align: center;
 }
 
 
@@ -744,7 +864,7 @@ h4  {
 
 
 .persona__name {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 700;
   margin-top: 0.7em;
   margin-bottom: 0.5em;
@@ -752,7 +872,7 @@ h4  {
 }
 
 .persona__id {
-  font-size: 1.7em;
+  font-size: 1.9em;
   font-weight: 300;
   margin-bottom: 2.5em;
   padding: 0;
@@ -781,8 +901,8 @@ h4  {
 
 
 /* user stories */
-.userstories {
-  margin-bottom: 1.5em;
+.sickfix__userstories {
+  margin-bottom: 1em;
   padding-bottom: 0;
   line-height: 0;
 }
@@ -827,8 +947,6 @@ h4  {
   margin-top: 1.2em;
   margin-left: 2em;
   position: relative;
-
-
 }
 
 ol.results-list li::before {
@@ -889,8 +1007,15 @@ span.bullet-gap {
   margin-bottom: 0;
 }
 
-.logo-text-two {
+.logo-text-two, .logo-text-two-sickfix {
   margin-top: 0;
+}
+
+.logo-text-sickfix {
+  font-size: 1.5em;
+  margin-top: -6.5em;
+  margin-bottom: 3em;
+  text-align: center;
 }
 
 .palette__flex {
@@ -954,15 +1079,33 @@ p.colors__text {
   background: #FDF8F0;
 }
 
+.sickfix_green {
+  background: #D6F2F0;
+}
+
+.sickfix_blue {
+  background: #29429E;
+}
+
+.sickfix_black {
+  background: #363A3C;
+}
+
 .palette {
   margin-bottom: 2.5em;
 }
 
+/****** LOGOS *******/
 
-
-.vdubs__large {
+.vdubs__large, .sickfix__large {
   display: block;
   margin: 2em auto;
+}
+
+.sickfix__large {
+  width: 80%;
+  height: auto;
+  max-width: 431px;
 }
 
 
@@ -997,14 +1140,20 @@ p.preftests__title {
   font-weight: 700;
 }
 
-.wrapper__preftests {
-  background: linear-gradient(90deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
+.wrapper__preftests { /*defaults, v-dubs*/
+  background: linear-gradient(70deg, rgba(238,238,238,1) 16%, rgba(217,250,242,1) 100%);
   border-radius: 2.5em;
   padding: 0 2em;
   padding-bottom: 0.5em;
   margin: 4em auto;
   max-width: 90em;
 }
+
+.wrapper__preftests.sickfixprefs { /*sickfix preference test background color*/
+  background: linear-gradient(70deg, rgba(238,235,236,1) 16%, rgba(244,229,232,1) 100%);
+
+  }
+
 
 .wrapper__preftests.first-test {
   margin-top: 1.5em;
@@ -1064,12 +1213,22 @@ ul.to-top a {
 }
 
 /**** IMAGES IN CASE STUDY ****/
-.solutions-screens {
-  box-shadow: 7px 2px 13px #c7c7c7;
+.solutions-screens { /* Default, V-Dubs */
   display: block;
   margin: 0 auto;
+  margin-top: -7.5em;
+  height: auto;
+  max-width: 850px;
+}
+
+.solutions-screens_sickfix {
+  display: block;
+  margin: 0 auto;
+  margin-top: -6.5em;
+  margin-bottom: 2.5em;
   height: auto;
   width: 100%;
+  max-width: 750px;
 }
 
 .user-flow-vertical {
@@ -1091,6 +1250,12 @@ ul.to-top a {
   width: 100%;
   margin-top: 4em;
   margin-bottom: 3em;
+}
+
+.title__sickfix__wireframes { /* SickFix wireframe title */
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
 }
 
 .digital-wireframes-horizontal {
@@ -1150,18 +1315,25 @@ ul.to-top a {
   margin-right: auto;
   margin-top: -2.5em;
   margin-bottom: 3em;
+  max-width: 800px;
   width: 100%;
+
 }
 
 
 .wireframe__img {
-  box-shadow: 4px 2px 12px grey;
+  box-shadow: 6px 3px 20px #9E9C9C;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
   margin-top: 1em;
   vertical-align: middle;
   width: 100%;
+}
 
+.sickfix_fonts { /*sickfix fonts image*/
+  height: auto;
+  width: 100%;
+  max-width: 500px;
 }
 
 .row {
@@ -1183,6 +1355,13 @@ ul.to-top a {
   width: 100%;
   /* max-width: 400px; */
 }
+
+.isometric__summary__sickfix { /* SickFix hero image */
+  filter: drop-shadow(0.5rem 0.75rem 0.75rem #BDBCBC);
+  height: auto;
+  width: 100%;
+  max-width: 800px;
+  }
 
 
 
@@ -1282,6 +1461,7 @@ footer {
   margin-top: -2.5em;
   margin-bottom: 2.5em;
 }
+
 
 
 
@@ -1444,15 +1624,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
     width: 10%;
   }
 
-  /* .project-overlay {
-    visibility: hidden;
-  } */
-
-  /* .project:hover .project-overlay {
-    visibility: visible;
-    background-color: rgba(255, 255, 255, 0.78);
-  } */
-
 
 
 /* footer */
@@ -1540,12 +1711,23 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
    width: 73%;
  }
 
- .logo__casestudy{
+ .logo__casestudy{ /* Default, V-Dubs */
    margin: 0 auto;
    margin-top: 2em;
    margin-bottom: 1em;
    width: 10%;
  }
+
+ .logo__casestudy__sickfix { /* SickFix Logo */
+   margin: 0 auto;
+   margin-top: 2em;
+   margin-bottom: 3em;
+   width: 75%;
+   max-width: 350px;
+
+ }
+
+
 
  .project__title {
    font-size: 3.4em;
@@ -1585,6 +1767,12 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
    width: 6%;
  }
 
+ .solutions-screens_sickfix {
+   margin-bottom: 0;
+ }
+
+
+
  /* ROLES & RESPONSIBILITIES -- TABLET */
 
  .deliverables__flex-row {
@@ -1598,7 +1786,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
  .deliverables__flex-column {
    flex: 50%;
  }
-
 
 
 
@@ -1649,11 +1836,19 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
   }
 
   /* Case Study Hero -- desktop  */
- .logo__casestudy {
+ .logo__casestudy { /* Default, V-Dubs */
    margin-top: 2.5em;
    margin-bottom: 1em;
    width: 9%;
  }
+
+ .logo__casestudy__sickfix { /* SickFix Logo */
+   margin-top: 2.5em;
+   margin-bottom: 3.5em;
+   width: 100%;
+   max-width: 350px;
+ }
+
 
  .project__title {
    font-size: 3.5em;
@@ -1725,7 +1920,7 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
    width: 7%;
  }
 
-/* Surveys -- desktop */
+/* Surveys -- DESKTOP */
 
  .section__heading__survey {
    font-size: 1.8em;
@@ -1743,12 +1938,20 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
    flex-direction: row;
    justify-content: space-around;
    margin: 0 auto;
-   max-width: 75%;
+   max-width: 80%;
 
  }
 
- .results__summary {
-   max-width: 18em;
+ .results__summary { /*vdubs, default*/
+   max-width: 22em;
+ }
+
+ .results__summary.sickfix { /* SickFix */
+   max-width: 27em;
+ }
+
+ .results__summary.sickfix-results2 {
+   max-width: 34em;
  }
 
 
@@ -1779,6 +1982,10 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
 
  .persona__description {
    max-width: 16em;
+ }
+
+ .persona__description.sickfix-personas {
+   max-width: 20em;
  }
 
  /* USER STORIES BULLETED LIST -- DESKTOP */
@@ -1817,7 +2024,6 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
 
  /* Grid for wireframes -- desktop  */
  .wireframe__img {
-   box-shadow: 4px 2px 12px grey;
    margin-top: 3em;
    vertical-align: middle;
    width: 100%;
@@ -2034,7 +2240,7 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
 }
 
 #pieChartShare {
-  margin-top: 31px;
+  margin-top: 1px;
 }
 
 
@@ -2059,4 +2265,14 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
 
 .img-preftest1 {
   margin-right: 2em;
+}
+
+
+#research {
+  padding: 20em;
+}
+
+
+.main-header-space {
+  margin-top: 20em;
 }

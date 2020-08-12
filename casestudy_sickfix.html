@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167525485-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-167525485-1');
+    </script>
+
+    <title> Portfolio | Jolene Esposito </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="scripts.js"></script>
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <!-- <header> -->
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo_je.png" class="header__logo" alt="logo"></a>
+      </div>
+      <!-- desktop nav -->
+      <ul class="nav__desktop">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="esposito_resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- hamburger menu -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html#work">Work</a>
+          <a href="about.html">About</a>
+          <a href="esposito_resume.pdf" target="_blank">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    </nav>
+
+    <section class="summary">
+      <div class="casestudy__hero__top">
+        <img src="images/sickfix/logo_sickfix.png" alt="SickFix logo" class="logo__casestudy__sickfix">
+        <h3 class="project__title__sickfix">Medical Supplies. <span style="font-weight:700">Before</span> you need them.</h3>
+      </div>
+      <img src="images/sickfix/isometric_screens_sickfix.jpg" alt="SickFix mobile screens" class="isometric__summary__sickfix">
+      <a href="https://www.figma.com/proto/x62RXhpGGl5vDQjkfSBAe2/SickFix-Wireframes?node-id=313%3A280&viewport=3768%2C2344%2C0.5&scaling=scale-down" target="_blank" class="project_button__sickfix">View Prototype</a>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
+
+ <!-- Roles/Responsibilities -->
+     <section class="deliverables__flex-row">
+       <div class="deliverables__flex-column">
+         <div class="role">
+           <i class="fa fa-user-circle-o deliverables-icons"></i>
+           <h3 class="deliverables__titles">Role</h3>
+           <ul class="deliverables__list">
+             <li>Research</li>
+             <li>Branding</li>
+             <li>Visual Design</li>
+             <li>Prototyping</li>
+           </ul>
+         </div>
+       </div>
+
+       <div class="deliverables__flex-column">
+         <div class="role">
+           <i class="fa fa-clone deliverables-icons"></i>
+           <h3 class="deliverables__titles">Deliverables</h3>
+           <ul class="deliverables__list">
+             <li>User surveys</li>
+             <li>Competitive analyses</li>
+             <li>User personas</li>
+             <li>User Stories + Flows</li>
+             <li>Wireframes</li>
+             <li>Hi-fi Mockups</li>
+             <li>User Testing</li>
+             <li>Final Prototype</li>
+           </ul>
+         </div>
+     </div>
+       <div class="deliverables__flex-column">
+         <div class="role">
+           <i class="fa fa-pencil deliverables-icons"></i>
+           <h3 class="deliverables__titles">Tools</h3>
+           <ul class="deliverables__list">
+             <li>Sketch</li>
+             <li>Figma</li>
+             <li>Invision</li>
+             <li>Adobe Illustrator</li>
+             <li>Adobe Photoshop</li>
+             <li>UsabilityHub</li>
+             <li>Google Forms</li>
+           </ul>
+         </div>
+       </div>
+         <div class="deliverables__flex-column">
+           <div class="role">
+             <i class="fa fa-clock-o deliverables-icons"></i>
+             <h3 class="deliverables__titles">Timeline</h3>
+             <ul class="deliverables__list">
+               <li>2.5 months</li>
+             </ul>
+           </div>
+         </div>
+     </section>
+
+
+    <!-- Overview -->
+    <div class="wrapper__overview">
+
+      <section class="overview">
+        <hr>
+        <h2 class="main__header">Overview</h2>
+        <h3 class="prob-sol-con">The Problem</h3>
+        <p><span style="font-weight:700">There are no subscription boxes for medical supplies.</span> Health and wellness subscription boxes currently on the market are more inspirational than functional. That is, they send products you don't need or use, and many subscription boxes don't allow you to choose your shipment frequency.</p>
+        <h3 class="prob-sol-con">The Solution</h3>
+        <p>SickFix is a subscription box for medical supplies where you can choose the supplies you need, when you need them.</p>
+      </section>
+    </div>
+    <picture>
+      <source media="(min-width: 450px)" srcset="images/sickfix/isometric_overhead_sickfix.png">
+      <img src="images/sickfix/isometric_overhead_sickfix-mobile.png" alt="SickFix mobile screens" class="solutions-screens_sickfix">
+    </picture>
+
+
+
+
+      <!-- In-page Navigation -->
+      <nav id="project__nav">
+        <a href="#research">Discovery &ensp;|</a>
+        <a href="#informationarchitecture"> &ensp;Information Architecture &ensp;|</a>
+        <a href="#visualdesign">&ensp;Visual Design &ensp;|</a>
+        <a href="#prototype">&ensp;Prototype</a>
+      </nav>
+
+
+
+      <!-- DISCOVERY -->
+      <div class="wrapper__casestudy">
+        <a id="research"></a>
+        <hr>
+        <h2 class="main__header">Discovery</h2>
+        <p class="section__subheading">User Research</p>
+        <h3 class="section__heading">It's about the user.</h3>
+        <p>I surveyed people who currently have subscription boxes; people who had a subscription box in the past, but no longer subscribe; and people who have never subscribed to a box.</p>
+
+        <!--User Survey: Subscription boxes -->
+        <h3 class="section__heading__survey">Survey Goals: Subscription Boxes</h3>
+        <ul class="survey">
+          <li>Likes and dislikes of subscription boxes</li>
+          <li>Importance of specific features</li>
+          <li>Device(s) used to access subscription box info</li>
+        </ul>
+
+      </div>
+
+
+
+      <!-- Results of User Survey 1 -->
+      <section class="survey__results sickfix__results">
+        <h3 class="section__subheading__results">Results: Subscription Box Survey</h3>
+        <div class="survey__results__flexbox">
+          <div class="results__summary sickfix">
+            <h4 class="sickfix__results__header">Current Subscribers:</h4>
+            <p class="results__text__sickfix">62% subscribe to a box because of <span style="font-weight:700">convenience</span></p>
+            <div>
+              <canvas id="pieChartCurrentSubscriber"></canvas>
+            </div>
+          </div>
+          <div class="results__summary sickfix">
+            <h4 class="sickfix__results__header">Previous Subscribers:</h4>
+            <p class="results__text__sickfix">56% no longer subscribe to a box because they <span style="font-weight:700">did not receive useful items</span></p>
+            <div>
+              <canvas id="pieChartPreviousSubscriber"></canvas>
+            </div>
+          </div>
+          <div class="results__summary sickfix">
+            <h4 class="sickfix__results__header">Never Subscribed:</h4>
+            <p class="results__text__sickfix">67% haven't subscribed because there are <span style="font-weight:700">no boxes tailored to needs</span></p>
+            <div>
+              <canvas id="pieChartNeverSubscribed"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="survey__results__flexbox">
+          <div class="results__summary sickfix-results2">
+            <h4 class="sickfix__results__header">Top Features</h4>
+            <ul class="survey__results__list">
+              <li>Choose shipment frequency</li>
+              <li>Choose items and have some surprises</li>
+              <li>Pause subscription</li>
+              <li>Ideal price point: $26 - $49</li>
+            </ul>
+          </div>
+          <div class="results__summary sickfix-results2">
+            <h4 class="sickfix__results__header">Frustrations</h4>
+            <ul class="survey__results__list">
+              <li>Can't choose shipment frequency</li>
+              <li>Don't have products that are needed</li>
+              <li>Inconsistent design of sites/apps</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- In Depth Interviews -->
+    <div class="wrapper__casestudy">
+
+
+      <p class="section__subheading">In-depth interviews:</p>
+      <h3 class="section__heading">Box talk.</h3>
+      <p>Interviewing several survey respondents on their subscription box habits led to more insights about
+        how to design a successful medical supply subscription box. <span style="font-weight:700">I learned there are several important features to include:</span></p>
+        <ol class="numbered">
+          <li>Select items you want/need</li>
+          <li>Have surprises thrown in</li>
+          <li>Choose shipment frequency</li>
+          <li>Offering a wide variety of products</li>
+        </ol>
+
+      </div>
+
+
+      <!-- Competitive Analysis -->
+      <div class="wrapper__casestudy">
+
+        <p class="section__subheading competitive">Competitive Analysis</p>
+        <h3 class="section__heading">Sizing up the competition.</h3>
+        <p>I performed competitive and SWOT analyses on 3 health and wellness subscription boxes: Hers, Baze, and TheraBox, and informally evaluated a dozen others. I learned that opportunities exist to create a
+          medical supply subscription box.</p>
+        <a href="https://docs.google.com/document/d/18_XxLRrKfgGXuY-vaCUntPfD13pmUhFSCTiUOD1-YpE/edit?usp=sharing" target="_blank" class="project_button">View Full Results</a>
+      </div>
+
+        <!-- User Personas -->
+      <div class="wrapper__casestudy">
+
+        <p class="section__subheading personas">User Personas</p>
+        <h3 class="section__heading">Many people. Common motivations.</h3>
+        <p>Using survey results, in-depth interviews, and competative anlaysis data, I generated 2 personas:</p>
+        <ol class="numbered">
+          <li>The Patient</li>
+          <li>The Caregiver</li>
+        </ol>
+      </div>
+
+
+
+      <section class="personas__flex">
+        <!-- Persona 1 -->
+        <div class="persona-one">
+          <img src="images/sickfix/personas/caregiver.jpg" alt="Lina. The Caregiver" class="persona__image one">
+          <h3 class="persona__name">Lina</h3>
+          <h4 class="persona__id">The Caregiver | 51 years old</h4>
+          <div class ="wrapper__personas">
+            <h5 class="motivations_frustrations">Motivations:</h5>
+            <p class="persona__description sickfix-personas">I work full-time and care for my aging mother. I'm familiar with subscription boxes, having subscribed to several health and wellness boxes in the past. I want to be able to choose products for myself and my mother, get recommendations, and have surprises thrown in.</p>
+            <h5 class="motivations_frustrations">Frustrations:</h5>
+            <p class="persona__description sickfix-personas">I found that the boxes I subscribed to didn't have items I used, nor did they get sent on a schedule that I prefered.</p>
+          </div>
+        </div>
+
+
+        <!-- Persona 2 -->
+        <div class="persona-two">
+          <img src="images/sickfix/personas/patient.jpg" alt="Marti. The Patient" class="persona__image">
+          <h3 class="persona__name">Marti</h3>
+          <h4 class="persona__id">The Patient | 43 years old</h4>
+          <div class ="wrapper__personas">
+            <h5 class="motivations_frustrations">Motivations:</h5>
+            <p class="persona__description sickfix-personas">I work remotely as a software engineeer. I suffer from several minor health issues. Ordering health-related products from one convenient, inexpensive place without having to leave my home would be ideal.</p>
+            <h5 class="motivations_frustrations">Frustrations:</h5>
+            <p class="persona__description sickfix-personas">There isn't a specific service tailored to my needs. The subscription boxes available often don't have products I want, ship too frequenty, and have confusing sign up processes.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- User Stories -->
+    <div class="wrapper__casestudy">
+      <p class="section__subheading">User Stories</p>
+      <h3 class="section__heading">Less is more.</h3>
+      <p>After researching subscription boxes and creating a lengthy list of user tasks, I prioritized
+        these tasks to create a Minimum Lovable Product.</p>
+      <p class="section__heading__survey sickfix__userstories">High Priority Items - New User</p>
+      <ul class="survey user-stories sickfix__userstories__list">
+        <li>Learn how SickFix works</li>
+        <li>Sign up for new account</li>
+        <li>Browse products and read detailed descriptions</li>
+        <li>Select/de-select items for my box</li>
+        <li>Choose how often I want to receive a box</li>
+        <li>Input shipping, billing, payment info</li>
+        <li>Checkout and receive confirmation of order</li>
+      </ul>
+      <p class="section__heading__survey sickfix__userstories">High Priority Items - Returning User</p>
+      <ul class="survey user-stories sickfix__userstories__list">
+        <li>Sign into account</li>
+        <li>Pause my subscription </li>
+        <li>Update info: shipping, payment, frequency</li>
+        <li>Shop items for next box</li>
+        <li>Sign out of account</li>
+      </ul>
+    </div>
+
+
+    <!-- Lesson -->
+    <section class="lesson">
+      <div class="wrapper__lessons">
+        <h3 class="lesson__title">Discovery Phase &mdash; Lessons Learned: Think about the Minimum Lovable Product</h3>
+        <p class="lesson__paragraph">I was advised by a knowledgable mentor to think of my MVP in terms of a 'minimum lovable product'.
+        What features should SickFix have in order for people to make people feel engaged and want to return to the service?</p>
+      </div>
+    </section>
+
+
+    <!-- Information Architecture -->
+    <div class="wrapper__casestudy">
+
+      <a id="informationarchitecture"></a>
+      <hr>
+      <h2 class="main__header">Information Architecture</h2>
+      <!-- User Flows -->
+      <p class="section__subheading">User Flows</p>
+      <h3 class="section__heading">Going with the flow.</h3>
+      <p class="user-flows">From the highest priority user stories, I sketched flows for the following tasks:</p>
+        <ul class="survey user-stories">
+          <li>Learn more about SickFix</li>
+          <li>Sign up/Sign in/Sign Out</li>
+          <li>Product Selection</li>
+          <li>Checkout</li>
+          <li>Pause subscription</li>
+          <li>Update information</li>
+        </ul>
+
+      <section class="flows__flex">
+        <picture>
+          <source media="(min-width: 1000px)" srcset="images/sickfix/flows/flow_horizontal_desktop.png">
+          <img src="images/sickfix/flows/flow_vertical_mobile.png" alt="Product Selection Flow" class="user-flow-vertical">
+        </picture>
+        <a href="https://drive.google.com/drive/folders/1qzV6CwgIXv7UMcMiFqwMq48C3B-Up6al?usp=sharing" target="_blank" class="project_button">View User Flows</a>
+      </section>
+
+    </div>
+
+
+    <!-- Wireframes -->
+    <div class="wrapper__casestudy wireframes">
+      <p class="section__subheading">Wireframes</p>
+      <h3 class="section__heading">Showing the vision.</h3>
+    </div>
+
+    <img src="images/sickfix/wireframes/wireframe_sketches_sickfix.jpg" alt="Wireframe sketches" class="wireframe-sketches">
+
+    <div class="wrapper__casestudy">
+
+      <h3 class="section__heading">Round 1: User Testing</h3>
+      <p>I performed 2 user tests on my paper sketches and quickly learned of several pain points. Below you will see how my paper sketches were transformed into wireframes.</p>
+      <a href="https://docs.google.com/document/d/1QzhXHxy-evonBT0cT469LSf6o-c3jysRYzlFZBgQ6W4/edit?usp=sharing" target="_blank" class="project_button">View Tasks</a>
+      <p class="section__heading__survey results-one">Results Summary:</p>
+      <ol class="results-list">
+        <li><span class="bullet-gap">Expectation for Product Selection screen is a 2-column layout (similar to other e-commerce sites)</span></li>
+        <li><span class="bullet-gap">Users noticed no way to proceed forward or see what you have already chosen for your box, so I added shopping cart and finalize box buttons</span></li>
+        <li><span class="bullet-gap">Expectation for Review Your Box screen is a list-like layout (similar to other e-commerce sites)</span></li>
+      </ol>
+    </div>
+
+    <div class="wrapper__background__color usertesting1bkg">
+      <picture>
+        <source media="(min-width: 400px)" srcset="images/sickfix/usertesting/usertesting_round1_desktop.png" class="usertesting1">
+        <img src="images/sickfix/usertesting/usertesting_round1_mobile.png" alt="User testing results" class="usertesting1">
+      </picture>
+    </div>
+    <div class="wrapper__background__color">
+      <h3 class="title__sickfix__wireframes">Wireframes<h3>
+      <section class="row">
+        <div class="column">
+          <img src="images/sickfix/wireframes/landingpage.jpg" alt="Landing Page" class="wireframe__img">
+          <img src="images/sickfix/wireframes/dashboard.jpg" alt="Add content" class="wireframe__img">
+        </div>
+        <div class="column">
+          <img src="images/sickfix/wireframes/signup.jpg" alt="Sign Up" class="wireframe__img">
+          <img src="images/sickfix/wireframes/review.jpg" alt="Ask a question" class="wireframe__img">
+          <img src="images/sickfix/wireframes/account.jpg" alt="Ask a question" class="wireframe__img">
+
+        </div>
+        <div class="column">
+          <img src="images/sickfix/wireframes/products.jpg" alt="Dashboard" class="wireframe__img">
+          <img src="images/sickfix/wireframes/frequency.jpg" alt="Dashboard" class="wireframe__img">
+
+        </div>
+        <div class="column">
+          <img src="images/sickfix/wireframes/productdetail.jpg" alt="New Note" class="wireframe__img">
+          <img src="images/sickfix/wireframes/checkout.jpg" alt="New Note" class="wireframe__img">
+
+        </div>
+        </section>
+    </div>
+
+
+
+    <section class="lesson">
+      <div class="wrapper__lessons">
+        <h3 class="lesson__title">Information Architecture &mdash; Lessons Learned: Sketches are immensely helpful.</h3>
+        <p class="lesson__paragraph">I'm not the best sketcher, so I grumble through this process. However,
+          sketching out SickFix helped me quickly identify screens I was missing and pain points the user experienced before I got too far along in the design process.</p>
+        </div>
+    </section>
+
+
+    <!-- Visual Design -->
+    <div class="wrapper__casestudy">
+
+      <a id="visualdesign"></a>
+      <hr>
+      <h2 class="main__header">Visual Design</h2>
+
+      <!-- Branding -->
+      <p class="section__subheading">Branding</p>
+      <h3 class="section__heading">Simple, classically modern.</h3>
+
+    </div>
+
+      <img src="images/sickfix/branding/moodboard_sickfix.jpg" alt="Moodboard inspiration for app" class="moodboard">
+
+
+
+    <div class="wrapper__casestudy">
+
+      <p class="branding-text">SickFix is <span style="font-weight:700">classically modern.</span> It combines traditional elements (i.e. blue color, serif style font) with modern elements (i.e. powder green, modern serif and sans serif fonts, playful product name).
+        The target audience should quickly idenfity what the brand is all about and what the product is.</p>
+      <!-- Logo -->
+      <p class="section__subheading logo">Logo</p>
+      <h3 class="section__heading">Word cloud to SickFix.</h3>
+
+    </div>
+
+      <picture>
+        <source media="(min-width: 400px)" srcset="images/sickfix/branding/sketches_logo_sickfix_desktop.png" class="logo-sketches-desktop">
+        <img src="images/sickfix/branding/sketches_logo_sickfix_mobile.png" alt="Logo sketches" class="logo-sketches-mobile">
+      </picture>
+
+    <div class="wrapper__casestudy">
+
+      <p class="logo-text-sickfix">You can see visually see my journey from word cloud to the final logo. </p>
+      <img src="images/sickfix/branding/final_logo_sickfix.png" alt="Final SickFix logo" class="sickfix__large">
+      <p class="logo-text-two-sickfix">I explored a variety of potential names, but quickly settled on SickFix. It is playful, yet identifiable in terms
+        of the product and service being offered.</p>
+
+      <!-- Color Palette -->
+      <p class="section__subheading">Color Palette</p>
+      <h3 class="section__heading">Blue and green should be seen.</h3>
+      <p class="colors__text">Primary Colors</p>
+      <section class="palette__flex">
+        <div class="colors">
+          <div class="circle sickfix_blue"></div>
+          <p class="hex">#29429E</p>
+        </div>
+        <div class="colors">
+          <div class="circle sickfix_green"></div>
+          <p class="hex">#D6F2F0</p>
+        </div>
+      </section>
+      <p class="colors__text">Secondary Colors</p>
+      <section class="palette__flex">
+        <div class="colors">
+          <div class="circle sickfix_black"></div>
+          <p class="hex">#363A3C</p>
+        </div>
+      </section>
+      <p class="palette">Blue is a commonly use color, particularly in medical-related brands. Blue is non-threatening and traditional, and gives feelings of peace and security. I coupled blue with a modern, pastel green color. Accessibility is key, so it is important that the green and blue well with each other for readability.</p>
+
+      <!-- Typography -->
+      <p class="section__subheading">Typography</p>
+      <h3 class="section__heading">It's my type.</h3>
+      <img src="images/sickfix/branding/fonts.png" alt="Fonts used in the app" class="sickfix_fonts">
+      <p><span style="font-weight:700">Maitree</span> is used for the logo, only. It has the right font weights needed to emphasize the 'Fix' in SickFix. <span style="font-weight:700">Source Serif Pro</span> is used for headers. It was designed for the digital environment and is readable and modern. <span style="font-weight:700">Open Sans</span> is used for all other text on site and app. It is modern, clean, and easy to read.</p>
+        <a href="images/sickfix/styleguide_sickfix.pdf" target="_blank" class="project_button">View Style Guide</a>
+
+    </div>
+
+    <section class="lesson">
+      <div class="wrapper__lessons">
+        <h3 class="lesson__title">Visual Design &mdash; Lessons Learned: Take your time, but don't overthink it.</h3>
+        <p class="lesson__paragraph">I like taking my time on branding in order to develop a visually appealing, accessible color palette and choose fonts that compliment the brand.
+          Choosing 3 fonts (logo, headers, text) did not initially feel right. "Many brands only have two fonts!" is what my mind said. I quickly realized there isn't anywhere that specifically
+          states you can only have 2 fonts for your brand. The font choice for my logo works really well with the range of font weights provided, but this font wouldn't work nearly as well as the fonts I chose for headers and text. This is OK!</p>
+        </div>
+    </section>
+
+      <!-- Prototype -->
+    <div class="wrapper__casestudy prototype">
+
+      <a id="prototype"></a>
+      <hr>
+      <h2 class="main__header">Prototype</h2>
+      <p class="section__subheading">Preference Testing</p>
+      <h3 class="section__heading">Which do you prefer?</h3>
+    </div>
+      <div class="wrapper__preftests first-test sickfixprefs">
+        <p class="preftests__title">Button Color</p>
+        <div class="wrapper__eachtest">
+          <img src="images/sickfix/preference_testing/button_color1.png" alt="Dark blue button color on landing page" class="img-preftest1">
+          <img src="images/sickfix/preference_testing/button_color2.png" alt="Lighter blue button color on landing page" class="img-preftest2">
+        </div>
+        <p class="preftests__text">Over <span class="preftests__text-bold">71%</span> of users prefered the <span class="preftests__text-bold">Option A</span>. Keeping the logo, headers, and buttons one, consistent color blue is ideal.</p>
+      </div>
+      <div class="wrapper__preftests sickfixprefs">
+        <p class="preftests__title">Product Display (Homepage)</p>
+        <div class="wrapper__eachtest">
+          <img src="images/sickfix/preference_testing/product_display1.png" alt="Products displayed in a 2-column layout" class="img-preftest1">
+          <img src="images/sickfix/preference_testing/product_display2.png" alt="Products displayed in a carousel" class="img-preftest2">
+        </div>
+        <p class="preftests__text"><span class="preftests__text-bold">76%</span> of users chose <span class="preftests__text-bold">Option A</span>. Users prefered a 2-column layout for displaying products as opposed to the carousel layout.</p>
+      </div>
+      <div class="wrapper__preftests sickfixprefs">
+        <p class="preftests__title">Bottom Navigation Bar Color (In-App)</p>
+        <div class="wrapper__eachtest">
+          <img src="images/sickfix/preference_testing/bottomnav1.png" alt="Dashboard with no tabs" class="img-preftest1">
+          <img src="images/sickfix/preference_testing/bottomnav2.png" alt="Dashboard with tabs" class="img-preftest2">
+        </div>
+          <p class="preftests__text"><span class="preftests__text-bold">53%</span> of users chose <span class="preftests__text-bold">Option B, green color</span>. Since the results for this test are not statistically significant, <span class="preftests__text-bold">additional research is needed.</span></p>
+      </div>
+
+
+      <!-- Hi Fi Mockups -->
+    <div class="wrapper__casestudy">
+      <p class="section__subheading mockups">Hi Fi Mockups</p>
+      <h3 class="section__heading">The app comes to life.</h3>
+    </div>
+
+      <img src="images/sickfix/isometric_slanted_sickfix.jpg"  alt="Hi-fi mockup screens" class="vdubs-isometric2">
+
+    <div class="wrapper__casestudy">
+
+      <h3 class="section__heading">Round 2: User Testing</h3>
+      <p>Round 2 user testing contained 11 tasks.</p>
+      <a href="https://docs.google.com/document/d/1QzhXHxy-evonBT0cT469LSf6o-c3jysRYzlFZBgQ6W4/edit?usp=sharing" target="_blank" class="project_button">View Tasks</a>
+      <p class="section__heading__survey results-one">Results Summary:</p>
+      <ol class="results-list">
+        <li><span class="bullet-gap">On checkout screen, total cost was not specified on previous iterations</span></li>
+        <li><span class="bullet-gap">To eliminate onboarding fatigue, have account creation occur in a follow-up email rather than creating an account as part of the onboarding flow </span></li>
+        <li><span class="bullet-gap">Sign Out as a returning user was not present on previous iterations</span></li>
+        <li><span class="bullet-gap">Selecting (and changing) your shipment frequency as a new and returning user contained too many user clicks to complete the task. I simplied this by putting options in a list</span></li>
+        <li><span class="bullet-gap">When using the Contact Us link, there was no indication that the message was sent. This can be frustrating to users not knowing if their message was sent, so I added a confirmation message</span></li>
+
+      </ol>
+    </div>
+
+    <div class="wrapper__background__color">
+      <picture>
+        <source media="(min-width: 450px)" srcset="images/sickfix/usertesting/usertesting_round2_desktop.png" class="usertesting2">
+        <img src="images/sickfix/usertesting/usertesting_round2_mobile.png" alt="User testing round 2" class="usertesting2">
+      </picture>
+    </div>
+
+
+    <!-- Lesson -->
+    <section class="lesson">
+      <div class="wrapper__lessons">
+
+        <h3 class="lesson__title">Prototype &mdash; Lessons Learned: Creating a subscription box with e-commerce flare has its challenges.</h3>
+        <p class="lesson__paragraph">SickFix has the interesting challenge of combining a subscription box model with an e-commerce feel. The biggest obstacle for me was reducing the amount of steps the user has to accomplish to order a box, while also solving the problems of being able to choose items in your box and select how often you want to receive a box.</p>
+
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="conclusion">
+      <div class="wrapper__casestudy">
+
+        <h3 class="prob-sol-con">Conclusion</h3>
+        <p>I took on an interesting challenge of creating a subscription box with e-commerce flare. SickFix is a medical supply subscription box that lets you choose the products you need, when you need them. The project could have taken many directions, but through in-depth research, I learned that the ability to choose items you want (with some surprises thrown in!) and select how often you want to receive a box were critical features to be included.<span style="font-weight:700"> The challenges came in the information architecture phase where I had to balance product selection and selection of shipment frequency with other common, e-commerce onboarding tasks like account creation and checkout.</span></p>
+        <p>I ultimately chose to remove account creation from onboarding. Users enter their email address on checkout page and are invited to create an account via their confirmation email. <span style="font-weight:700">While I risk losing some users who may never subscribe again and create an account, I have created a more pleasant, less tedious onboarding experience.</span>  As I continue to refine SickFix, I want to further stress test and refine the onboarding process to make it even simpler. I also want to build in general health-related questions so that SickFix can ‘“learn” user preferences and offer product recommendations.</p>
+        </div>
+    </section>
+    <a href="contact.html" class="project_button contact_casestudy">Get in Touch</a>
+
+
+
+    <!-- Footer -->
+    <footer>
+      <h2 class="footer__connect">Let's Connect!</h2>
+      <section class="social__flex">
+        <div class="social__icons">
+          <a href="https://www.linkedin.com/in/jolene-esposito" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+          <p class="social__text">LinkedIn</p>
+        </div>
+        <div class="social__icons">
+          <a href="https://github.com/jespos" target="_blank"><i class="fa fa-github-square"></i></a>
+          <p class="social__text">Github</p>
+        </div>
+        <div class="social__icons">
+          <a href="contact.html"><i class="fa fa-envelope-square"></i></a>
+          <p class="social__text">Email</p>
+        </div>
+      </section>
+      <p class="copywrite">© 2020 | Designed and Developed with <i class="fa fa-heart"></i> by Jolene Esposito</p>
+    </footer>
+
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+
+
+
+////////////////// CURRENT BOX SUBSCRIBERS PIE CHART ////////////////////////////////////
+    var ctx = document.getElementById('pieChartCurrentSubscriber').getContext('2d');
+    ctx.width = 100;
+    ctx.height = 100;
+
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'pie',
+
+    // The data for our dataset
+    data: {
+          labels: ["Convenience", "Tailored to needs/interests", "Curiosity", "Value"],
+          datasets: [{
+            label: "Primary reason for subscribing to a box",
+            backgroundColor: ["#142850", "#B83B5E", "#F08A5D", "#00909E" ],
+            data: [8,3, 1, 1]
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          responsive: true,
+          maintainAspectRatio: false,
+        }
+    });
+
+////////////////// PREVIOUS SUBSCRIBERS PIE CHART ////////////////////////////////////
+    var ctx = document.getElementById('pieChartPreviousSubscriber').getContext('2d');
+    ctx.width = 100;
+    ctx.height = 100;
+
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'pie',
+
+    // The data for our dataset
+    data: {
+          labels: ["Did not receive useful items", "Cost"],
+          datasets: [{
+            label: "Primary reason for no longer subscribing to a box",
+            backgroundColor: ["#99B898", "#E84A5F"],
+            data: [9,7]
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          responsive: true,
+          maintainAspectRatio: false,
+        }
+    });
+
+////////////////// NEVER SUBSCRIBERED PIE CHART ////////////////////////////////////
+    var ctx = document.getElementById('pieChartNeverSubscribed').getContext('2d');
+    ctx.width = 100;
+    ctx.height = 100;
+
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'pie',
+
+    // The data for our dataset
+    data: {
+          labels: ["No box tailored to needs/interests", "No need for a box"],
+          datasets: [{
+            label: "Primary reasons for not subscribing to a box",
+            backgroundColor: ["#086972", "#87DFD6"],
+            data: [2,1]
+          }]
+        },
+        options: {
+          legend: {
+            display: false
+          },
+          responsive: true,
+          maintainAspectRatio: false,
+        }
+    });
+
+
+    </script>
+
+
+
+
+  </body>
+</html>
