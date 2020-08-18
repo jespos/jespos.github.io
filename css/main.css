@@ -230,10 +230,6 @@ nav li a:hover {
   color: #35B999;
 }
 
-nav li a:active {
-  color: #35B999;
-}
-
 nav li a::before {
   background-color: #35B999;
   content: '';
@@ -247,6 +243,10 @@ nav li a::before {
 
 nav li a:hover::before {
   width: 100%;
+}
+
+nav li a:active {
+  color: #35B999;
 }
 
 
