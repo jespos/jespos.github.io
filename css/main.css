@@ -226,7 +226,7 @@ nav li a{
   color: #F2E5E5;
 }
 
-nav li a:hover {
+nav li a:hover, a:active {
   color: #35B999;
 }
 
@@ -245,9 +245,10 @@ nav li a:hover::before {
   width: 100%;
 }
 
-nav li a:active {
+/* nav li a:active {
   color: #35B999;
-}
+} */
+
 
 
 /**** HERO SECTION ***/
