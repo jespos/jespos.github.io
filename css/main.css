@@ -41,7 +41,7 @@ h1, h2, h3, h4, p {
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: white; /* Set a background color */
-  color: #35B999; /* Text color */
+  color: #26826B; /*#35B999*/ /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   /*padding: 15px; Some padding */
   border-radius: 50%; /* circle */
@@ -356,7 +356,7 @@ nav li a:hover::before {
 }
 
 .project_button_homepage {
-  background-color: #35B999;
+  background-color: #26826B; /*#35B999*/
   border: none;
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -460,7 +460,7 @@ nav li a:hover::before {
 
 /*buttons*/
 .project_button { /*default, V-Dubs */
-  background-color: #35B999;
+  background-color: #26826B; /*#35B999*/
   border: none;
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -483,7 +483,7 @@ nav li a:hover::before {
 }
 
 .project_button__sickfix {
-  background-color: #35B999;
+  background-color: #26826B; /*#35B999*/
   border: none;
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -563,7 +563,7 @@ nav li a:hover::before {
 
 /*Overview*/
 .main__header {
-  color: #35B999;
+  color: #26826B; /*#35B999*/
   font-size: 1.7em;
   font-weight: 500;
   margin-bottom: 2em;
@@ -574,7 +574,7 @@ hr {
   display: block;
   margin-left: 0;
   margin-right: auto;
-  border-color: #35B999;
+  border-color: #26826B; /*#35B999*/
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
@@ -589,6 +589,7 @@ hr {
 
 p {
   font-size: 1.7em;
+  font-weight: 500;
   line-height: 1.9em;
   padding-bottom: 1em;
 }
@@ -646,7 +647,7 @@ ol.numbered {
 
 ol.numbered li::before {
   content: counter(li);
-  color: #35B999;
+  color: #26826B; /*#35B999*/
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1.7em; /* Also needed for space (tweak if needed) */
   margin-left: -2em; /* Also needed for space (tweak if needed) */
@@ -699,7 +700,7 @@ ol.results-list li::before {
 }
 
 .lesson {
-  background-color: #35B999;
+  background-color: #26826B; /*#35B999*/
   padding-top: 3em;
   padding-bottom: 3em;
   margin-bottom: 3em;
@@ -759,14 +760,14 @@ ul.survey {
 }
 
 .survey.user-stories.sickfix__userstories__list { /* SickFix user stories list */
-  font-weight: 400;
+  font-weight: 500;
 }
 
 
 
 .section__heading__survey {
   font-size: 2.2em;
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: 1em;
   margin-top: 0.5em;
 }
@@ -784,7 +785,7 @@ ul.survey li {
 
 ul.survey li::before {
   content: "\2022";  /* Code/unicode for a bullet */
-  color: #35B999;
+  color: #26826B; /*#35B999*/
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
@@ -793,6 +794,7 @@ ul.survey li::before {
 
 .survey__results__list {
   font-size: 1.6em;
+  font-weight: 500;
   list-style: none;
   line-height: 2em;
   text-align: center;
@@ -1210,7 +1212,7 @@ ul.to-top {
 }
 
 ul.to-top a {
-  color: #35B999;
+  color: #26826B; /*#35B999*/
 }
 
 /**** IMAGES IN CASE STUDY ****/
@@ -1382,7 +1384,7 @@ ul.to-top a {
 }
 
 .fa.fa-heart {
-  color: #35B999;
+  color: #26826B; /*#35B999*/
 }
 
 footer {
@@ -1925,7 +1927,7 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
 
  .section__heading__survey {
    font-size: 1.8em;
-   font-weight: 300;
+   font-weight: 600;
    margin-bottom: 1em;
  }
 
