@@ -1360,10 +1360,10 @@ ul.to-top a {
 }
 
 .isometric__summary__sickfix { /* SickFix hero image */
-  filter: drop-shadow(0.5rem 0.75rem 0.75rem #BDBCBC);
+  /* filter: drop-shadow(0.5rem 0.75rem 0.75rem #BDBCBC); */
   height: auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   }
 
 
