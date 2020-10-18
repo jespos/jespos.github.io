@@ -279,24 +279,23 @@ nav li a:hover::before {
 }
 
 .hero__name {
-  font-size: 4em;
-  font-weight: 300;
-  line-height: 1.3em;
+  font-size: 3.5em;
+  font-weight: 400;
+  line-height: 1.1em;
   margin-bottom: .5em;
 }
 
 
 .hero__profession {
-  font-size: 3em;
-  font-weight: 300;
-  line-height: 1.5em;
-  margin-bottom: 0.5em;
+  /* font-size: 3em; */
+  font-weight: 600;
+  color: #35B999;
 }
 
 .hero__story {
   font-size: 2em;
   font-weight: 300;
-  line-height: 1.8em;
+  line-height: 1.9em;
 }
 
 .down-arrow {
@@ -308,6 +307,12 @@ nav li a:hover::before {
 .down-arrow a {
   text-decoration: none;
   color: #F2E5E5;
+}
+
+.hero__dots {
+  position:relative;
+  left:10em;
+  top:10em;
 }
 
 
@@ -1681,16 +1686,16 @@ TRANSITION FROM HAMBURGER TO NAVIGATION BAR
   /* HERO -- TABLET */
 
   .hero__name {
-    font-size: 5.5em;
+    font-size: 5em;
     letter-spacing: 1.5px;
-    margin-bottom: 0.3em;
+    /* margin-bottom: 0.3em; */
     margin-top: 0.3em;
   }
 
   .hero__profession {
-    font-size: 3.7em;
-    letter-spacing: 0.9px;
-    margin-bottom: 0.2em;
+    /* font-size: 5.5em; */
+    /* letter-spacing: 0.9px; */
+    /* margin-bottom: 0.2em; */
   }
 
   .hero__story {
